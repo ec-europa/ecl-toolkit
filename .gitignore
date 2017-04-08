@@ -1,0 +1,25 @@
+# ******************************************************************************
+# Based on Github's awesome .gitignore templates
+# See: https://github.com/github/gitignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Yarn Integrity file
+.yarn-integrity
+
+# ******************************************************************************
+# Custom
+
+# Lerna changelog
+/.changelog
