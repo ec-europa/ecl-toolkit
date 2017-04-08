@@ -1,5 +1,7 @@
 # Contributing
 
+*Heavily inspired by [Contributing to Create React App](https://github.com/facebookincubator/create-react-app/blob/master/CONTRIBUTING.md).*
+
 ## Cutting a Release
 
 1.  Tag all merged pull requests that go into the release with the relevant 
