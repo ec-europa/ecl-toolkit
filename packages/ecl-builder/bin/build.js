@@ -1,34 +1,42 @@
 #!/usr/bin/env node
 
-const spawn = require('cross-spawn');
+const path = require('path');
+const program = require('commander');
+const buildScript = require('../scripts/scripts');
+const buildStyles = require('../scripts/styles');
+const copyFiles = require('../scripts/copy');
 
-const script = process.argv[2];
-const args = process.argv.slice(3);
+const loadConfig = (configFile) => {
+  const conf = configFile || 'ecl-builder.config.js';
+  return require(path.resolve(process.cwd(), conf)); // eslint-disable-line
+};
 
-switch (script) {
-  case 'styles':
-  case 'scripts':
-  case 'start':
-  case 'test': {
-    const result = spawn.sync('node', [require.resolve(`../scripts/${script}`)].concat(args), { stdio: 'inherit' });
-    if (result.signal) {
-      if (result.signal === 'SIGKILL') {
-        console.log('The build failed because the process exited too early. ' +
-          'This probably means the system ran out of memory or someone called ' +
-          '`kill -9` on the process.');
-      } else if (result.signal === 'SIGTERM') {
-        console.log('The build failed because the process exited too early. ' +
-          'Someone might have called `kill` or `killall`, or the system could ' +
-          'be shutting down.');
-      }
-      process.exit(1);
-    }
-    process.exit(result.status);
-    break;
-  }
-  default: {
-    console.log(`Unknown script "${script}"`);
-    console.log('Perhaps you need to update ecl-builder?');
-    break;
-  }
-}
+program
+  .version('0.0.1')
+  .option('-c, --config [config_file]', 'Config file (default: ecl-builder.config.js)');
+
+program
+  .command('scripts')
+  .description('compile JS')
+  .action((options) => {
+    const config = loadConfig(options.config_file);
+    config.scripts.forEach(conf => buildScript(conf.entry, conf.dest, conf.options));
+  });
+
+program
+  .command('styles')
+  .description('compile SCSS to CSS')
+  .action((options) => {
+    const config = loadConfig(options.config_file);
+    config.styles.forEach(conf => buildStyles(conf.entry, conf.dest, conf.options));
+  });
+
+program
+  .command('copy')
+  .description('copy static files')
+  .action((options) => {
+    const config = loadConfig(options.config_file);
+    config.copy.forEach(conf => copyFiles(conf.from, conf.to));
+  });
+
+program.parse(process.argv);

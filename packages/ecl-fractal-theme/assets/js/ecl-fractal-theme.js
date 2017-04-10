@@ -1,5 +1,5 @@
 global.jQuery = require('jquery');
-global.pjax = require('jquery-pjax');
+require('jquery-pjax');
 
 const $ = global.jQuery;
 const doc = $(document);
