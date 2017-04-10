@@ -1,0 +1,17 @@
+.block--full-width {
+  margin-left: -$grid-gutter-width-base / 2;
+  margin-right: -$grid-gutter-width-base / 2;
+}
+
+@include media-breakpoint-up(lg) {
+  .block--full-width {
+    margin: 0 -999em;
+    padding: 0 999em;
+  }
+}
+
+@media (max-width: 500px) {
+  .block--full-width {
+    margin: 0;
+  }
+}

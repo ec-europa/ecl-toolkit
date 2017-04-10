@@ -1,0 +1,72 @@
+/**
+ * Language select (Site)
+ * @define lang-select-site
+ */
+
+.lang-select-site {
+  @extend %hidden-print;
+
+  position: absolute;
+  right: $grid-gutter-width-base / 2;
+  text-align: center;
+  top: 0;
+
+  @include media-breakpoint-up(md) {
+    float: left;
+    position: static;
+  }
+
+  .lang-select-site__link {
+    border: 3px solid transparent;
+    color: inherit;
+    display: inline-block;
+    font-size: map-get($font-size, 's');
+    font-weight: bold;
+    padding: 7.5px 15px;
+    text-align: center;
+    text-decoration: none;
+
+    &:focus {
+      border-color: $yellow-light;
+      outline: none;
+    }
+  }
+
+  .lang-select-site__label {
+    margin-right: 0.556em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .lang-select-site__code {
+    color: $brand-primary;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    width: map-get($font-size, 'xs') * 2;
+  }
+
+  .lang-select-site__code-text {
+    background-color: $brand-primary;
+    color: $white;
+    font-size: map-get($font-size, 'xs');
+    left: -1px;
+    position: relative;
+    top: 0;
+  }
+
+  .lang-select-site__icon {
+    color: $brand-primary;
+    font-size: map-get($font-size, 'xs') * 2;
+    left: -1px;
+    line-height: 1.4;
+    position: absolute;
+    top: -1px;
+
+    &::before {
+      font-weight: inherit;
+    }
+  }
+}

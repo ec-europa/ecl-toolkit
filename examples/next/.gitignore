@@ -1,0 +1,20 @@
+# Temporary files
+.tmp
+
+# Ignore some folders
+node_modules
+/static/assets/searchIndex.json
+/static/framework
+dist
+/test/errorShots
+/test/screenshots/captured
+/test/screenshots/diff
+
+# Logs
+logs
+*.log
+
+# Editors
+.idea
+.c9
+.env
