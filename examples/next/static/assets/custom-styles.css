@@ -94,7 +94,7 @@ body {
   transform: translateY(-50%);
   width: 0.75rem;
   height: 0.75rem;
-  background-image: url(../themes/mandelbrot/img/icon-navigation-opened.svg);
+  background-image: url(../themes/ecl-fractal-theme/img/icon-navigation-opened.svg);
   background-size: 0.8rem;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -107,7 +107,7 @@ body {
 }
 
 [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::after {
-  background-image: url(../themes/mandelbrot/img/icon-navigation-closed-ltr.svg);
+  background-image: url(../themes/ecl-fractal-theme/img/icon-navigation-closed-ltr.svg);
 }
 
 /* Components search */

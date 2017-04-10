@@ -1,4 +1,8 @@
 (function ($) {
+  if (!document.getElementById('searchIndexPath')) {
+    return;
+  }
+
   const searchIndexPath = JSON.parse($('#searchIndexPath').html());
   const data = $.getJSON(searchIndexPath.path);
 
