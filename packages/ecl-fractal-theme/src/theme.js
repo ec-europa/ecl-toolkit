@@ -26,7 +26,7 @@ module.exports = (options) => {
     'info',
   ];
 
-  config.nav = config.nav || ['components', 'docs', 'assets'];
+  config.nav = config.nav || ['search', 'docs', 'components', 'assets'];
   config.styles = [].concat(config.styles).concat(config.stylesheet).filter(url => url).map(url => (url === 'default'
     ? `/${config.static.mount}/css/${config.skin}.css`
     : url));

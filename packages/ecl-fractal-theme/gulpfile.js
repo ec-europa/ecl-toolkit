@@ -36,6 +36,9 @@ $color-link: ${skin.links};
 @import "../theme";
 @import "../core/all";
 @import "../components/**/*.scss";
+
+// Custom (to be deleted asap)
+@import "../custom-styles";
 `);
   }
 });

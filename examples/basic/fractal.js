@@ -8,14 +8,7 @@ const paths = {
 };
 
 // Create a new theme instance with custom config options
-const theme = eclTheme({
-  skin: 'blue',
-  nav: ['search', 'docs', 'components'],
-  styles: [
-    'default',
-    '/assets/custom-styles.css',
-  ],
-});
+const theme = eclTheme({ skin: 'blue' });
 
 // Project config
 fractal.set('project.title', 'Europa Component Library');
