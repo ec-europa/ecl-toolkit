@@ -1,13 +1,19 @@
-(function ($) {
-  if (!document.getElementById('searchIndexPath')) {
-    return;
+const $ = global.jQuery;
+const lunr = require('lunr');
+
+class Search {
+  constructor() {
+    this._init();
   }
 
-  const searchIndexPath = JSON.parse($('#searchIndexPath').html());
-  const data = $.getJSON(searchIndexPath.path);
+  _init() {
+    if (!document.getElementById('searchIndexPath')) {
+      return;
+    }
 
-  // pjax because mandelbrot.js uses it.
-  $(document).on('ready pjax:success', () => {
+    const searchIndexPath = JSON.parse($('#searchIndexPath').html());
+    const data = $.getJSON(searchIndexPath.path);
+
     let store = '';
     let index = '';
 
@@ -62,5 +68,7 @@
         });
       }
     });
-  });
-}(jQuery));
+  }
+}
+
+module.exports = Search;

@@ -96,6 +96,7 @@ module.exports = (options) => {
 
   theme.on('init', (env, app) => {
     require('./filters')(theme, env, app);
+    require('./search')(theme, env, app);
   });
 
   let handles = null;

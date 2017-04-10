@@ -10,6 +10,7 @@ const utils = require('./utils');
 const framer = require('./components/frame');
 const Tree = require('./components/tree');
 const Pen = require('./components/pen');
+const Search = require('./search');
 
 global.fractal = {
   events,
@@ -40,5 +41,6 @@ events.on('main-content-loaded', loadPen);
 function loadPen() {
   setTimeout(() => {
     $.map($('[data-behaviour="pen"]'), p => new Pen(p));
+    new Search();
   }, 1);
 }

@@ -15,11 +15,6 @@ const theme = eclTheme({
     'default',
     '/assets/custom-styles.css',
   ],
-  scripts: [
-    'https://cdnjs.cloudflare.com/ajax/libs/lunr.js/1.0.0/lunr.min.js',
-    'default',
-    '/assets/search.js',
-  ],
 });
 
 // Project config
