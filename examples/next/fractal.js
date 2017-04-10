@@ -1,6 +1,6 @@
 const path = require('path');
 const fractal = require('@frctl/fractal').create(); // eslint-disable-line import/no-extraneous-dependencies
-const mandelbrot = require('@frctl/mandelbrot'); // eslint-disable-line import/no-extraneous-dependencies
+const eclTheme = require('@ec-europa/ecl-fractal-theme'); // eslint-disable-line import/no-extraneous-dependencies
 
 const paths = {
   build: `${__dirname}/dist`,
@@ -8,7 +8,7 @@ const paths = {
 };
 
 // Create a new theme instance with custom config options
-const theme = mandelbrot({
+const theme = eclTheme({
   skin: 'blue',
   nav: ['search', 'docs', 'components'],
   panels: ['view', 'context', 'html', 'resources', 'info'],
