@@ -19,12 +19,11 @@ module.exports = (options) => {
   });
 
   config.panels = config.panels || [
-    'html',
     'view',
     'context',
+    'html',
     'resources',
     'info',
-    'notes',
   ];
 
   config.nav = config.nav || ['components', 'docs', 'assets'];
@@ -44,12 +43,18 @@ module.exports = (options) => {
 
   theme.addRoute('/', {
     handle: 'overview',
-    view: 'pages/doc.nunj',
+    view: 'pages/home.nunj',
   });
 
-  theme.addRoute('/docs', { redirect: '/' });
+  theme.addRoute('/docs', {
+    handle: 'docs',
+    view: 'pages/intro.nunj',
+  });
 
-  theme.addRoute('/components', { redirect: '/' });
+  theme.addRoute('/components', {
+    handle: '/components',
+    view: 'pages/components/intro.nunj',
+  });
 
   theme.addRoute('/assets', { redirect: '/' });
 

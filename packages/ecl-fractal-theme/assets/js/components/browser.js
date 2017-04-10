@@ -41,6 +41,8 @@ class Browser {
     tabs.removeClass('is-active');
     tabs.eq(selectedIndex).find('a').trigger('click');
   }
+
+  _initFileSwitcher() {}
 }
 
 module.exports = Browser;
