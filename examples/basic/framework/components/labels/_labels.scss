@@ -91,16 +91,3 @@ $label_text_color_light: $white;
 .label--no-padding-left {
   padding-left: 0;
 }
-
-.label--meta {
-  @extend .meta__item;
-
-  margin: 0.25em 1.3em 0.3em 0;
-}
-
-.label--meta-medium {
-  @extend .label--meta;
-
-  margin: 0.35em 0.5em 0.45em 0;
-  font-size: 75%;
-}

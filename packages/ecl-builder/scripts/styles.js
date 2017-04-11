@@ -7,8 +7,6 @@ const autoprefixer = require('autoprefixer');
 const mkdirp = require('mkdirp');
 
 module.exports = (entry, dest, options) => {
-  // console.log('postcss -c ./node_modules/@ecl/ecl-builder/postcss.config.js');
-
   const params = process.env.NODE_ENV === 'production' ? {
     plugins: [cssnano],
   } : {
@@ -26,6 +24,7 @@ module.exports = (entry, dest, options) => {
           mkdirp(path.dirname(dest), (mkdirpErr) => {
             if (mkdirpErr) {
               console.error(mkdirpErr);
+              process.exit(1);
             } else {
               fs.writeFile(dest, postcssResult.css);
               if (postcssResult.map) {
@@ -34,6 +33,9 @@ module.exports = (entry, dest, options) => {
             }
           });
         });
+    } else {
+      console.error(sassErr);
+      process.exit(1);
     }
   });
 };
