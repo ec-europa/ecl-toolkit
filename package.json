@@ -5,10 +5,11 @@
   "description": "ECL Toolkit",
   "main": "index.js",
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "changelog": "lerna-changelog",
     "lint:js": "eslint .",
     "lint": "npm-run-all --parallel lint:*",
-    "postinstall": "lerna bootstrap",
+    "postinstall": "npm run bootstrap",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "publish": "scripts/release.sh",

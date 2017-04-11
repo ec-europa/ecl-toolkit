@@ -1,0 +1,34 @@
+{
+  "name": "@ec-europa/ecl-builder",
+  "author": "European Commission",
+  "license": "EUPL-1.1",
+  "version": "0.1.0",
+  "description": "Europa Component Library builder",
+  "bin": {
+    "ecl-builder": "./bin/build.js"
+  },
+  "dependencies": {
+    "autoprefixer": "6.7.7",
+    "babel-eslint": "7.2.1",
+    "babel-preset-es2015-rollup": "3.0.0",
+    "commander": "2.9.0",
+    "cross-env": "4.0.0",
+    "cross-spawn": "5.1.0",
+    "cssnano": "3.10.0",
+    "fs-extra": "2.1.2",
+    "mkdirp": "0.5.1",
+    "node-sass": "4.5.2",
+    "npm-run-all": "4.0.2",
+    "postcss": "5.2.16",
+    "postcss-cli": "2.6.0",
+    "rimraf": "2.6.1",
+    "rollup": "0.41.6",
+    "rollup-plugin-babel": "2.7.1",
+    "rollup-plugin-commonjs": "8.0.2",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-uglify": "1.0.1"
+  },
+  "engines": {
+    "node": ">=6.9.5"
+  }
+}

@@ -1,0 +1,10 @@
+<div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        {% include 'icons/close-nav.svg' %}
+        {% include 'icons/open-nav.svg' %}
+    </button>
+    <strong><a href="{{ path('/') }}" class="Header-title">Europa Component Library</a></strong>
+    <a href="{{ path('/docs') }}" class="Header-title">Documentation</a>
+    <a href="{{ path('/components') }}" class="Header-title">Components</a>
+    <a href="https://github.com/ec-europa/europa-component-library" class="Header-title">GitHub</a>
+</div>

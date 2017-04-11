@@ -15,6 +15,9 @@
     "cacheDir": ".changelog"
   },
   "commands": {
+    "bootstrap": {
+      "concurrency": 1
+    },
     "publish": {
       "ignore": [
         "*.md",
@@ -23,6 +26,7 @@
     }
   },
   "packages": [
+    "examples/*",
     "packages/*"
   ]
 }
