@@ -5,6 +5,7 @@ const program = require('commander');
 const buildScript = require('../scripts/scripts');
 const buildStyles = require('../scripts/styles');
 const copyFiles = require('../scripts/copy');
+const pkg = require('../package.json');
 
 const loadConfig = (configFile) => {
   const conf = configFile || 'ecl-builder.config.js';
@@ -12,7 +13,7 @@ const loadConfig = (configFile) => {
 };
 
 program
-  .version('0.0.1')
+  .version(pkg.version)
   .option('-c, --config [config_file]', 'Config file (default: ecl-builder.config.js)');
 
 program

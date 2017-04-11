@@ -34,6 +34,8 @@ yarn start
 Then open [http://localhost:3000/](http://localhost:3000/) to see your fractal
 app up and running.
 
+For more information, you can check the [basic example's README](./examples/basic/README.md).
+
 #### Other
 
 _For now, there's no other example available._

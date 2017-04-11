@@ -2,22 +2,16 @@
   "name": "@ec-europa/ecl-qa",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "ECL QA tools",
   "dependencies": {
-    "@ec-europa/eslint-config-ecl": "1.0.0",
-    "@ec-europa/stylelint-config-ecl": "1.0.0",
+    "@ec-europa/eslint-config-ecl": "0.1.0",
+    "@ec-europa/stylelint-config-ecl": "0.1.0",
     "axe-core": "2.1.7",
     "chai": "3.5.0",
     "eslint": "3.19.0",
     "html-inspector": "0.8.2",
-    "stylelint": "7.10.1",
-    "wdio-mocha-framework": "0.5.9",
-    "wdio-sauce-service": "0.3.1",
-    "wdio-screenshot": "0.5.2",
-    "wdio-selenium-standalone-service": "0.0.8",
-    "wdio-static-server-service": "1.0.1",
-    "wdio-visual-regression-service": "0.7.0"
+    "stylelint": "7.10.1"
   },
   "peerDependencies": {
     "webdriverio": ">= 4.6.2"
