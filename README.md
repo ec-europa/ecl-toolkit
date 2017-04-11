@@ -38,4 +38,4 @@ For more information, you can check the [basic example's README](./examples/basi
 
 #### Other
 
-_For now, there's no other example available._
+_For now, there are no other examples available._
