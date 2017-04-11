@@ -14,7 +14,7 @@ const loadConfig = (configFile) => {
 
 program
   .version(pkg.version)
-  .option('-c, --config [config_file]', 'Config file (default: ecl-builder.config.js)');
+  .option('-c, --config [config_file]', 'config file (default: ecl-builder.config.js)');
 
 program
   .command('scripts')
@@ -40,4 +40,9 @@ program
     config.copy.forEach(conf => copyFiles(conf.from, conf.to));
   });
 
-program.parse(process.argv);
+// If no arguments provided, display help menu.
+if (!process.argv.slice(2).length) {
+  program.help();
+} else {
+  program.parse(process.argv);
+}
