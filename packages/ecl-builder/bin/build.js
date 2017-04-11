@@ -14,6 +14,7 @@ const loadConfig = (configFile) => {
 
 program
   .version(pkg.version)
+  .usage('ecl-builder [command] [option]')
   .option('-c, --config [config_file]', 'config file (default: ecl-builder.config.js)');
 
 program
