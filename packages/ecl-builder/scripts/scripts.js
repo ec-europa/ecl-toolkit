@@ -1,3 +1,4 @@
+const es2015Rollup = require('babel-preset-es2015-rollup');
 const rollup = require('rollup');
 const babel = require('rollup-plugin-babel');
 const resolve = require('rollup-plugin-node-resolve');
@@ -20,7 +21,7 @@ module.exports = (entry, dest, options) => {
       }),
       commonjs(),
       babel({
-        presets: ['es2015-rollup'],
+        presets: [es2015Rollup],
         exclude: 'node_modules/**',
       }),
       (process.env.NODE_ENV === 'production' && uglify()),

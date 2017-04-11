@@ -1,0 +1,16 @@
+{
+  "name": "@ec-europa/stylelint-config-ecl",
+  "author": "European Commission",
+  "license": "EUPL-1.1",
+  "version": "1.0.0",
+  "description": "Stylelint config for ECL QA",
+  "main": "index.js",
+  "peerDependencies": {
+    "stylelint": ">= 7"
+  },
+  "dependencies": {
+    "stylelint-config-sass-guidelines": "2.0.0",
+    "stylelint-config-standard": "16.0.0",
+    "stylelint-selector-bem-pattern": "1.0.0"
+  }
+}
