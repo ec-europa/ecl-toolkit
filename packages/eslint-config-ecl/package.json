@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "description": "ESLint config for ECL QA",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "eslint": ">= 3"
   },
