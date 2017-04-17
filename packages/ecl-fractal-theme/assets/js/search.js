@@ -50,19 +50,44 @@ class Search {
           }
 
           if (results.length) {
-            let $resultsDom = '<div class="Document"><div class="Document-header"><h1 class="Document-title">Search results</h1></div><div class="Document-content"><div class="Prose"><ul>';
-            const lll = results.map(result => (`
-              <li><h4><a data-pjax href="${prefix + store[result.ref].handle}">${store[result.ref].title}</a></h4></li>
-            `));
-            $resultsDom += lll.join('');
-            $resultsDom += '</ul></div></div></div>';
+            const $resultsDom = `
+                <div class="Document">
+                  <div class="Document-header">
+                    <h1 class="Document-title">Search results</h1>
+                  </div>
+                  <div class="Document-content">
+                    <div class="Prose">
+                      <ul>
+                        ${results
+              .map(result => `
+                            <li>
+                              <h4>
+                                <a data-pjax href="${prefix + store[result.ref].handle}">${store[result.ref].title}</a>
+                              </h4>
+                            </li>
+                          `)
+              .join('')}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            `;
             $resultsArea.append($($resultsDom));
           } else {
-            const resultString = $(`
-                <div class="Document"><div class="Document-header"><h1 class="Document-title">Search results</h1></div><div class="Document-content"><div class="Prose">
+            const resultString = $(
+              `
+                <div class="Document">
+                  <div class="Document-header">
+                    <h1 class="Document-title">Search results</h1>
+                  </div>
+                  <div class="Document-content">
+                    <div class="Prose">
                     <h4>No components found</h4>
-                </div></div></div>
-            `);
+                  </div>
+                </div>
+              </div>
+            `,
+            );
             $resultsArea.append(resultString);
           }
         });

@@ -1,4 +1,11 @@
-const variants = ['default', 'primary', 'secondary', 'ctn', 'ctn--border', 'menu'];
+const variants = [
+  'default',
+  'primary',
+  'secondary',
+  'ctn',
+  'ctn--border',
+  'menu',
+];
 
 describe('buttons', () => {
   before(() => {
@@ -11,7 +18,7 @@ describe('buttons', () => {
     browser.pause(1000);
   });
 
-  variants.forEach((variant) => {
+  variants.forEach(variant => {
     describe(`--${variant}`, () => {
       before(() => {
         // Go to url
@@ -27,7 +34,9 @@ describe('buttons', () => {
       // Normal state
       context('with plain state', () => {
         it('should match the reference screenshot', () => {
-          const screenshots = browser.checkDocument({ name: `buttons/${variant}/plain` });
+          const screenshots = browser.checkDocument({
+            name: `buttons/${variant}/plain`,
+          });
           expect(screenshots).to.matchReference();
         });
 
@@ -61,7 +70,9 @@ describe('buttons', () => {
         });
 
         it('should match the reference screenshot', () => {
-          const screenshots = browser.checkDocument({ name: `buttons/${variant}/hover` });
+          const screenshots = browser.checkDocument({
+            name: `buttons/${variant}/hover`,
+          });
           expect(screenshots).to.matchReference();
         });
 
@@ -78,7 +89,9 @@ describe('buttons', () => {
         });
 
         it('should match the reference screenshot', () => {
-          const screenshots = browser.checkDocument({ name: `buttons/${variant}/pressed` });
+          const screenshots = browser.checkDocument({
+            name: `buttons/${variant}/pressed`,
+          });
           expect(screenshots).to.matchReference();
         });
 
@@ -95,7 +108,9 @@ describe('buttons', () => {
         });
 
         it('should match the reference screenshot', () => {
-          const screenshots = browser.checkDocument({ name: `buttons/${variant}/released` });
+          const screenshots = browser.checkDocument({
+            name: `buttons/${variant}/released`,
+          });
           expect(screenshots).to.matchReference();
         });
 
