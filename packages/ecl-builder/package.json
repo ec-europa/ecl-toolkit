@@ -17,6 +17,7 @@
     "commander": "2.9.0",
     "cssnano": "3.10.0",
     "findup-sync": "1.0.0",
+    "globby": "6.1.0",
     "mkdirp": "0.5.1",
     "ncp": "2.0.0",
     "node-sass": "4.5.2",
