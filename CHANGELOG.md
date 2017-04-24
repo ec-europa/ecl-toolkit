@@ -1,3 +1,9 @@
+## 0.2.2 (April 24, 2017)
+
+#### :bug: Bug Fix
+
+*   Fix copy from multiple sources to one dest (again)
+
 ## 0.2.1 (April 24, 2017)
 
 #### :bug: Bug Fix
