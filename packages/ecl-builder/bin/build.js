@@ -38,7 +38,7 @@ program
   .description('copy static files')
   .action((options) => {
     const config = loadConfig(options.config_file);
-    config.copy.forEach(conf => copyFiles(conf.from, conf.to));
+    config.copy.forEach(conf => copyFiles(conf.patterns || '**', conf.from, conf.to));
   });
 
 // If no arguments provided, display help menu.
