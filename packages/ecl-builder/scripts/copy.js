@@ -1,11 +1,20 @@
-const copy = require('fs-extra').copy;
+const path = require('path');
+const copy = require('ncp').ncp;
+const mkdirp = require('mkdirp');
 
 module.exports = (from, to) => {
-  copy(from, to, (err) => {
-    if (err) {
-      return console.error(err);
+  mkdirp(path.dirname(to), (mkdirpErr) => {
+    if (mkdirpErr) {
+      console.error(mkdirpErr);
+      process.exit(1);
     }
 
-    return 0;
+    copy(from, to, (err) => {
+      if (err) {
+        return console.error(err);
+      }
+
+      return 0;
+    });
   });
 };
