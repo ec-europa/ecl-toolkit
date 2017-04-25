@@ -1,3 +1,9 @@
+## 0.2.3 (April 25, 2017)
+
+#### :nail_care: Enhancement
+
+*   Update ECL components (preset)
+
 ## 0.2.2 (April 24, 2017)
 
 #### :bug: Bug Fix
