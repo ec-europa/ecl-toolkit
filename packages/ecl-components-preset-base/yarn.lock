@@ -22,17 +22,17 @@
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-grid/-/ecl-grid-0.1.0.tgz#186028dfa2555ac010555c17439dbf6830869d25"
 
-"@ec-europa/ecl-icons@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-icons/-/ecl-icons-0.1.0.tgz#456ef19ea52e54f7966f2a08b83c02ca80e65be9"
+"@ec-europa/ecl-icons@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-icons/-/ecl-icons-0.2.0.tgz#a297eb03759dff889df02f811e2dc208413d2754"
 
 "@ec-europa/ecl-images@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-images/-/ecl-images-0.1.0.tgz#55dc4a755cd6c9dc1c794405970cedfe2f18320d"
 
-"@ec-europa/ecl-logos@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-logos/-/ecl-logos-0.1.0.tgz#c66a9f3e0f70d21777fc1a2a78c8439d9670ccbb"
+"@ec-europa/ecl-logos@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-logos/-/ecl-logos-0.2.0.tgz#5e0239c7438b2fb4ee2ef328355d4666c4525389"
 
 "@ec-europa/ecl-margin@^0.1.0":
   version "0.1.0"
