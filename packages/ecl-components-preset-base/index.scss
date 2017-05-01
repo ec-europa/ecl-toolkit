@@ -1,0 +1,31 @@
+/**
+ * Import files
+ */
+
+// Core variables and mixins
+@import '~@ec-europa/ecl-base';
+
+// Typography
+@import '~@ec-europa/ecl-typography-blockquotes';
+@import '~@ec-europa/ecl-typography-headings';
+@import '~@ec-europa/ecl-typography-links';
+@import '~@ec-europa/ecl-typography-lists';
+@import '~@ec-europa/ecl-typography-paragraphs';
+
+// Icons
+@import '~@ec-europa/ecl-icons';
+
+// Content
+@import '~@ec-europa/ecl-images';
+@import '~@ec-europa/ecl-logos';
+@import '~@ec-europa/ecl-tables';
+
+// Layout
+@import '~@ec-europa/ecl-grid';
+
+// Utilities
+@import '~@ec-europa/ecl-flex';
+@import '~@ec-europa/ecl-font-size';
+@import '~@ec-europa/ecl-margin';
+@import '~@ec-europa/ecl-padding';
+@import '~@ec-europa/ecl-screen-reader';
