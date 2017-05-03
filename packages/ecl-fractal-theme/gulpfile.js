@@ -27,8 +27,10 @@ gulp.task('css:skins', () => {
   const fs = require('fs');
   const skins = require('./assets/scss/skins/_skins.json');
 
-  for (let skin of skins) {
-    fs.writeFile(`./assets/scss/skins/${skin.name}.scss`, `
+  for (const skin of skins) {
+    fs.writeFile(
+      `./assets/scss/skins/${skin.name}.scss`,
+      `
 $color-header-background: ${skin.accent};
 $color-header-content: ${skin.complement};
 $color-link: ${skin.links};
@@ -39,25 +41,30 @@ $color-link: ${skin.links};
 
 // Custom (to be deleted asap)
 @import "../custom-styles";
-`);
+`
+    );
   }
 });
 
-gulp.task('css', ['css:skins'], () => gulp.src('./assets/scss/skins/*.scss')
-  .pipe(stylelint({
-    reporters: [
-      {
-        formatter: 'string',
-        console: true,
-      },
-    ],
-  }))
-  .pipe(sassGlob())
-  .pipe(sass({ includePaths: 'node_modules' })
-  .on('error', sass.logError))
-  .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-  .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest('./dist/css')));
+gulp.task('css', ['css:skins'], () =>
+  gulp
+    .src('./assets/scss/skins/*.scss')
+    .pipe(
+      stylelint({
+        reporters: [
+          {
+            formatter: 'string',
+            console: true,
+          },
+        ],
+      })
+    )
+    .pipe(sassGlob())
+    .pipe(sass({ includePaths: 'node_modules' }).on('error', sass.logError))
+    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./dist/css'))
+);
 
 gulp.task('css:clean', () => del(['./dist/css']));
 
@@ -69,8 +76,7 @@ gulp.task('css:watch', () => {
 // Fonts
 //
 gulp.task('fonts', ['fonts:clean'], () => {
-  gulp.src('./assets/fonts/**/*')
-    .pipe(gulp.dest('./dist/fonts'));
+  gulp.src('./assets/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('fonts:clean', () => del(['./dist/fonts']));
@@ -104,8 +110,9 @@ gulp.task('default', ['fonts', 'css', 'js', 'img']);
 // Utils
 //
 function compileJS(watch) {
-  let bundler = browserify('./assets/js/ecl-fractal-theme.js', { debug: true })
-    .transform(babel, { presets: ['es2015'] });
+  let bundler = browserify('./assets/js/ecl-fractal-theme.js', {
+    debug: true,
+  }).transform(babel, { presets: ['es2015'] });
 
   if (watch) {
     bundler = watchify(bundler);
@@ -116,10 +123,14 @@ function compileJS(watch) {
   }
 
   function rebundle() {
-    const bundle = bundler.bundle().on('error', (err) => {
-      console.error(err.message);
-      // this.emit('end');
-    }).pipe(source('ecl-fractal-theme.js')).pipe(buffer());
+    const bundle = bundler
+      .bundle()
+      .on('error', err => {
+        console.error(err.message);
+        // this.emit('end');
+      })
+      .pipe(source('ecl-fractal-theme.js'))
+      .pipe(buffer());
 
     if (!watch) {
       bundle.pipe(uglify());

@@ -6,7 +6,7 @@ module.exports = {
   status: 'wip',
   collated: true,
   context: {
-    label: 'input[type=\'button\']',
+    label: 'input[type="button"]',
   },
   variants,
 };

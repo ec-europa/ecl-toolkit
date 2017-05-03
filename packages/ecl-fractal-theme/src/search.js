@@ -30,8 +30,11 @@ module.exports = (theme, env, app) => {
     store[record.id] = record;
   }
 
-  fs.writeFileSync(`${app.web.get('static.path')}/assets/searchIndex.json`, JSON.stringify({
-    index: lunarIndex.toJSON(),
-    store,
-  }));
+  fs.writeFileSync(
+    `${app.web.get('static.path')}/assets/searchIndex.json`,
+    JSON.stringify({
+      index: lunarIndex.toJSON(),
+      store,
+    })
+  );
 };
