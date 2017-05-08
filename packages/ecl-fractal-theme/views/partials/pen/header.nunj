@@ -6,8 +6,8 @@
         </a>
     </h1>
     <div class="Pen-tabs-nav">
-        <a href="#playground" class="active">Demo</a> &bull;
         <a href="#documentation">Documentation</a>
+        <a href="#playground" class="active">Demo</a> &bull;
     </div>
     {{ status.tag(entity.status) }}
 </div>
