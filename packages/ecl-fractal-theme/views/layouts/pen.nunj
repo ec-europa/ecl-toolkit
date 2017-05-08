@@ -29,7 +29,7 @@
     {% include "partials/pen/header.nunj" %}
 
     <div class="Pen-tabs">
-        <div class="Pen-documentation" id="documentation">
+        <div class="Pen-documentation active" id="documentation">
           <div class="Document">
             <div class="Document-content">
               <div class="Prose">
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div class="Pen-playground active" data-behaviour="pen" id="playground">
+        <div class="Pen-playground" data-behaviour="pen" id="playground">
           {% include "partials/pen/preview.nunj" %}
           <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
           {% include "partials/pen/browser.nunj" %}
