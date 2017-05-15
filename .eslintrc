@@ -1,13 +1,4 @@
 ---
-  extends:
-    - airbnb-base
-    - prettier
-  plugins:
-    - prettier
   root: true
-  rules:
-    prettier/prettier:
-      - error
-      -
-        trailingComma: es5
-        singleQuote: true
+  extends:
+    - '@ec-europa/eslint-config-ecl'
