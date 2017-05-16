@@ -2,29 +2,8 @@
  * Import files
  */
 
-// Core variables and mixins
-@import 'base/variables';
-@import 'base/mixins';
-
-// Reset and dependencies
-@import 'base/reset';
-@import 'base/fluid-type';
-@import 'base/print';
-
-// Typography
-@import 'content/typography/blockquotes/blockquotes';
-@import 'content/typography/headings/headings';
-@import 'content/typography/links/links';
-@import 'content/typography/lists/lists';
-@import 'content/typography/paragraphs/paragraphs';
-
-// Icons
-@import 'content/icons/icons';
-
-// Content
-@import 'content/images/images';
-@import 'content/logos/logos';
-@import 'content/tables/tables';
+// Import base preset
+@import '~@ec-europa/ecl-components-preset-base';
 
 // Forms
 @import 'components/forms/controls/controls';
@@ -45,9 +24,6 @@
 @import 'components/labels/labels';
 @import 'components/messages/messages';
 
-// Layout
-@import 'layout/grid/grid';
-
 // Molecules
 @import 'components/comments/comments';
 @import 'components/files/files';
@@ -58,10 +34,3 @@
 
 // Organisms
 @import 'components/footers/footers';
-
-// Utilities
-@import 'utilities/flex/flex';
-@import 'utilities/font-size/font-size' ;
-@import 'utilities/margin/margin' ;
-@import 'utilities/padding/padding' ;
-@import 'utilities/screen-reader/screen-reader' ;

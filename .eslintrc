@@ -1,3 +1,4 @@
 ---
-  extends: airbnb-base
   root: true
+  extends:
+    - '@ec-europa/eslint-config-ecl'

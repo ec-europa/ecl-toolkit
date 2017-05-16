@@ -1,5 +1,3 @@
 module.exports = {
-  extends: [
-    '@ec-europa/stylelint-config-ecl'
-  ],
+  extends: ['@ec-europa/stylelint-config-ecl'],
 };

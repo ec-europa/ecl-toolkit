@@ -2,13 +2,13 @@
   "name": "@ec-europa/ecl-qa",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ECL QA tools",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "axe-core": "2.1.7",
+    "axe-core": "2.2.0",
     "chai": "3.5.0",
     "html-inspector": "0.8.2"
   },

@@ -21,19 +21,26 @@ $.map($('[data-behaviour="tree"]'), t => new Tree(t));
 loadPen();
 
 if (frctl.env === 'server') {
-  doc.pjax('a[data-pjax], code a[href], .Prose a[href]:not([data-no-pjax]), .Browser a[href]:not([data-no-pjax])', '#pjax-container', {
-    fragment: '#pjax-container',
-    timeout: 10000,
-  }).on('pjax:start', (e, xhr, options) => {
-    if (utils.isSmallScreen()) {
-      frame.closeSidebar();
-    }
-    frame.startLoad();
-    events.trigger('main-content-preload', options.url);
-  }).on('pjax:end', () => {
-    events.trigger('main-content-loaded');
-    frame.endLoad();
-  });
+  doc
+    .pjax(
+      'a[data-pjax], code a[href], .Prose a[href]:not([data-no-pjax]), .Browser a[href]:not([data-no-pjax])',
+      '#pjax-container',
+      {
+        fragment: '#pjax-container',
+        timeout: 10000,
+      }
+    )
+    .on('pjax:start', (e, xhr, options) => {
+      if (utils.isSmallScreen()) {
+        frame.closeSidebar();
+      }
+      frame.startLoad();
+      events.trigger('main-content-preload', options.url);
+    })
+    .on('pjax:end', () => {
+      events.trigger('main-content-loaded');
+      frame.endLoad();
+    });
 }
 
 events.on('main-content-loaded', loadPen);
