@@ -1,5 +1,7 @@
 # ECL Toolkit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ec-europa/ecl-toolkit.svg)](https://greenkeeper.io/)
+
 Set of tools we use to build our front-end components.
 
 ## Development
