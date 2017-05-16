@@ -1,3 +1,16 @@
+## 0.3.1 (2017-05-16)
+
+#### :house: Internal
+
+*   Other
+    *   [#11](https://github.com/ec-europa/ecl-toolkit/pull/11) docs(readme): add Greenkeeper badge - no issue. ([@yhuard](https://github.com/yhuard))
+*   `ecl-builder`, `ecl-fractal-theme`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#10](https://github.com/ec-europa/ecl-toolkit/pull/10) chore(deps): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.3.0 (2017-05-08)
 
 #### :house: Internal
