@@ -1,3 +1,14 @@
+## 0.5.0 (2017-05-19)
+
+#### :nail_care: Enhancement
+
+*   `ecl-fractal-theme`
+    *   [#13](https://github.com/ec-europa/ecl-toolkit/pull/13) Improve fractal theme. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.4.0 (2017-05-19)
 
 #### :nail_care: Enhancement
