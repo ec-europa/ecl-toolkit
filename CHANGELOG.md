@@ -1,3 +1,14 @@
+## 0.6.0 (2017-05-19)
+
+#### :nail_care: Enhancement
+
+*   `ecl-components-preset-base`
+    *   [#14](https://github.com/ec-europa/ecl-toolkit/pull/14) Update base preset. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.5.0 (2017-05-19)
 
 #### :nail_care: Enhancement
