@@ -1,3 +1,14 @@
+## 0.4.0 (2017-05-19)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `eslint-config-ecl`
+    *   [#12](https://github.com/ec-europa/ecl-toolkit/pull/12) Enhance SCSS resolver. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.3.1 (2017-05-16)
 
 #### :house: Internal
