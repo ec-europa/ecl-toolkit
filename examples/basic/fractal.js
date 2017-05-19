@@ -11,7 +11,12 @@ const paths = {
 const theme = eclTheme({ skin: 'blue' });
 
 // Project config
-fractal.set('project.title', 'Europa Component Library');
+fractal.set('project.title', 'ECL Toolkit Example');
+fractal.set('project.url', '/');
+fractal.set(
+  'project.repo',
+  'https://github.com/ec-europa/ecl-toolkit/tree/master/examples/basic'
+);
 
 // Components config
 fractal.components.set('label', 'library');
