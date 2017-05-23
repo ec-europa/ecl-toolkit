@@ -22,20 +22,30 @@ fractal.set(
 fractal.components.set('label', 'library');
 fractal.components.set('default.preview', '@preview');
 fractal.components.set('statuses', {
+  ready: {
+    label: 'Ready',
+    description: 'Can be used in production.',
+    color: '#29CC29',
+  },
   planned: {
     label: 'Planned',
-    description: 'Do not implement.',
-    color: '#FF3333',
+    description: 'Still under discussion.',
+    color: '#337ab7',
   },
   wip: {
     label: 'WIP',
     description: 'Work in progress. Implement with caution.',
+    color: '#fbca04',
+  },
+  legacy: {
+    label: 'Legacy',
+    description: 'Not to be used on new applications. Kept temporarily.',
     color: '#FF9233',
   },
-  ready: {
-    label: 'Ready',
-    description: 'Ready to implement.',
-    color: '#29CC29',
+  broken: {
+    label: 'Broken',
+    description: 'Cannot be used.',
+    color: '#FF3333',
   },
 });
 fractal.components.set('default.status', 'planned');
