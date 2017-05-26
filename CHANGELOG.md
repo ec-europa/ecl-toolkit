@@ -1,3 +1,14 @@
+## 0.6.2 (2017-05-26)
+
+#### :nail_care: Enhancement
+
+*   `ecl-qa`, `eslint-config-ecl`
+    *   [#16](https://github.com/ec-europa/ecl-toolkit/pull/16) Update dependencies. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.6.1 (2017-05-23)
 
 #### :house: Internal

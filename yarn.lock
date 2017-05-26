@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@ec-europa/eslint-config-ecl@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/eslint-config-ecl/-/eslint-config-ecl-0.2.2.tgz#2096427fd6ff8a2c6232c8dd247ab1ea4d9acac7"
+"@ec-europa/eslint-config-ecl@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@ec-europa/eslint-config-ecl/-/eslint-config-ecl-0.2.4.tgz#6c8ee03ddf03dc63cf55bf7a886dba53d37a9af8"
   dependencies:
     eslint-config-airbnb-base "11.2.0"
-    eslint-config-prettier "2.1.0"
-    eslint-plugin-import "2.2.0"
+    eslint-config-prettier "2.1.1"
+    eslint-plugin-import "2.3.0"
     eslint-plugin-prettier "2.1.1"
 
 JSONStream@^1.0.4:
@@ -766,9 +766,9 @@ eslint-config-airbnb-base@11.2.0:
   version "11.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.2.0.tgz#19a9dc4481a26f70904545ec040116876018f853"
 
-eslint-config-prettier@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-2.1.0.tgz#cf78bc7864f98b0f87bcadf702459e933dfa659c"
+eslint-config-prettier@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-2.1.1.tgz#ab3923fb704eebecab6960906b7d0d6e801cde58"
   dependencies:
     get-stdin "^5.0.1"
 
@@ -787,9 +787,9 @@ eslint-module-utils@^2.0.0:
     debug "2.2.0"
     pkg-dir "^1.0.0"
 
-eslint-plugin-import@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.2.0.tgz#72ba306fad305d67c4816348a4699a4229ac8b4e"
+eslint-plugin-import@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.3.0.tgz#37c801e0ada0e296cbdf20c3f393acb5b52af36b"
   dependencies:
     builtin-modules "^1.1.1"
     contains-path "^0.1.0"
@@ -800,7 +800,7 @@ eslint-plugin-import@2.2.0:
     has "^1.0.1"
     lodash.cond "^4.3.0"
     minimatch "^3.0.3"
-    pkg-up "^1.0.0"
+    read-pkg-up "^2.0.0"
 
 eslint-plugin-prettier@2.1.1:
   version "2.1.1"
@@ -1559,16 +1559,18 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lint-staged@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.4.2.tgz#9cd1c0e4e477326c2696802a8377c22f92d65e79"
+lint-staged@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.5.0.tgz#e8a8900b863e85051a3769e0a11ccb4a7dfa9f83"
   dependencies:
     app-root-path "^2.0.0"
     cosmiconfig "^1.1.0"
     execa "^0.6.0"
     listr "^0.12.0"
+    lodash.chunk "^4.2.0"
     minimatch "^3.0.0"
     npm-which "^3.0.1"
+    p-map "^1.1.1"
     staged-git-files "0.0.4"
 
 listr-silent-renderer@^1.1.1:
@@ -1647,6 +1649,10 @@ locate-path@^2.0.0:
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+
+lodash.chunk@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.chunk/-/lodash.chunk-4.2.0.tgz#66e5ce1f76ed27b4303d8c6512e8d1216e8106bc"
 
 lodash.cond@^4.3.0:
   version "4.5.2"
@@ -2065,12 +2071,6 @@ pkg-dir@^1.0.0:
   dependencies:
     find-up "^1.0.0"
 
-pkg-up@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-1.0.0.tgz#3e08fb461525c4421624a33b9f7e6d0af5b05a26"
-  dependencies:
-    find-up "^1.0.0"
-
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
@@ -2079,9 +2079,9 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier-eslint-cli@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-4.0.1.tgz#ad529e465b0c79778b660ade679d7ce4e4a7f374"
+prettier-eslint-cli@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-4.0.2.tgz#84520ff9efc80bbae4a7a477ea362e36be836103"
   dependencies:
     arrify "^1.0.1"
     babel-runtime "^6.23.0"
