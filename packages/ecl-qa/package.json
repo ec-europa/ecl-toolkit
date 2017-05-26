@@ -8,7 +8,7 @@
     "access": "public"
   },
   "dependencies": {
-    "axe-core": "2.2.0",
+    "axe-core": "2.2.2",
     "chai": "3.5.0",
     "html-inspector": "0.8.2"
   },
