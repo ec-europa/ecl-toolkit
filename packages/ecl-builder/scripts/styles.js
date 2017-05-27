@@ -4,17 +4,22 @@ const fs = require('fs');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
+const postcssNormalize = require('postcss-normalize');
 const mkdirp = require('mkdirp');
 const findup = require('findup-sync');
 
 module.exports = (entry, dest, options) => {
   const params = process.env.NODE_ENV === 'production'
     ? {
-        plugins: [cssnano],
+        plugins: [cssnano()],
       }
     : {
-        plugins: [autoprefixer],
+        plugins: [autoprefixer()],
       };
+
+  if (options.normalize) {
+    params.plugins.unshift(postcssNormalize());
+  }
 
   sass.render(
     {
@@ -41,7 +46,7 @@ module.exports = (entry, dest, options) => {
 
         if (path.basename(file) === 'package.json') {
           // eslint-disable-next-line
-          const pkg = require(file);
+          const pkg = require(file)
           const relativeStyle = pkg.style || pkg.main || 'index.scss';
 
           return done({
@@ -50,8 +55,6 @@ module.exports = (entry, dest, options) => {
         }
 
         return done({ file });
-        // }
-        // return null;
       },
     },
     (sassErr, sassResult) => {
@@ -67,11 +70,12 @@ module.exports = (entry, dest, options) => {
               if (mkdirpErr) {
                 console.error(mkdirpErr);
                 process.exit(1);
-              } else {
-                fs.writeFile(dest, postcssResult.css);
-                if (postcssResult.map) {
-                  fs.writeFile(`${dest}.map`, postcssResult.map);
-                }
+                return;
+              }
+
+              fs.writeFile(dest, postcssResult.css);
+              if (postcssResult.map) {
+                fs.writeFile(`${dest}.map`, postcssResult.map);
               }
             });
           });
