@@ -1,3 +1,15 @@
+## 0.7.0 (2017-05-27)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-fractal-theme`, `stylelint-config-ecl`
+    *   [#17](https://github.com/ec-europa/ecl-toolkit/pull/17) Add postcss-normalize. ([@yhuard](https://github.com/yhuard))
+    Set `options.normalize` to `true` on the styleset where you want to embed normalize.css
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.6.2 (2017-05-26)
 
 #### :nail_care: Enhancement
