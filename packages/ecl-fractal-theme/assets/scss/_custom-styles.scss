@@ -9,10 +9,6 @@ img {
   max-width: 100%;
 }
 
-.Header {
-  background-color: $ecl-color-primary;
-}
-
 .Frame-panel--sidebar {
   background-color: map-get($ecl-colors, 'grey-5');
   padding: map-get($ecl-spacing, 's') 0;
@@ -37,7 +33,7 @@ img {
 
 .Tree-depth-1 li {
   line-height: 2.5;
-  font-size: map-get($ecl-font-size, 'm');
+  font-size: map-get($ecl-font-size, 's');
 }
 
 .Tree-entityLink {
@@ -108,7 +104,6 @@ img {
 .Document {
   margin: auto;
   max-width: 70rem;
-  padding: map-get($ecl-spacing, 'xl') map-get($ecl-spacing, 'l');
 }
 
 .Prose {
@@ -179,12 +174,6 @@ img {
 
 .Pen-tabs > div:not(.active) {
   display: none;
-}
-
-.Header-title {
-  line-height: 2.5;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 [dir='ltr'] .Tree-entityLink .Status,
