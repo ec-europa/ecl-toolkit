@@ -1,7 +1,12 @@
 html {
   box-sizing: border-box;
   font-family: $ecl-font-family-base;
-  font-size: map-get($ecl-font-size, 'm');
+  font-size: 1.125rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 .Header {
@@ -17,21 +22,17 @@ html {
   border-right: 1px solid rgba(0, 0, 0, 0.07);
 }
 
-.Navigation-group + .Navigation-group {
-  margin-top: map-get($ecl-spacing, 'l');
-}
-
 .Tree-items {
-  border-top: 1px solid map-get($ecl-colors, 'grey-10');
-  border-bottom: 1px solid map-get($ecl-colors, 'grey-10');
+  border-top: 1px solid map-get($ecl-colors, 'grey-15');
+  border-bottom: 1px solid map-get($ecl-colors, 'grey-15');
 }
 
 .Tree-items > li + li {
-  border-top: 1px solid map-get($ecl-colors, 'grey-10');
+  border-top: 1px solid map-get($ecl-colors, 'grey-15');
 }
 
 .Tree-collectionItems {
-  border-top: 1px solid map-get($ecl-colors, 'grey-10');
+  border-top: 1px solid map-get($ecl-colors, 'grey-15');
 }
 
 .Tree-depth-1 li {
@@ -41,6 +42,8 @@ html {
 
 .Tree-entityLink {
   color: map-get($ecl-colors, 'grey-100');
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .is-current .Tree-entityLink {
@@ -61,6 +64,8 @@ html {
 
 .Tree-collectionLabel {
   font: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .Tree-collectionLabel span::before {
@@ -124,7 +129,6 @@ html {
 
 .Pen-tabs-nav {
   margin: 0 map-get($ecl-spacing, 's');
-  font-size: map-get($ecl-font-size, 'l');
 
   a,
   a:link {
@@ -179,6 +183,8 @@ html {
 
 .Header-title {
   line-height: 2.5;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 [dir='ltr'] .Tree-entityLink .Status,
