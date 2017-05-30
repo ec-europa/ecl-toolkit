@@ -90,7 +90,6 @@ html {
   background-image: url(../img/icon-navigation-closed-ltr.svg);
 }
 
-/* Components search */
 #search-components {
   font-family: $ecl-font-family-base;
   padding: map-get($ecl-spacing, 'xxs');
@@ -234,5 +233,5 @@ html {
 
 .Tree-title {
   font-family: $ecl-font-family-base;
-  font-size: map-get($font-size, 's');
+  font-size: map-get($ecl-font-size, 's');
 }
