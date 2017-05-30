@@ -1,25 +1,3 @@
-$font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace !default;
-$font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif !default;
-
-$color-link: #28f !default;
-$color-text: #535363 !default;
-$color-heading: #444 !default;
-
-$color-background: #fff !default;
-$color-background-offset: #f6f6f6 !default;
-
-$color-ui-hover: rgba($color-text, 0.05) !default;
-$color-ui-active: rgba($color-text, 0.075) !default;
-
-$color-header-background: #14f !default;
-$color-header-content: #fff !default;
-
-$color-frame-border: rgba($color-text, 0.25) !default;
-
-$color-sidebar-heading: rgba($color-text, 0.75) !default;
-
-$highlight-theme: 'github' !default;
-
 // ECL Font family
 
 $ecl-font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default;
@@ -84,3 +62,27 @@ $ecl-spacing: (
   xl: 3.33rem,
   xxl: 4.44rem
 ) !default;
+
+// Fractal variables
+
+$font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace !default;
+$font-family-sans-serif: $ecl-font-family-base;
+
+$color-link: $ecl-color-secondary !default;
+$color-text: $ecl-color-shade !default;
+$color-heading: $ecl-color-shade !default;
+
+$color-background: #fff !default;
+$color-background-offset: map-get($ecl-colors, 'grey-5') !default;
+
+$color-ui-hover: rgba($color-text, 0.05) !default;
+$color-ui-active: rgba($color-text, 0.075) !default;
+
+$color-header-background: $ecl-color-primary !default;
+$color-header-content: #fff !default;
+
+$color-frame-border: rgba($color-text, 0.25) !default;
+
+$color-sidebar-heading: rgba($color-text, 0.75) !default;
+
+$highlight-theme: 'github' !default;

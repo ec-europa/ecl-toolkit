@@ -43,10 +43,6 @@ html {
   color: map-get($ecl-colors, 'grey-100');
 }
 
-.Tree-entityLink:hover {
-  background-color: map-get($ecl-colors, 'grey-15');
-}
-
 .is-current .Tree-entityLink {
   color: $ecl-color-primary;
 }
@@ -65,10 +61,6 @@ html {
 
 .Tree-collectionLabel {
   font: inherit;
-}
-
-.Tree-collectionLabel:hover {
-  background-color: map-get($ecl-colors, 'grey-15');
 }
 
 .Tree-collectionLabel span::before {
