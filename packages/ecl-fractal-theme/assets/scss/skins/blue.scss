@@ -1,7 +1,7 @@
 
-$color-header-background: #14f;
+$color-header-background: $ecl-color-primary;
 $color-header-content: #fff;
-$color-link: #28f;
+$color-link: $ecl-color-primary;
 
 @import "../theme";
 @import "../core/all";
