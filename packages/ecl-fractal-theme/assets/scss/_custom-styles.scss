@@ -14,6 +14,14 @@ img {
   overflow: visible;
 }
 
+.Frame-header {
+  clear: both;
+}
+
+.Frame-inner {
+  position: relative;
+}
+
 .Frame-panel--sidebar {
   background-color: map-get($ecl-colors, 'grey-5');
   padding: map-get($ecl-spacing, 's') 0;
