@@ -12,5 +12,10 @@ module.exports = {
       },
     },
   ],
-  copy: [],
+  copy: [
+    {
+      from: path.resolve(__dirname, 'node_modules/@ec-europa/ecl-icons/fonts'),
+      to: path.resolve(__dirname, 'fonts'),
+    },
+  ],
 };
