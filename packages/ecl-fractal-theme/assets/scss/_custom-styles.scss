@@ -104,12 +104,6 @@ img {
   background-image: url(../img/icon-navigation-closed-ltr.svg);
 }
 
-#search-components {
-  font-family: $ecl-font-family-base;
-  padding: map-get($ecl-spacing, 'xxs');
-  width: 100%;
-}
-
 .Tree-search {
   padding: 0 map-get($ecl-font-size, 's');
 }

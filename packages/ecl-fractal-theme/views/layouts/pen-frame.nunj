@@ -24,7 +24,8 @@
         <form class="ecl-search-form">
           <label class="ecl-search-form__textfield-wrapper">
             <span class="ecl-sr-only">Search this website</span>
-            <input type="ecl-search" class="ecl-search-form__textfield ecl-text-input" size="60" maxlength="128" title="ecl-search">
+            <input type="ecl-search" id="search-components" class="ecl-search-form__textfield ecl-text-input" size="60" maxlength="128" title="ecl-search">
+            <script id="searchIndexPath" type="application/json">{ "path": "{{ path('/assets/searchIndex.json') }}" }</script>
           </label>
 
           <button class="ecl-search-form__button ecl-button ecl-button--form" value="ecl-search" type="submit">Search</button>
@@ -52,7 +53,6 @@
 
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
             <nav class="Navigation">
-                {% include 'partials/navigation/search.nunj' %}
                 {% include 'partials/navigation/components.nunj' %}
             </nav>
         </div>

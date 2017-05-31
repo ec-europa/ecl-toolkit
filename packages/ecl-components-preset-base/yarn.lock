@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@ec-europa/ecl-base@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.2.0.tgz#3c7f1c24da0f87dcbb3027e8e7e001e33b2572df"
+"@ec-europa/ecl-base@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.3.0.tgz#f9c3b4a9a9926edea71316208881b4a8f477cf47"
 
 "@ec-europa/ecl-clearfix@^0.3.0":
   version "0.3.0"
@@ -14,9 +14,9 @@
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-flex/-/ecl-flex-0.3.0.tgz#4ddb171ac135271bfbb44896786e9d7f2de7c27a"
 
-"@ec-europa/ecl-font-size@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-font-size/-/ecl-font-size-0.3.0.tgz#6d5342494727691717ff6677f7b57d5d4fd5b7ab"
+"@ec-europa/ecl-font-size@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-font-size/-/ecl-font-size-0.4.0.tgz#23470477f92b7c595cec4f35b0d19ac28db1fc34"
 
 "@ec-europa/ecl-grid@^0.3.0":
   version "0.3.0"
@@ -46,9 +46,9 @@
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-screen-reader/-/ecl-screen-reader-0.3.0.tgz#1ccb6a6705576ca36ec5bae6535e3ea3d9abdb42"
 
-"@ec-europa/ecl-tables@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-tables/-/ecl-tables-0.3.0.tgz#d8b175ccba4a0f0c2248726b992e952b1e40a08c"
+"@ec-europa/ecl-tables@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-tables/-/ecl-tables-0.4.0.tgz#f235ba36e190895692bc911d259f577e21ddf839"
 
 "@ec-europa/ecl-typography-blockquotes@^0.3.0":
   version "0.3.0"
