@@ -25,36 +25,40 @@ module.exports = (entry, dest, options) => {
     {
       file: entry,
       importer: (url, prev, done) => {
-        // if (url.startsWith('~')) {
-        const base = path.dirname(prev);
-        const normalizedUrl = url.startsWith('~') ? url.substr(1) : url;
-        const normalizedDir = path.dirname(normalizedUrl);
-        const normalizedFile = path.basename(normalizedUrl, '.scss');
-        const prefix = url.startsWith('~') ? 'node_modules' : '';
+        try {
+          const base = path.dirname(prev);
+          const normalizedUrl = url.startsWith('~') ? url.substr(1) : url;
+          const normalizedDir = path.dirname(normalizedUrl);
+          const normalizedFile = path.basename(normalizedUrl, '.scss');
+          const prefix = url.startsWith('~') ? 'node_modules' : '';
 
-        const checkFor = [
-          path.join(prefix, normalizedDir, `${normalizedFile}.scss`),
-          path.join(prefix, normalizedDir, `_${normalizedFile}.scss`),
-          path.join(prefix, normalizedUrl, 'index.scss'),
-          path.join(prefix, normalizedDir, 'package.json'),
-          path.join(prefix, normalizedDir, normalizedFile, 'package.json'),
-        ];
+          const checkFor = [
+            path.join(prefix, normalizedDir, `${normalizedFile}.scss`),
+            path.join(prefix, normalizedDir, `_${normalizedFile}.scss`),
+            path.join(prefix, normalizedUrl, 'index.scss'),
+            path.join(prefix, normalizedDir, 'package.json'),
+            path.join(prefix, normalizedDir, normalizedFile, 'package.json'),
+          ];
 
-        const file = findup(checkFor, {
-          cwd: base,
-        });
-
-        if (path.basename(file) === 'package.json') {
-          // eslint-disable-next-line
-          const pkg = require(file)
-          const relativeStyle = pkg.style || pkg.main || 'index.scss';
-
-          return done({
-            file: path.resolve(path.dirname(file), relativeStyle),
+          const file = findup(checkFor, {
+            cwd: base,
           });
-        }
 
-        return done({ file });
+          if (path.basename(file) === 'package.json') {
+            // eslint-disable-next-line
+            const pkg = require(file)
+            const relativeStyle = pkg.style || pkg.main || 'index.scss';
+
+            return done({
+              file: path.resolve(path.dirname(file), relativeStyle),
+            });
+          }
+
+          return done({ file });
+        } catch (e) {
+          // Return a better error message?
+          return done();
+        }
       },
     },
     (sassErr, sassResult) => {

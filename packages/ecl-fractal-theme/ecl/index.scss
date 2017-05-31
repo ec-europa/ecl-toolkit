@@ -2,10 +2,13 @@
 
 @import '~@ec-europa/ecl-components-preset-base';
 @import '~@ec-europa/ecl-grid';
-@import '~@ec-europa/ecl-icons';
-@import '~@ec-europa/ecl-logos';
+@import '~@ec-europa/ecl-legacy-bootstrap-grid';
+@import '~@ec-europa/ecl-buttons';
+@import '~@ec-europa/ecl-forms-text-inputs';
 @import '~@ec-europa/ecl-search-forms';
 @import '~@ec-europa/ecl-header-search-bars';
-@import '~@ec-europa/ecl-lang-select-site';
+@import '~@ec-europa/ecl-lang-select-sites';
 @import '~@ec-europa/ecl-site-headers';
 @import '~@ec-europa/ecl-footers';
+
+// TODO: import ecl-clearfix

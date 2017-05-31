@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@ec-europa/ecl-base@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.3.0.tgz#f9c3b4a9a9926edea71316208881b4a8f477cf47"
+"@ec-europa/ecl-base@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.4.0.tgz#770effddd59df650deb08d7ed74e3d1f59994a8f"
 
 "@ec-europa/ecl-clearfix@^0.3.0":
   version "0.3.0"
