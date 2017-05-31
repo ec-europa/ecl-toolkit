@@ -2,70 +2,70 @@
 # yarn lockfile v1
 
 
-"@ec-europa/ecl-base@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.1.0.tgz#5c5ac6ee3b8ddfb8ebd0fd3a87d29948f2a3b655"
-
-"@ec-europa/ecl-clearfix@^0.2.0":
+"@ec-europa/ecl-base@^0.2.0":
   version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-clearfix/-/ecl-clearfix-0.2.0.tgz#90843a0fcd28b5ecf6f0bf89eba9960761718e04"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.2.0.tgz#3c7f1c24da0f87dcbb3027e8e7e001e33b2572df"
 
-"@ec-europa/ecl-flex@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-flex/-/ecl-flex-0.2.0.tgz#a3970646f12be49cbe51e20c8214d82b6217c910"
-
-"@ec-europa/ecl-font-size@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-font-size/-/ecl-font-size-0.2.0.tgz#de34595b3dbcddb8b6160fab1fda9b600007d2fb"
-
-"@ec-europa/ecl-grid@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-grid/-/ecl-grid-0.2.0.tgz#33023dbdfadf19d0f97957fe469c0bc7917c2f34"
-
-"@ec-europa/ecl-icons@^0.3.0":
+"@ec-europa/ecl-clearfix@^0.3.0":
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-icons/-/ecl-icons-0.3.0.tgz#0ab15537a0b2a2f028a83228c81e43d3fc8b90ee"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-clearfix/-/ecl-clearfix-0.3.0.tgz#9836c24b1f532560f8690f8562eb7d2681be3af5"
 
-"@ec-europa/ecl-images@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-images/-/ecl-images-0.2.0.tgz#ad3e67e60620f18e06b3a3438618440c3d3fa7f5"
-
-"@ec-europa/ecl-logos@^0.3.0":
+"@ec-europa/ecl-flex@^0.3.0":
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-logos/-/ecl-logos-0.3.0.tgz#01581056132d2422548540cc934d6861f3adb7a6"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-flex/-/ecl-flex-0.3.0.tgz#4ddb171ac135271bfbb44896786e9d7f2de7c27a"
 
-"@ec-europa/ecl-margin@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-margin/-/ecl-margin-0.2.0.tgz#5a7d801985ae39c12339a9c3e20cc6d82877aaf1"
+"@ec-europa/ecl-font-size@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-font-size/-/ecl-font-size-0.3.0.tgz#6d5342494727691717ff6677f7b57d5d4fd5b7ab"
 
-"@ec-europa/ecl-padding@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-padding/-/ecl-padding-0.2.0.tgz#64a0bc73caf37d33058aea604fb755f5b1ee9deb"
+"@ec-europa/ecl-grid@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-grid/-/ecl-grid-0.3.0.tgz#cd16310baadf301bfdb10e448c1a0361555593f8"
 
-"@ec-europa/ecl-screen-reader@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-screen-reader/-/ecl-screen-reader-0.2.0.tgz#c9e1510593743916ca9e897cad344abd866b8968"
+"@ec-europa/ecl-icons@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-icons/-/ecl-icons-0.4.0.tgz#d26bbc15031ca2ee03babef18e4b05f3ab7961d3"
 
-"@ec-europa/ecl-tables@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-tables/-/ecl-tables-0.2.0.tgz#c7213275c6e6bbde149547c9ac4876340d045e0b"
+"@ec-europa/ecl-images@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-images/-/ecl-images-0.3.0.tgz#13566e9b03662ebc8d608e8f839c33cda00eb4fe"
 
-"@ec-europa/ecl-typography-blockquotes@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-blockquotes/-/ecl-typography-blockquotes-0.2.0.tgz#2776dbe752971a16842743d684987862ee5d619c"
+"@ec-europa/ecl-logos@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-logos/-/ecl-logos-0.4.0.tgz#e95884be4de1d35dbf015396f6fd96cf928aef02"
 
-"@ec-europa/ecl-typography-headings@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-headings/-/ecl-typography-headings-0.2.0.tgz#2b04bb0e8835abe9100749672c61531059856855"
+"@ec-europa/ecl-margin@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-margin/-/ecl-margin-0.3.0.tgz#ec2cc530ec47eb658ef98b667bd23bdc8a64cffc"
 
-"@ec-europa/ecl-typography-links@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-links/-/ecl-typography-links-0.2.0.tgz#6c689694ef527134a189adf144b196d704a85ac2"
+"@ec-europa/ecl-padding@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-padding/-/ecl-padding-0.3.0.tgz#fdac1c0e9b4d356fcc95600745a732388ec994ba"
 
-"@ec-europa/ecl-typography-lists@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-lists/-/ecl-typography-lists-0.2.0.tgz#633ecb4b8a01225bbd4b17bfec4be9afa7d617bb"
+"@ec-europa/ecl-screen-reader@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-screen-reader/-/ecl-screen-reader-0.3.0.tgz#1ccb6a6705576ca36ec5bae6535e3ea3d9abdb42"
 
-"@ec-europa/ecl-typography-paragraphs@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-paragraphs/-/ecl-typography-paragraphs-0.2.0.tgz#b4290ed3e2785cdb1fc9f7db31c0654d316eeb4e"
+"@ec-europa/ecl-tables@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-tables/-/ecl-tables-0.3.0.tgz#d8b175ccba4a0f0c2248726b992e952b1e40a08c"
+
+"@ec-europa/ecl-typography-blockquotes@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-blockquotes/-/ecl-typography-blockquotes-0.3.0.tgz#7a934efc319755ec6f3b5a55589e336645ec8674"
+
+"@ec-europa/ecl-typography-headings@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-headings/-/ecl-typography-headings-0.3.0.tgz#f49b39a9bf11d625e32dd4c6fbdd82eb6d3be33a"
+
+"@ec-europa/ecl-typography-links@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-links/-/ecl-typography-links-0.3.0.tgz#7d26f6dee52e19401b93999cf984ee6415e30e0e"
+
+"@ec-europa/ecl-typography-lists@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-lists/-/ecl-typography-lists-0.3.0.tgz#e58f23037f85f7c6466a09684ba18f46a3a81fca"
+
+"@ec-europa/ecl-typography-paragraphs@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-typography-paragraphs/-/ecl-typography-paragraphs-0.3.0.tgz#081dd4430563e223b663813b9ec6329753a6457c"

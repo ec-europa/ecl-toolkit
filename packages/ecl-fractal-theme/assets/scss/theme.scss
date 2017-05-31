@@ -1,17 +1,84 @@
-$font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace !default;
-$font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif !default;
+// ECL variables
+// TODO: use variables from ecl-components-preset-base
+$ecl-font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default;
+$ecl-font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$ecl-font-family-base: $ecl-font-family-sans-serif !default;
 
-$color-link: #28f !default;
-$color-text: #535363 !default;
-$color-heading: #444 !default;
+// ECL Type Scale
+
+$ecl-font-size: (
+  none: 0,
+  xxs: 0.67rem,
+  xs: 0.78rem,
+  s: 0.89rem,
+  m: 1rem,
+  l: 1.22rem,
+  xl: 1.67rem,
+  xxl: 2.22rem
+) !default;
+
+// ECL Colors
+
+$ecl-colors: (
+  blue-120: #003776,
+  blue-110: #003776,
+  blue-100: #004494,
+  blue-75: #4073af,
+  blue-50: #7fa1c9,
+  blue-25: #bfd0e4,
+  yellow-120: #f8ae21,
+  yellow-110: #fbc11d,
+  yellow-100: #ffd617,
+  yellow-75: #ffde39,
+  yellow-50: #ffe879,
+  yellow-25: #fff4bb,
+  grey-100: #404040,
+  grey-75: #707070,
+  grey-50: #9f9f9f,
+  grey-25: #cfcfcf,
+  grey-15: #e3e3e3,
+  grey-10: #ebebeb,
+  grey-5: #f5f5f5
+) !default;
+
+$ecl-color-primary: map-get($ecl-colors, 'blue-100') !default;
+$ecl-color-secondary: map-get($ecl-colors, 'yellow-100') !default;
+$ecl-color-shade: map-get($ecl-colors, 'grey-100') !default;
+
+$ecl-color-info: #006fb4 !default;
+$ecl-color-warning: #f29527 !default;
+$ecl-color-success: #467a39 !default;
+$ecl-color-error: #da2130 !default;
+
+// ECL Spacing
+
+$ecl-spacing: (
+  none: 0,
+  xxs: 0.66rem,
+  xs: 0.89rem,
+  s: 1rem,
+  m: 1.66rem,
+  l: 2.22rem,
+  xl: 3.33rem,
+  xxl: 4.44rem
+) !default;
+
+// Fractal variables
+
+$font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace !default;
+$font-family-sans-serif: $ecl-font-family-base;
+
+$color-link: $ecl-color-secondary !default;
+$color-text: $ecl-color-shade !default;
+$color-heading: $ecl-color-shade !default;
 
 $color-background: #fff !default;
-$color-background-offset: #f6f6f6 !default;
+$color-background-offset: map-get($ecl-colors, 'grey-5') !default;
 
 $color-ui-hover: rgba($color-text, 0.05) !default;
 $color-ui-active: rgba($color-text, 0.075) !default;
 
-$color-header-background: #14f !default;
+$color-header-background: $ecl-color-primary !default;
 $color-header-content: #fff !default;
 
 $color-frame-border: rgba($color-text, 0.25) !default;

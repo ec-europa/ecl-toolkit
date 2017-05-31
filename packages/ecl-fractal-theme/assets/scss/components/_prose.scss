@@ -1,5 +1,4 @@
 .Prose {
-    @include font(body);
     max-width: 44em;
     font-feature-settings: "liga", "dlig", "kern", "onum";
     hanging-punctuation: first;
@@ -27,12 +26,7 @@
         list-style-type: decimal;
     }
 
-    h1 {
-        @include font(title);
-    }
-
     h2 {
-        @include font(heading);
         margin-bottom: 1em;
         color: $color-heading;
     }
@@ -42,7 +36,6 @@
     }
 
     h3 {
-        @include font(subHeading);
         margin-bottom: 0.75em;
         opacity: 0.8;
     }

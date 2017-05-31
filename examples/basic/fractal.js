@@ -25,27 +25,27 @@ fractal.components.set('statuses', {
   ready: {
     label: 'Ready',
     description: 'Can be used in production.',
-    color: '#29CC29',
+    color: '#467a39',
   },
   planned: {
     label: 'Planned',
     description: 'Still under discussion.',
-    color: '#337ab7',
+    color: '#006fb4',
   },
   wip: {
     label: 'WIP',
     description: 'Work in progress. Implement with caution.',
-    color: '#fbca04',
+    color: '#fbc11d',
   },
   legacy: {
     label: 'Legacy',
     description: 'Not to be used on new applications. Kept temporarily.',
-    color: '#FF9233',
+    color: '#f29527',
   },
   broken: {
     label: 'Broken',
     description: 'Cannot be used.',
-    color: '#FF3333',
+    color: '#da2130',
   },
 });
 fractal.components.set('default.status', 'planned');
