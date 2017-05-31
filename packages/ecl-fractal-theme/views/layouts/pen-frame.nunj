@@ -26,6 +26,10 @@
             </nav>
         </div>
     </div>
+
+    <div class="Frame-footer">
+        {% include 'partials/footer.nunj' %}
+    </div>
 </div>
 
 {% endblock %}
