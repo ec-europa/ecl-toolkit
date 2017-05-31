@@ -3,7 +3,7 @@
 
 {% block page %}
 
-<div class="Frame" id="frame">
+<div id="frame">
 
     <div class="Frame-header">
         {% include 'partials/header.nunj' %}

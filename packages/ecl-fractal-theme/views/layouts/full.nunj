@@ -2,7 +2,7 @@
 
 {% block page %}
 
-<div class="Frame Frame--full" id="frame">
+<div class="Frame--full" id="frame">
 
 {% block content %}{% endblock %}
 
