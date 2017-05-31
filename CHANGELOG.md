@@ -1,3 +1,14 @@
+## 0.8.0 (2017-05-31)
+
+#### :nail_care: Enhancement
+
+*   `ecl-components-preset-base`, `ecl-fractal-theme`
+    *   [#18](https://github.com/ec-europa/ecl-toolkit/pull/18) feat(theme): apply ecl style to fractal theme - INNO-514. ([@emeryro](https://github.com/emeryro))
+
+#### Committers: 1
+
+-   [emeryro](https://github.com/emeryro)
+
 ## 0.7.0 (2017-05-27)
 
 #### :nail_care: Enhancement
