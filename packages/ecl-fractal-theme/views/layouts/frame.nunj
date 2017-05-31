@@ -18,11 +18,16 @@
         </div>
 
         <div class="Frame-handle" data-role="frame-resize-handle"></div>
-        
+
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
             {% include 'partials/navigation/navigation.nunj' %}
         </div>
     </div>
+
+    <div class="Frame-footer">
+        {% include 'partials/footer.nunj' %}
+    </div>
+
 </div>
 
 {% endblock %}
