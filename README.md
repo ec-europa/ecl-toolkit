@@ -1,7 +1,5 @@
 # ECL Toolkit
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ec-europa/ecl-toolkit.svg)](https://greenkeeper.io/)
-
 Set of tools we use to build our front-end components.
 
 ## Development
@@ -23,7 +21,7 @@ This will install the main dependencies and automatically run `lerna bootstrap`.
 
 #### Basic
 
-You **don't** need to install the dependencies here since lerna already took 
+You **don't** need to install the dependencies here since lerna already took
 care of it during the [initialization](#initialization).
 
 To get a basic fractal environment running with, just follow these steps:
