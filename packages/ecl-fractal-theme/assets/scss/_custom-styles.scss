@@ -9,8 +9,13 @@ img {
   max-width: 100%;
 }
 
+.Frame-panel,
+.Frame {
+  overflow: visible;
+}
+
 .Frame-panel--sidebar {
-  background-color: map-get($ecl-colors, 'grey-5');
+  background-color: #fff;
   padding: map-get($ecl-spacing, 's') 0;
 }
 
