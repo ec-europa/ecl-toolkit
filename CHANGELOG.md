@@ -1,3 +1,24 @@
+## 0.9.0 (2017-06-01)
+
+#### :rocket: New Feature
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`
+    *   [#22](https://github.com/ec-europa/ecl-toolkit/pull/22) feat(site-header): add ECL site-header - INNO-512. ([@yhuard](https://github.com/yhuard))
+
+#### :nail_care: Enhancement
+
+*   `ecl-fractal-theme`
+    *   [#21](https://github.com/ec-europa/ecl-toolkit/pull/21) refactor(theme): remove fixed navigation - INNO-534. ([@emeryro](https://github.com/emeryro))
+    *   [#20](https://github.com/ec-europa/ecl-toolkit/pull/20) refactor(theme): remove fixed navigation - INNO-534. ([@emeryro](https://github.com/emeryro))
+*   `ecl-builder`, `ecl-fractal-theme`, `stylelint-config-ecl`
+    *   [#19](https://github.com/ec-europa/ecl-toolkit/pull/19) feat(footer): add ecl-footers in ecl-theme. ([@kalinchernev](https://github.com/kalinchernev))
+
+#### Committers: 3
+
+-   Kalin Chernev ([kalinchernev](https://github.com/kalinchernev))
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+-   [emeryro](https://github.com/emeryro)
+
 ## 0.8.0 (2017-05-31)
 
 #### :nail_care: Enhancement
