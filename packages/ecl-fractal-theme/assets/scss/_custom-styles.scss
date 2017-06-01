@@ -14,6 +14,14 @@ img {
   overflow: visible;
 }
 
+.Frame-header {
+  clear: both;
+}
+
+.Frame-inner {
+  position: relative;
+}
+
 .Frame-panel--sidebar {
   background-color: map-get($ecl-colors, 'grey-5');
   padding: map-get($ecl-spacing, 's') 0;
@@ -94,12 +102,6 @@ img {
 
 [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::after {
   background-image: url(../img/icon-navigation-closed-ltr.svg);
-}
-
-#search-components {
-  font-family: $ecl-font-family-base;
-  padding: map-get($ecl-spacing, 'xxs');
-  width: 100%;
 }
 
 .Tree-search {
