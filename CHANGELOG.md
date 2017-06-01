@@ -1,3 +1,14 @@
+## 0.9.1 (2017-06-01)
+
+#### :bug: Bug Fix
+
+*   `ecl-fractal-theme`
+    *   [#23](https://github.com/ec-europa/ecl-toolkit/pull/23) fix(sidebar): fix display issue - INNO-539. ([@emeryro](https://github.com/emeryro))
+
+#### Committers: 1
+
+-   [emeryro](https://github.com/emeryro)
+
 ## 0.9.0 (2017-06-01)
 
 #### :rocket: New Feature
