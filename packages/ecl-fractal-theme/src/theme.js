@@ -27,24 +27,24 @@ module.exports = options => {
   ];
 
   config.nav = config.nav || ['search', 'docs', 'components', 'assets'];
-  config.styles = []
+  config.styles = [`/${config.static.mount}/ecl/ecl.css`]
     .concat(config.styles)
     .concat(config.stylesheet)
     .filter(url => url)
     .map(
       url =>
-        (url === 'default'
+        url === 'default'
           ? `/${config.static.mount}/css/${config.skin}.css`
-          : url)
+          : url
     );
   config.scripts = []
     .concat(config.scripts)
     .filter(url => url)
     .map(
       url =>
-        (url === 'default'
+        url === 'default'
           ? `/${config.static.mount}/js/ecl-fractal-theme.js`
-          : url)
+          : url
     );
   config.favicon = config.favicon || `/${config.static.mount}/favicon.ico`;
 
