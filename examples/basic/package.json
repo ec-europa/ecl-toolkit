@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@ec-europa/ecl-example-basic",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "scripts": {
     "build:copy": "ecl-builder copy",
     "build:scripts": "ecl-builder scripts",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@ec-europa/ecl-builder": "^0.6.1",
     "@ec-europa/ecl-components-preset-base": "^0.4.0",
-    "@ec-europa/ecl-fractal-theme": "^0.5.0",
+    "@ec-europa/ecl-fractal-theme": "^0.5.1",
     "@ec-europa/ecl-qa": "^0.2.1",
     "@ec-europa/eslint-config-ecl": "^0.2.4",
     "@ec-europa/stylelint-config-ecl": "^0.2.4",
