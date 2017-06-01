@@ -25,6 +25,8 @@ img {
 .Frame-panel--sidebar {
   background-color: map-get($ecl-colors, 'grey-5');
   padding: map-get($ecl-spacing, 's') 0;
+  width: auto !important;
+  min-width: 200px;
 }
 
 [dir="ltr"] .Frame-panel--sidebar {
@@ -53,6 +55,7 @@ img {
   color: map-get($ecl-colors, 'grey-100');
   padding-bottom: 0;
   padding-top: 0;
+  padding-right: map-get($ecl-spacing, 'xxs');
 }
 
 .is-current .Tree-entityLink {
@@ -75,6 +78,7 @@ img {
   font: inherit;
   padding-top: 0;
   padding-bottom: 0;
+  padding-right: map-get($ecl-spacing, 'xxs');
 }
 
 .Tree-collectionLabel span::before {
