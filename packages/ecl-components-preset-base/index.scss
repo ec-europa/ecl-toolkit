@@ -2,8 +2,9 @@
  * Import files
  */
 
-// Core variables and mixins
+// Core variables and mixins + reset
 @import '~@ec-europa/ecl-base';
+@import '~@ec-europa/ecl-base/reset';
 
 // Icons
 @import '~@ec-europa/ecl-icons';
@@ -20,12 +21,33 @@
 @import '~@ec-europa/ecl-logos';
 @import '~@ec-europa/ecl-tables';
 
+// Forms
+@import '~@ec-europa/ecl-forms-form-groups';
+@import '~@ec-europa/ecl-forms-help-blocks';
+@import '~@ec-europa/ecl-forms-text-inputs';
+
+// Other atoms
+@import '~@ec-europa/ecl-buttons';
+@import '~@ec-europa/ecl-meta';
+
 // Layout
 @import '~@ec-europa/ecl-grid';
+@import '~@ec-europa/ecl-legacy-bootstrap-grid';
+
+// Molecules
+@import '~@ec-europa/ecl-footers';
+@import '~@ec-europa/ecl-lang-select-sites';
+@import '~@ec-europa/ecl-search-forms';
+
+// Organisms
+@import '~@ec-europa/ecl-header-search-bars';
+@import '~@ec-europa/ecl-page-headers';
+@import '~@ec-europa/ecl-site-headers';
 
 // Utilities
 @import '~@ec-europa/ecl-clearfix';
 @import '~@ec-europa/ecl-flex';
+@import '~@ec-europa/ecl-colorize';
 @import '~@ec-europa/ecl-font-size';
 @import '~@ec-europa/ecl-margin';
 @import '~@ec-europa/ecl-padding';
