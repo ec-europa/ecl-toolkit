@@ -14,11 +14,17 @@ module.exports = {
   ],
   copy: [
     {
-      from: path.resolve(__dirname, 'node_modules/@ec-europa/ecl-icons/fonts'),
+      from: path.resolve(
+        __dirname,
+        'node_modules/@ec-europa/ecl-components-preset-base/node_modules/@ec-europa/ecl-icons/fonts'
+      ),
       to: path.resolve(__dirname, 'dist/fonts'),
     },
     {
-      from: path.resolve(__dirname, 'node_modules/@ec-europa/ecl-logos/images'),
+      from: path.resolve(
+        __dirname,
+        'node_modules/@ec-europa/ecl-components-preset-base/node_modules/@ec-europa/ecl-logos/images'
+      ),
       to: path.resolve(__dirname, 'dist/images'),
     },
   ],

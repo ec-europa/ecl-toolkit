@@ -34,6 +34,7 @@
     flex-direction: row-reverse;
     flex-grow: 1;
     height: calc(100% - 3rem);
+    min-height: 20rem;
 
     @include mq($until: navCollapse) {
         @include margin-inline(end, $width-sidebar);

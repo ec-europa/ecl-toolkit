@@ -8,8 +8,8 @@
     "access": "public"
   },
   "dependencies": {
-    "axe-core": "2.2.2",
-    "chai": "3.5.0",
+    "axe-core": "2.2.3",
+    "chai": "4.0.2",
     "html-inspector": "0.8.2"
   },
   "peerDependencies": {
