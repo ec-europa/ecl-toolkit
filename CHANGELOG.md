@@ -1,3 +1,14 @@
+## 0.9.2 (2017-06-06)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `ecl-qa`, `stylelint-config-ecl`
+    *   [#24](https://github.com/ec-europa/ecl-toolkit/pull/24) Update base preset and dependencies. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.9.1 (2017-06-01)
 
 #### :bug: Bug Fix
