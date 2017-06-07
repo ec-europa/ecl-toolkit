@@ -21,7 +21,7 @@ module.exports = (theme, env, app) => {
   env.engine.addFilter('beautify', str =>
     beautifyHTML(str, {
       // TODO: move to config
-      indent_size: 4,
+      indent_size: 2,
       preserve_newlines: true,
       max_preserve_newlines: 1,
     })
@@ -30,7 +30,10 @@ module.exports = (theme, env, app) => {
   env.engine.addFilter(
     'resourceUrl',
     str =>
-      `/${app.web.get('assets.mount')}/components/${Path.relative(Path.resolve(app.components.get('path')), Path.resolve(str))}`
+      `/${app.web.get('assets.mount')}/components/${Path.relative(
+        Path.resolve(app.components.get('path')),
+        Path.resolve(str)
+      )}`
   );
   env.engine.addFilter('componentPath', str =>
     Path.relative(
