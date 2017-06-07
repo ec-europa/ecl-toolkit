@@ -1,3 +1,14 @@
+## 0.9.3 (2017-06-07)
+
+#### :bug: Bug Fix
+
+*   `ecl-fractal-theme`
+    *   [#25](https://github.com/ec-europa/ecl-toolkit/pull/25) fix(typo): fix typo in the footer - INNO-584. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.9.2 (2017-06-06)
 
 #### :nail_care: Enhancement
