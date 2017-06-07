@@ -2061,9 +2061,9 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
-prettier-eslint-cli@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-4.0.3.tgz#5b9df73365cd1a1d47dabe306ae0dd0066cefe6c"
+prettier-eslint-cli@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/prettier-eslint-cli/-/prettier-eslint-cli-4.0.4.tgz#778ec4ae06c644f1cfac5cd8677fb881338292d6"
   dependencies:
     arrify "^1.0.1"
     babel-runtime "^6.23.0"
