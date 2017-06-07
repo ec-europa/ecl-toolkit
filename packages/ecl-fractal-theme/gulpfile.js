@@ -23,30 +23,7 @@ gulp.task('clean:js', () => del(['./dist/js']));
 //
 // CSS
 //
-gulp.task('css:skins', () => {
-  const fs = require('fs');
-  const skins = require('./assets/scss/skins/_skins.json');
-
-  for (const skin of skins) {
-    fs.writeFile(
-      `./assets/scss/skins/${skin.name}.scss`,
-      `
-$color-header-background: ${skin.accent};
-$color-header-content: ${skin.complement};
-$color-link: ${skin.links};
-
-@import "../theme";
-@import "../core/all";
-@import "../components/**/*.scss";
-
-// Custom (to be deleted asap)
-@import "../custom-styles";
-`
-    );
-  }
-});
-
-gulp.task('css', ['css:skins'], () =>
+gulp.task('css', () =>
   gulp
     .src('./assets/scss/skins/*.scss')
     .pipe(
