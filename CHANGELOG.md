@@ -1,3 +1,14 @@
+## 0.9.4 (2017-06-07)
+
+#### :nail_care: Enhancement
+
+*   `ecl-fractal-theme`
+    *   [#26](https://github.com/ec-europa/ecl-toolkit/pull/26) fix(indent): indent HTML with 2 spaces - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.9.3 (2017-06-07)
 
 #### :bug: Bug Fix
