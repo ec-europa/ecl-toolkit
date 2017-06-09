@@ -23,32 +23,9 @@ gulp.task('clean:js', () => del(['./dist/js']));
 //
 // CSS
 //
-gulp.task('css:skins', () => {
-  const fs = require('fs');
-  const skins = require('./assets/scss/skins/_skins.json');
-
-  for (const skin of skins) {
-    fs.writeFile(
-      `./assets/scss/skins/${skin.name}.scss`,
-      `
-$color-header-background: ${skin.accent};
-$color-header-content: ${skin.complement};
-$color-link: ${skin.links};
-
-@import "../theme";
-@import "../core/all";
-@import "../components/**/*.scss";
-
-// Custom (to be deleted asap)
-@import "../custom-styles";
-`
-    );
-  }
-});
-
-gulp.task('css', ['css:skins'], () =>
+gulp.task('css', () =>
   gulp
-    .src('./assets/scss/skins/*.scss')
+    .src('./assets/scss/fractal.scss')
     .pipe(
       stylelint({
         reporters: [
@@ -73,19 +50,6 @@ gulp.task('css:watch', () => {
 });
 
 //
-// Fonts
-//
-gulp.task('fonts', ['fonts:clean'], () => {
-  gulp.src('./assets/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
-});
-
-gulp.task('fonts:clean', () => del(['./dist/fonts']));
-
-gulp.task('fonts:watch', () => {
-  gulp.watch('./assets/fonts/**/*', ['fonts']);
-});
-
-//
 // Images
 //
 gulp.task('img', ['img:clean'], () => {
@@ -104,7 +68,7 @@ gulp.task('img:watch', () => {
 //
 gulp.task('watch', ['css:watch', 'js:watch', 'img:watch']);
 
-gulp.task('default', ['fonts', 'css', 'js', 'img']);
+gulp.task('default', ['css', 'js', 'img']);
 
 //
 // Utils

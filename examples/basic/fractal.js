@@ -8,7 +8,7 @@ const paths = {
 };
 
 // Create a new theme instance with custom config options
-const theme = eclTheme({ skin: 'blue' });
+const theme = eclTheme();
 
 // Project config
 fractal.set('project.title', 'ECL Toolkit Example');
