@@ -5,7 +5,6 @@ const packageJSON = require('../package.json');
 
 module.exports = options => {
   const config = _.defaultsDeep(_.clone(options || {}), {
-    skin: 'default',
     rtl: false,
     lang: 'en',
     styles: 'default',
@@ -33,9 +32,7 @@ module.exports = options => {
     .filter(url => url)
     .map(
       url =>
-        url === 'default'
-          ? `/${config.static.mount}/css/${config.skin}.css`
-          : url
+        url === 'default' ? `/${config.static.mount}/css/fractal.css` : url
     );
   config.scripts = []
     .concat(config.scripts)

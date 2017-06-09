@@ -25,7 +25,7 @@ gulp.task('clean:js', () => del(['./dist/js']));
 //
 gulp.task('css', () =>
   gulp
-    .src('./assets/scss/skins/*.scss')
+    .src('./assets/scss/fractal.scss')
     .pipe(
       stylelint({
         reporters: [

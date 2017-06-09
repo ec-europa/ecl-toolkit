@@ -3,6 +3,7 @@
 }
 
 .Tree-title {
+  @include font(label);
   @include padding-inline(start, 1rem);
 
   color: $color-sidebar-heading;
