@@ -50,19 +50,6 @@ gulp.task('css:watch', () => {
 });
 
 //
-// Fonts
-//
-gulp.task('fonts', ['fonts:clean'], () => {
-  gulp.src('./assets/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
-});
-
-gulp.task('fonts:clean', () => del(['./dist/fonts']));
-
-gulp.task('fonts:watch', () => {
-  gulp.watch('./assets/fonts/**/*', ['fonts']);
-});
-
-//
 // Images
 //
 gulp.task('img', ['img:clean'], () => {
@@ -81,7 +68,7 @@ gulp.task('img:watch', () => {
 //
 gulp.task('watch', ['css:watch', 'js:watch', 'img:watch']);
 
-gulp.task('default', ['fonts', 'css', 'js', 'img']);
+gulp.task('default', ['css', 'js', 'img']);
 
 //
 // Utils
