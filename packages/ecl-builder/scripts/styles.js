@@ -9,21 +9,23 @@ const mkdirp = require('mkdirp');
 const findup = require('findup-sync');
 
 module.exports = (entry, dest, options) => {
-  const params = process.env.NODE_ENV === 'production'
-    ? {
-        plugins: [cssnano()],
-      }
-    : {
-        plugins: [autoprefixer()],
-      };
+  const plugins = [];
 
   if (options.normalize) {
-    params.plugins.unshift(postcssNormalize());
+    plugins.push(postcssNormalize());
+  }
+
+  plugins.push(autoprefixer());
+
+  if (process.env.NODE_ENV === 'production') {
+    plugins.push(cssnano({ safe: true }));
   }
 
   sass.render(
     {
       file: entry,
+      outFile: dest,
+      sourceMap: true,
       importer: (url, prev, done) => {
         try {
           const base = path.dirname(prev);
@@ -46,7 +48,7 @@ module.exports = (entry, dest, options) => {
 
           if (path.basename(file) === 'package.json') {
             // eslint-disable-next-line
-            const pkg = require(file)
+            const pkg = require(file);
             const relativeStyle = pkg.style || pkg.main || 'index.scss';
 
             return done({
@@ -63,9 +65,9 @@ module.exports = (entry, dest, options) => {
     },
     (sassErr, sassResult) => {
       if (!sassErr) {
-        postcss(params.plugins)
+        postcss(plugins)
           .process(sassResult.css, {
-            map: options.sourceMap,
+            map: options.sourceMap === true ? true : { inline: false },
             from: entry,
             to: dest,
           })
