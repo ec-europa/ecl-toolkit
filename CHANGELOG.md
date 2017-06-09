@@ -1,3 +1,24 @@
+## 0.10.0 (2017-06-09)
+
+#### :bug: Bug Fix
+
+*   `ecl-builder`
+    *   [#28](https://github.com/ec-europa/ecl-toolkit/pull/28) fix(styles): fix ECL styles builder - INNO-598. ([@yhuard](https://github.com/yhuard))
+
+#### :nail_care: Enhancement
+
+*   `ecl-components-preset-base`
+    *   [#29](https://github.com/ec-europa/ecl-toolkit/pull/29) chore(deps): update ECL components - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### :house: Internal
+
+*   `ecl-fractal-theme`
+    *   [#27](https://github.com/ec-europa/ecl-toolkit/pull/27) feat(fractal-theme): reduce technical debt - INNO-599. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.9.4 (2017-06-07)
 
 #### :nail_care: Enhancement
