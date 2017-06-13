@@ -1,7 +1,7 @@
 {
   "name": "@ec-europa/ecl-fractal-theme",
   "author": "European Commission",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "license": "EUPL-1.1",
   "description": "The default Fractal theme for ECL.",
   "publishConfig": {
