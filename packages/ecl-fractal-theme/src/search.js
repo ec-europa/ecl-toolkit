@@ -23,7 +23,7 @@ module.exports = (theme, env, app) => {
       handle: c.handle,
       title: c.title,
       notes: c.notes ? `${c.notes.substring(0, 50)} ...` : '',
-      variants: c.variants.items.length
+      variants: c.variants && c.variants.items && c.variants.items.length
         ? c.variants.items.map(v => v.name)
         : '',
     }));
