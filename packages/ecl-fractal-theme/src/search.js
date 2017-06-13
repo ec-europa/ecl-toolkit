@@ -1,3 +1,4 @@
+const get = require('lodash/get');
 const fs = require('fs');
 const lunr = require('lunr');
 
@@ -10,6 +11,7 @@ module.exports = (theme, env, app) => {
     this.field('name');
     this.field('handle');
     this.field('notes');
+    this.field('variants');
     this.pipeline.remove(lunr.stopWordFilter);
   });
 
@@ -22,6 +24,7 @@ module.exports = (theme, env, app) => {
       handle: c.handle,
       title: c.title,
       notes: c.notes ? `${c.notes.substring(0, 50)} ...` : '',
+      variants: get(c, 'variants.items', []).map(v => v.name),
     }));
 
   // eslint-disable-next-line no-restricted-syntax
