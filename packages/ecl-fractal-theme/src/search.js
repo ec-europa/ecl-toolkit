@@ -2,10 +2,6 @@ const fs = require('fs');
 const lunr = require('lunr');
 
 module.exports = (theme, env, app) => {
-  const getVariants = variants => {
-    variants.map(variant => variant.label);
-  };
-
   const store = {};
 
   const lunarIndex = lunr(function buildSchema() {
