@@ -1,3 +1,4 @@
+const get = require('lodash/get');
 const fs = require('fs');
 const lunr = require('lunr');
 
@@ -23,9 +24,7 @@ module.exports = (theme, env, app) => {
       handle: c.handle,
       title: c.title,
       notes: c.notes ? `${c.notes.substring(0, 50)} ...` : '',
-      variants: c.variants && c.variants.items && c.variants.items.length
-        ? c.variants.items.map(v => v.name)
-        : '',
+      variants: get(c, 'variants.items', []).map(v => v.name),
     }));
 
   // eslint-disable-next-line no-restricted-syntax
