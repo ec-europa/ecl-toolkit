@@ -1,3 +1,14 @@
+## 0.10.1 (2017-06-13)
+
+#### :nail_care: Enhancement
+
+*   `ecl-fractal-theme`
+    *   [#30](https://github.com/ec-europa/ecl-toolkit/pull/30) feat(lunr): indexing the names of the variants - noissue. ([@kalinchernev](https://github.com/kalinchernev))
+
+#### Committers: 1
+
+-   Kalin Chernev ([kalinchernev](https://github.com/kalinchernev))
+
 ## 0.10.0 (2017-06-09)
 
 #### :bug: Bug Fix
