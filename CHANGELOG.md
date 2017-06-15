@@ -1,3 +1,14 @@
+## 0.11.0 (2017-06-15)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#31](https://github.com/ec-europa/ecl-toolkit/pull/31) fix(browsers-support): use babel-preset-env - INNO-621. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.10.1 (2017-06-13)
 
 #### :nail_care: Enhancement
