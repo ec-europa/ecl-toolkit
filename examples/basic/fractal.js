@@ -1,6 +1,9 @@
 const path = require('path');
 const fractal = require('@frctl/fractal').create(); // eslint-disable-line import/no-extraneous-dependencies
 const eclTheme = require('@ec-europa/ecl-fractal-theme'); // eslint-disable-line import/no-extraneous-dependencies
+const twigAdapter = require('@frctl/twig')({
+  handlePrefix: '@ec-europa/',
+});
 
 const paths = {
   build: `${__dirname}/dist`,
@@ -50,7 +53,7 @@ fractal.components.set('statuses', {
 });
 fractal.components.set('default.status', 'planned');
 fractal.components.set('path', path.resolve(__dirname, './framework'));
-fractal.components.engine('@frctl/twig'); // use Twig for components
+fractal.components.engine(twigAdapter); // use Twig for components
 fractal.components.set('ext', '.twig');
 
 // 'Assets' tab
