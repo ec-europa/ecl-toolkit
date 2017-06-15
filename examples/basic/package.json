@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@ec-europa/ecl-example-basic",
-  "version": "0.7.4",
+  "version": "0.8.0",
   "scripts": {
     "build:copy": "ecl-builder copy",
     "build:scripts": "ecl-builder scripts",
@@ -21,12 +21,12 @@
     "watch": "npm-run-all --parallel watch:*"
   },
   "devDependencies": {
-    "@ec-europa/ecl-builder": "^0.6.3",
-    "@ec-europa/ecl-components-preset-base": "^0.6.0",
-    "@ec-europa/ecl-fractal-theme": "^0.6.1",
+    "@ec-europa/ecl-builder": "^0.7.0",
+    "@ec-europa/ecl-components-preset-base": "^0.6.1",
+    "@ec-europa/ecl-fractal-theme": "^0.6.2",
     "@ec-europa/ecl-qa": "^0.2.2",
-    "@ec-europa/eslint-config-ecl": "^0.2.4",
-    "@ec-europa/stylelint-config-ecl": "^0.2.5",
+    "@ec-europa/eslint-config-ecl": "^0.2.5",
+    "@ec-europa/stylelint-config-ecl": "^0.2.6",
     "@frctl/fractal": "1.1.4",
     "@frctl/twig": "1.0.0-alpha.0",
     "chai": "4.0.2",
