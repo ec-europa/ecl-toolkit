@@ -16,7 +16,6 @@
     "babel-preset-env": "1.5.2",
     "browserslist": "2.1.5",
     "commander": "2.9.0",
-    "core-js": "^2.4.1",
     "cssnano": "3.10.0",
     "findup-sync": "1.0.0",
     "globby": "6.1.0",
