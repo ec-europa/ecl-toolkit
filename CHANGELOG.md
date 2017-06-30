@@ -1,3 +1,14 @@
+## 0.11.1 (2017-06-30)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-qa`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#32](https://github.com/ec-europa/ecl-toolkit/pull/32) chore(deps): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.11.0 (2017-06-15)
 
 #### :nail_care: Enhancement
