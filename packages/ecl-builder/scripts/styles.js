@@ -9,13 +9,7 @@ const mkdirp = require('mkdirp');
 const findup = require('findup-sync');
 
 module.exports = (entry, dest, options) => {
-  const plugins = [];
-
-  if (options.normalize) {
-    plugins.push(postcssNormalize());
-  }
-
-  plugins.push(autoprefixer());
+  const plugins = [postcssNormalize(), autoprefixer()];
 
   if (process.env.NODE_ENV === 'production') {
     plugins.push(cssnano({ safe: true }));
