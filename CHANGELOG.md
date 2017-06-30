@@ -1,3 +1,14 @@
+## 0.12.0 (2017-06-30)
+
+#### :nail_care: Enhancement
+
+*   `ecl-components-preset-base`
+    *   [#33](https://github.com/ec-europa/ecl-toolkit/pull/33) chore(deps): update components - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.11.1 (2017-06-30)
 
 #### :nail_care: Enhancement
