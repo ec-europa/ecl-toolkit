@@ -1,5 +1,5 @@
 {
-  "lerna": "2.0.0-rc.5",
+  "lerna": "2.0.0",
   "version": "independent",
   "npmClient": "yarn",
   "changelog": {
@@ -19,14 +19,8 @@
       "concurrency": 1
     },
     "publish": {
-      "ignore": [
-        "*.md",
-        "test/**"
-      ]
+      "ignore": ["*.md", "test/**"]
     }
   },
-  "packages": [
-    "examples/*",
-    "packages/*"
-  ]
+  "packages": ["examples/*", "packages/*"]
 }
