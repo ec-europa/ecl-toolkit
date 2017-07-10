@@ -6,26 +6,8 @@ const commonjs = require('rollup-plugin-commonjs');
 const uglify = require('rollup-plugin-uglify');
 const browserslist = require('browserslist');
 
-function pickEnv(config) {
-  if (typeof config !== 'object') return config;
-
-  let env;
-  if (typeof process.env.BROWSERSLIST_ENV === 'string') {
-    env = process.env.BROWSERSLIST_ENV;
-  } else if (typeof process.env.NODE_ENV === 'string') {
-    env = process.env.NODE_ENV;
-  } else {
-    env = 'development';
-  }
-
-  return config[env] || config.defaults;
-}
-
 module.exports = (entry, dest, options) => {
-  const browserslistConfig = pickEnv(browserslist.findConfig('.'));
-  const targetBrowsers = Array.isArray(browserslistConfig)
-    ? browserslistConfig
-    : [browserslistConfig];
+  const browserslistConfig = browserslist();
 
   const config = {
     entry,
@@ -47,7 +29,7 @@ module.exports = (entry, dest, options) => {
             babelPresetEnv,
             {
               targets: {
-                browsers: targetBrowsers,
+                browsers: browserslistConfig,
                 uglify: process.env.NODE_ENV === 'production',
               },
               modules: false,
