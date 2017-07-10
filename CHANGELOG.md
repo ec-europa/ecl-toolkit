@@ -1,3 +1,19 @@
+## 0.13.0 (2017-07-10)
+
+#### :bug: Bug Fix
+
+*   `ecl-builder`
+    *   [#35](https://github.com/ec-europa/ecl-toolkit/pull/35) fix(browserslist): fix browserslist config - INNO-681. ([@yhuard](https://github.com/yhuard))
+
+#### :house: Internal
+
+*   `ecl-builder`, `ecl-fractal-theme`, `ecl-qa`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#36](https://github.com/ec-europa/ecl-toolkit/pull/36) chore(deps): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.12.0 (2017-06-30)
 
 #### :nail_care: Enhancement
