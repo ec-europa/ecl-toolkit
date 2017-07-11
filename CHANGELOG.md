@@ -1,3 +1,16 @@
+## 0.14.0 (2017-07-11)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `stylelint-config-ecl`
+    *   [#38](https://github.com/ec-europa/ecl-toolkit/pull/38) chore(deps): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+*   `ecl-fractal-theme`
+    *   [#37](https://github.com/ec-europa/ecl-toolkit/pull/37) feat(theme): replace homepage by components - INNO-646. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.13.0 (2017-07-10)
 
 #### :bug: Bug Fix
