@@ -56,7 +56,7 @@ module.exports = options => {
 
   theme.addRoute('/', {
     handle: 'overview',
-    view: 'pages/home.nunj',
+    view: 'pages/components/intro.nunj',
   });
 
   theme.addRoute('/docs', {
