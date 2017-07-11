@@ -23,6 +23,7 @@
 @import '~@ec-europa/ecl-forms-help-blocks';
 @import '~@ec-europa/ecl-forms-labels';
 @import '~@ec-europa/ecl-forms-legends';
+@import '~@ec-europa/ecl-forms-radios';
 @import '~@ec-europa/ecl-forms-selects';
 @import '~@ec-europa/ecl-forms-text-inputs';
 @import '~@ec-europa/ecl-forms-textareas';
@@ -30,10 +31,12 @@
 // Other atoms
 @import '~@ec-europa/ecl-blockquotes';
 @import '~@ec-europa/ecl-buttons';
+@import '~@ec-europa/ecl-fields';
 @import '~@ec-europa/ecl-links';
 @import '~@ec-europa/ecl-logos';
 @import '~@ec-europa/ecl-messages';
 @import '~@ec-europa/ecl-meta';
+@import '~@ec-europa/ecl-site-switchers';
 @import '~@ec-europa/ecl-tables';
 @import '~@ec-europa/ecl-tags';
 
@@ -52,6 +55,7 @@
 @import '~@ec-europa/ecl-datepickers';
 @import '~@ec-europa/ecl-dropdowns';
 @import '~@ec-europa/ecl-expandables';
+@import '~@ec-europa/ecl-featured-items';
 @import '~@ec-europa/ecl-files';
 @import '~@ec-europa/ecl-footers';
 @import '~@ec-europa/ecl-lang-select-sites';
@@ -62,9 +66,11 @@
 
 // Organisms
 @import '~@ec-europa/ecl-accordions';
+@import '~@ec-europa/ecl-galleries';
 @import '~@ec-europa/ecl-navigation-lists';
 @import '~@ec-europa/ecl-navigation-menus';
 @import '~@ec-europa/ecl-page-headers';
+@import '~@ec-europa/ecl-profile-topbars';
 @import '~@ec-europa/ecl-site-headers';
 
 // Utilities
