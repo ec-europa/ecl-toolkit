@@ -1,3 +1,14 @@
+## 0.14.1 (2017-07-11)
+
+#### :bug: Bug Fix
+
+*   `ecl-builder`
+    *   [#39](https://github.com/ec-europa/ecl-toolkit/pull/39) fix(build): remove exclude from babel - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.14.0 (2017-07-11)
 
 #### :nail_care: Enhancement
