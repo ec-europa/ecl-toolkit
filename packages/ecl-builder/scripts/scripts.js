@@ -38,7 +38,6 @@ module.exports = (entry, dest, options) => {
             },
           ],
         ],
-        exclude: 'node_modules/**',
       }),
       process.env.NODE_ENV === 'production' && uglify(),
     ],
