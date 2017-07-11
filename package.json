@@ -36,6 +36,6 @@
     "*.js": ["prettier-eslint --write", "git add"]
   },
   "dependencies": {
-    "@ec-europa/eslint-config-ecl": "0.3.0"
+    "@ec-europa/eslint-config-ecl": "0.3.1"
   }
 }

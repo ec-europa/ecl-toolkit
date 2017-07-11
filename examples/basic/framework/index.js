@@ -7,4 +7,4 @@
 // import 'core-js/fn/array/from';
 
 // 2. Export components
-export * from './components/expandables/expandables';
+export * from '@ec-europa/ecl-components-preset-base';
