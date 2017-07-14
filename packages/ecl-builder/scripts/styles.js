@@ -11,6 +11,13 @@ const findup = require('findup-sync');
 module.exports = (entry, dest, options) => {
   const plugins = [postcssNormalize(), autoprefixer()];
 
+  let postcssSourceMap = false;
+  if (options.sourceMap === true) {
+    postcssSourceMap = true; // inline
+  } else if (options.sourceMap === 'file') {
+    postcssSourceMap = { inline: false }; // as a file
+  }
+
   if (process.env.NODE_ENV === 'production') {
     plugins.push(cssnano({ safe: true }));
   }
@@ -19,7 +26,9 @@ module.exports = (entry, dest, options) => {
     {
       file: entry,
       outFile: dest,
-      sourceMap: true,
+      sourceMap: options.sourceMap === true,
+      sourceMapContents: options.sourceMap === true,
+      sourceMapEmbed: options.sourceMap === true,
       importer: (url, prev, done) => {
         try {
           const base = path.dirname(prev);
@@ -61,7 +70,7 @@ module.exports = (entry, dest, options) => {
       if (!sassErr) {
         postcss(plugins)
           .process(sassResult.css, {
-            map: options.sourceMap === true ? true : { inline: false },
+            map: postcssSourceMap,
             from: entry,
             to: dest,
           })
