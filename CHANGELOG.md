@@ -1,3 +1,14 @@
+## 0.14.2 (2017-07-17)
+
+#### :bug: Bug Fix
+
+*   `ecl-builder`
+    *   [#40](https://github.com/ec-europa/ecl-toolkit/pull/40) feat(builder): improve CSS sourcemap -INNO-698. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.14.1 (2017-07-11)
 
 #### :bug: Bug Fix
