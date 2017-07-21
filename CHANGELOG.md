@@ -1,3 +1,14 @@
+## 0.15.1 (2017-07-21)
+
+#### :bug: Bug Fix
+
+*   `ecl-fractal-theme`
+    *   [#42](https://github.com/ec-europa/ecl-toolkit/pull/42) fix(theme): fix fractal theme. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.15.0 (2017-07-21)
 
 #### :nail_care: Enhancement
