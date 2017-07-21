@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "axe-core": "2.3.1",
-    "chai": "4.0.2",
+    "chai": "4.1.0",
     "html-inspector": "0.8.2"
   },
   "peerDependencies": {

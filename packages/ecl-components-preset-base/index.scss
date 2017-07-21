@@ -17,11 +17,12 @@
 @import '~@ec-europa/ecl-typography-paragraphs/editor-paragraphs';
 
 // Forms
+@import '~@ec-europa/ecl-forms-labels';
 @import '~@ec-europa/ecl-forms-checkboxes';
 @import '~@ec-europa/ecl-forms-feedback-messages';
+@import '~@ec-europa/ecl-forms-file-uploads';
 @import '~@ec-europa/ecl-forms-form-groups';
 @import '~@ec-europa/ecl-forms-help-blocks';
-@import '~@ec-europa/ecl-forms-labels';
 @import '~@ec-europa/ecl-forms-legends';
 @import '~@ec-europa/ecl-forms-radios';
 @import '~@ec-europa/ecl-forms-selects';
@@ -31,12 +32,14 @@
 // Other atoms
 @import '~@ec-europa/ecl-blockquotes';
 @import '~@ec-europa/ecl-buttons';
+@import '~@ec-europa/ecl-date-blocks';
 @import '~@ec-europa/ecl-fields';
 @import '~@ec-europa/ecl-links';
 @import '~@ec-europa/ecl-logos';
 @import '~@ec-europa/ecl-messages';
 @import '~@ec-europa/ecl-meta';
 @import '~@ec-europa/ecl-site-switchers';
+@import '~@ec-europa/ecl-social-icons';
 @import '~@ec-europa/ecl-tables';
 @import '~@ec-europa/ecl-tags';
 
@@ -53,12 +56,14 @@
 @import '~@ec-europa/ecl-banners';
 @import '~@ec-europa/ecl-breadcrumbs';
 @import '~@ec-europa/ecl-datepickers';
+@import '~@ec-europa/ecl-dialogs';
 @import '~@ec-europa/ecl-dropdowns';
 @import '~@ec-europa/ecl-expandables';
 @import '~@ec-europa/ecl-featured-items';
 @import '~@ec-europa/ecl-files';
 @import '~@ec-europa/ecl-footers';
 @import '~@ec-europa/ecl-lang-select-sites';
+@import '~@ec-europa/ecl-navigation-inpages';
 @import '~@ec-europa/ecl-link-blocks';
 @import '~@ec-europa/ecl-pagers';
 @import '~@ec-europa/ecl-rss-links';
@@ -74,11 +79,13 @@
 @import '~@ec-europa/ecl-site-headers';
 
 // Utilities
-@import '~@ec-europa//ecl-clearfix';
-@import '~@ec-europa//ecl-flex';
-@import '~@ec-europa//ecl-colorize';
-@import '~@ec-europa//ecl-font-size';
-@import '~@ec-europa//ecl-margin';
-@import '~@ec-europa//ecl-padding';
-@import '~@ec-europa//ecl-ratio';
-@import '~@ec-europa//ecl-screen-reader';
+@import '~@ec-europa/ecl-clearfix';
+@import '~@ec-europa/ecl-flex';
+@import '~@ec-europa/ecl-colorize';
+@import '~@ec-europa/ecl-font-size';
+@import '~@ec-europa/ecl-margin';
+@import '~@ec-europa/ecl-padding';
+@import '~@ec-europa/ecl-ratio';
+@import '~@ec-europa/ecl-screen-reader';
+@import '~@ec-europa/ecl-text';
+@import '~@ec-europa/ecl-z-index';
