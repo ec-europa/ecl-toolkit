@@ -1,3 +1,14 @@
+## 0.15.2 (2017-07-24)
+
+#### :house: Internal
+
+*   `ecl-builder`, `ecl-fractal-theme`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#43](https://github.com/ec-europa/ecl-toolkit/pull/43) chore(package): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.15.1 (2017-07-21)
 
 #### :bug: Bug Fix
