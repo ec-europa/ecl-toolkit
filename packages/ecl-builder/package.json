@@ -14,7 +14,7 @@
     "autoprefixer": "7.1.2",
     "babel-eslint": "7.2.3",
     "babel-preset-env": "1.6.0",
-    "browserslist": "2.2.0",
+    "browserslist": "2.2.2",
     "commander": "2.11.0",
     "cssnano": "3.10.0",
     "findup-sync": "1.0.0",
