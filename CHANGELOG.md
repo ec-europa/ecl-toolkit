@@ -1,3 +1,19 @@
+## 0.15.3 (2017-07-30)
+
+#### :bug: Bug Fix
+
+*   `ecl-builder`
+    *   [#44](https://github.com/ec-europa/ecl-toolkit/pull/44) fix(warning): add callbacks to avoid deprecation warnings - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### :house: Internal
+
+*   `eslint-config-ecl`
+    *   [#45](https://github.com/ec-europa/ecl-toolkit/pull/45) chore(package): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.15.2 (2017-07-24)
 
 #### :house: Internal
