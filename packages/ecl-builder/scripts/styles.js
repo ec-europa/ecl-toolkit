@@ -8,6 +8,10 @@ const postcssNormalize = require('postcss-normalize');
 const mkdirp = require('mkdirp');
 const findup = require('findup-sync');
 
+const handleError = err => {
+  if (err) throw err;
+};
+
 module.exports = (entry, dest, options) => {
   const plugins = [postcssNormalize(), autoprefixer()];
 
@@ -67,31 +71,25 @@ module.exports = (entry, dest, options) => {
       },
     },
     (sassErr, sassResult) => {
-      if (!sassErr) {
-        postcss(plugins)
-          .process(sassResult.css, {
-            map: postcssSourceMap,
-            from: entry,
-            to: dest,
-          })
-          .then(postcssResult => {
-            mkdirp(path.dirname(dest), mkdirpErr => {
-              if (mkdirpErr) {
-                console.error(mkdirpErr);
-                process.exit(1);
-                return;
-              }
+      if (sassErr) throw sassErr;
 
-              fs.writeFile(dest, postcssResult.css);
-              if (postcssResult.map) {
-                fs.writeFile(`${dest}.map`, postcssResult.map);
-              }
-            });
+      postcss(plugins)
+        .process(sassResult.css, {
+          map: postcssSourceMap,
+          from: entry,
+          to: dest,
+        })
+        .then(postcssResult => {
+          mkdirp(path.dirname(dest), err => {
+            if (err) throw err;
+
+            fs.writeFile(dest, postcssResult.css, handleError);
+
+            if (postcssResult.map) {
+              fs.writeFile(`${dest}.map`, postcssResult.map, handleError);
+            }
           });
-      } else {
-        console.error(sassErr);
-        process.exit(1);
-      }
+        });
     }
   );
 };
