@@ -36,13 +36,13 @@
     "npm-run-all": "4.0.2",
     "sass-mq": "3.3.2",
     "select2": "4.0.3",
-    "stylelint-config-standard": "16.0.0",
+    "stylelint-config-standard": "17.0.0",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0",
     "watchify": "3.9.0"
   },
   "dependencies": {
-    "@frctl/fractal": "1.1.4",
+    "@frctl/fractal": "1.1.5",
     "js-beautify": "1.6.14",
     "lodash": "4.17.4",
     "lunr": "1.0.0"
