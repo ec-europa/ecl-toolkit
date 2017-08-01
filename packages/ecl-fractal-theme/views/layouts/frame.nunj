@@ -37,7 +37,7 @@
 
 <div id="frame">
 
-    <div class="Frame-header">
+    <div class="Frame-header ecl-u-bg-primary">
         {% include 'partials/header.nunj' %}
     </div>
 

@@ -1,5 +1,7 @@
-<div class="Header">
+<div class="ecl-container">
+  <div class="Header">
     <strong><a href="{{ path('/components') }}" class="Header-title">{{ frctl.get('project.title') }}</a></strong>
     <a href="{{ path('/docs') }}" class="Header-title">Documentation</a>
     <a href="{{ frctl.get('project.repo') }}" class="Header-title">GitHub</a>
+  </div>
 </div>
