@@ -1,3 +1,14 @@
+## 0.17.0 (2017-08-18)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `ecl-qa`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#47](https://github.com/ec-europa/ecl-toolkit/pull/47) chore(packages): update packages, builder, preset and fractal theme - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.16.0 (2017-08-01)
 
 #### :nail_care: Enhancement
