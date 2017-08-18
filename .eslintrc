@@ -1,4 +1,4 @@
 ---
   root: true
   extends:
-    - '@ec-europa/eslint-config-ecl'
+    - './packages/eslint-config-ecl/index.js'

@@ -2,62 +2,18 @@
 {% import "macros/navigation.nunj" as nav %}
 
 {% block page %}
-
-<header class="ecl-site-header" role="banner">
-  <div class="container-fluid ecl-site-header__container">
-    <a href="https://ec.europa.eu" class="ecl-logo ecl-logo--logotype ecl-site-header__logo" title="Home - European Commission">
-      <span class="ecl-sr-only">Home - European Commission</span>
-    </a>
-
-    <section class="ecl-site-header__top-bar" aria-label="Site tools">
-      <div class="ecl-site-header__top-bar__wrapper">
-        <div class="ecl-lang-select-sites">
-          <a href="#" class="ecl-lang-select-sites__link">
-            <span class="ecl-lang-select-sites__label">English</span>
-            <span class="ecl-lang-select-sites__code">
-              <span class="ecl-icon ecl-icon--language ecl-lang-select-sites__icon"></span>
-              <span class="ecl-lang-select-sites__code-text">en</span>
-            </span>
-          </a>
-        </div>
-
-        <form class="ecl-search-form">
-          <label class="ecl-search-form__textfield-wrapper">
-            <span class="ecl-sr-only">Search this website</span>
-            <input type="ecl-search" id="search-components" class="ecl-search-form__textfield ecl-text-input" size="60" maxlength="128" title="ecl-search">
-            <script id="searchIndexPath" type="application/json">{ "path": "{{ path('/assets/searchIndex.json') }}" }</script>
-          </label>
-
-          <button class="ecl-search-form__button ecl-button ecl-button--form" value="ecl-search" type="submit">Search</button>
-        </form>
-      </div>
-    </section>
-  </div>
-</header>
-
-<div id="frame">
-
-    <div class="Frame-header ecl-u-bg-primary">
-        {% include 'partials/header.nunj' %}
-    </div>
-
+  <div id="frame">
     <div class="Frame-body" data-role="body">
-
-        <div class="Frame-panel Frame-panel--main" data-role="main">
-            <div class="Frame-inner" id="pjax-container">
-            {% block content %}{% endblock %}
-            </div>
+      <div class="Frame-panel Frame-panel--main" data-role="main">
+        <div class="Frame-inner" id="pjax-container">
+          {% block content %}{% endblock %}
         </div>
-
-        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
-            {% include 'partials/navigation/navigation.nunj' %}
-        </div>
+      </div>
+      <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+        <nav class="Navigation">
+          {% include 'partials/navigation/navigation.nunj' %}
+        </nav>
+      </div>
     </div>
-
-    <div class="Frame-footer">
-        {% include 'partials/footer.nunj' %}
-    </div>
-
-</div>
-
+  </div>
 {% endblock %}

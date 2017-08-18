@@ -17,13 +17,15 @@
 @import '~@ec-europa/ecl-typography-paragraphs/editor-paragraphs';
 
 // Forms
+@import '~@ec-europa/ecl-forms-forms';
+@import '~@ec-europa/ecl-forms-fieldsets';
+@import '~@ec-europa/ecl-forms-legends';
+@import '~@ec-europa/ecl-forms-form-groups';
 @import '~@ec-europa/ecl-forms-labels';
 @import '~@ec-europa/ecl-forms-checkboxes';
 @import '~@ec-europa/ecl-forms-feedback-messages';
 @import '~@ec-europa/ecl-forms-file-uploads';
-@import '~@ec-europa/ecl-forms-form-groups';
 @import '~@ec-europa/ecl-forms-help-blocks';
-@import '~@ec-europa/ecl-forms-legends';
 @import '~@ec-europa/ecl-forms-radios';
 @import '~@ec-europa/ecl-forms-radio-groups';
 @import '~@ec-europa/ecl-forms-selects';
@@ -57,6 +59,7 @@
 // Molecules
 @import '~@ec-europa/ecl-banners';
 @import '~@ec-europa/ecl-breadcrumbs';
+@import '~@ec-europa/ecl-carousels';
 @import '~@ec-europa/ecl-comments';
 @import '~@ec-europa/ecl-context-navs';
 @import '~@ec-europa/ecl-datepickers';
@@ -78,7 +81,7 @@
 
 // Organisms
 @import '~@ec-europa/ecl-accordions';
-@import '~@ec-europa/ecl-galleries';
+@import '~@ec-europa/ecl-gallery-base';
 @import '~@ec-europa/ecl-navigation-lists';
 @import '~@ec-europa/ecl-navigation-menus';
 @import '~@ec-europa/ecl-page-headers';
@@ -95,4 +98,5 @@
 @import '~@ec-europa/ecl-ratio';
 @import '~@ec-europa/ecl-screen-reader';
 @import '~@ec-europa/ecl-text';
+@import '~@ec-europa/ecl-u-display';
 @import '~@ec-europa/ecl-z-index';

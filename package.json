@@ -24,18 +24,15 @@
   },
   "homepage": "https://github.com/ec-europa/ecl-toolkit#readme",
   "devDependencies": {
-    "eslint": "4.3.0",
+    "eslint": "4.4.1",
     "husky": "0.14.3",
     "lerna": "2.0.0",
     "lerna-changelog": "0.6.0",
-    "lint-staged": "4.0.2",
+    "lint-staged": "4.0.3",
     "npm-run-all": "4.0.2",
-    "prettier-eslint-cli": "4.1.1"
+    "prettier-eslint-cli": "4.2.0"
   },
   "lint-staged": {
     "*.js": ["prettier-eslint --write", "git add"]
-  },
-  "dependencies": {
-    "@ec-europa/eslint-config-ecl": "0.4.1"
   }
 }
