@@ -2,7 +2,7 @@
   "name": "@ec-europa/ecl-components-preset-base",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Europa Component Library base preset",
   "main": "index.js",
   "style": "index.scss",
