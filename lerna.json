@@ -16,7 +16,8 @@
   },
   "commands": {
     "bootstrap": {
-      "concurrency": 1
+      "concurrency": 1,
+      "hoist": true
     },
     "publish": {
       "ignore": ["*.md", "test/**"]

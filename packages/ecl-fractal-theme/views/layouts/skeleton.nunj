@@ -16,9 +16,11 @@
     {% include 'partials/head.nunj' %}
 </head>
 <body class="language-en">
-
-{% block page %}{% endblock %}
-
-{% include 'partials/foot.nunj' %}
+  {% include 'partials/header.nunj' %}
+  <main>
+    <a id="main-content" tabindex="-1"></a>
+    {% block page %}{% endblock %}
+  </main>
+  {% include 'partials/foot.nunj' %}
 </body>
 </html>

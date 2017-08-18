@@ -38,6 +38,7 @@ module.exports = (entry, dest, options) => {
             },
           ],
         ],
+        plugins: ['external-helpers'],
       }),
       process.env.NODE_ENV === 'production' && uglify(),
     ],

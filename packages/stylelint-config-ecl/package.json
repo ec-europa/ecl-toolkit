@@ -12,8 +12,8 @@
     "stylelint": "^8.0.0"
   },
   "dependencies": {
-    "stylelint-config-sass-guidelines": "3.0.1",
+    "stylelint-config-sass-guidelines": "3.1.0",
     "stylelint-config-standard": "17.0.0",
-    "stylelint-selector-bem-pattern": "1.1.0"
+    "stylelint-selector-bem-pattern": "1.1.1"
   }
 }

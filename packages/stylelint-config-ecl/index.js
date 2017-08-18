@@ -15,6 +15,7 @@ module.exports = {
     'plugin/selector-bem-pattern': {
       componentName: /^[a-z][-a-zA-Z0-9]+$/,
       componentSelectors: bemSelector,
+      ignoreSelectors: /^\.no-js$/,
     },
     'selector-class-pattern': null,
     'at-rule-no-unknown': [
@@ -23,11 +24,17 @@ module.exports = {
         ignoreAtRules: [
           'at-root',
           'debug',
+          'each',
+          'else',
           'error',
           'extend',
+          'for',
+          'if',
           'import-normalize',
           'include',
+          'mixin',
           'warn',
+          'while',
         ],
       },
     ],
