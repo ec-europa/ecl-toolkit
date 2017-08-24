@@ -1,3 +1,94 @@
 {% for script in frctl.theme.get('scripts') %}
-<script src="{{ path(script) }}?cachebust={{ frctl.theme.get('version') }}"></script>
+  <script src="{{ path(script) }}?cachebust={{ frctl.theme.get('version') }}"></script>
+  <script src="https://cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
+  <script>
+    (function($) {
+      // Tutorial available at: https://auth0.com/blog/building-serverless-apps-with-webtask/
+
+      // We'll instantiate lock, passing our Auth0 Client ID and Domain
+      var lock = new Auth0Lock(
+        'WUMo3n94BWUdPe9afJT8oowW0NYigH22',
+        'kalinchernev.eu.auth0.com',
+        {
+          allowedConnections: ['Username-Password-Authentication', 'google-oauth2'],
+          rememberLastLogin: false,
+          socialButtonStyle: 'big',
+          languageDictionary: {'title': 'ECL'},
+          language: 'en',
+          theme: {
+            'logo': 'https://ec-europa.github.io/europa-component-library/framework/images/svg/logo/logo--en.svg',
+            'primaryColor': '#004494'
+          },
+          auth: {
+            redirectUrl: '',
+            responseType: '200',
+            params: {
+              scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+            }
+          }
+        }
+      );
+
+      // The login function once invoked will display the Lock widget
+      // Upon successful login, we'll store the user profile and token in localStorage
+      function login() {
+        lock.show();
+      }
+
+      lock.on('authenticated', function(authResult) {
+        console.log(authResult);
+        lock.getProfile(authResult.idToken, function(error, profile) {
+
+          if (error) {
+            return alert(error.message);
+          }
+
+          localStorage.setItem('profile', JSON.stringify(profile));
+          localStorage.setItem('token', authResult.idToken);
+          updateAuthenticationStatus();
+        });
+      });
+
+
+      // The logout function, will remove the user information and token from localStorage
+      function logout() {
+        localStorage.removeItem('profile');
+        localStorage.removeItem('token');
+        updateAuthenticationStatus();
+      }
+
+      // The getUser helper function will get the current status of our user
+      // and display user information or a link to login if there is no
+      // authenticated user
+      function updateAuthenticationStatus() {
+        var $user = $('#user');
+        var $login = $('#login');
+
+        $user.empty();
+        $login.empty();
+
+        var user = localStorage.getItem('profile');
+
+        if (user) {
+          user = JSON.parse(user);
+          $user.show().append('<a class="ecl-navigation-list__link ecl-link" href="#">' + user.email + ' (Log out)</a>');
+          $user.on('click', logout);
+
+          $login.hide();
+        }
+        else {
+          $login.show().append('<a class="ecl-navigation-list__link ecl-link" href="#">Log in</a>');
+          $login.on('click', login);
+
+          $user.hide();
+        }
+      }
+
+      // Any time a page is loaded, we'll check to see if there is a user.
+      $(document).ready(function() {
+        updateAuthenticationStatus();
+      });
+
+    }(jQuery))
+  </script>
 {% endfor %}

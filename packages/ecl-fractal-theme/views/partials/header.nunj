@@ -7,6 +7,15 @@
     <li class="ecl-site-switcher__option"><a class="ecl-link ecl-site-switcher__link" href="#">Commission and its priorities</a></li>
     <li class="ecl-site-switcher__option ecl-site-switcher__option--is-selected"><a class="ecl-link ecl-site-switcher__link" href="#">Policies, information and services</a></li>
   </ul>
+  <div class="ecl-container">
+    <nav class="ecl-navigation-list-wrapper" style="float: right">
+      <h2 class="ecl-sr-only">User menu</h2>
+      <ul class="ecl-navigation-list ecl-navigation-list--small">
+        <li class="ecl-navigation-list__item" id="login"></li>
+        <li class="ecl-navigation-list__item" id="user"></li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 <header class="ecl-site-header" role="banner">
