@@ -6,16 +6,11 @@ const commonjs = require('rollup-plugin-commonjs');
 const uglify = require('rollup-plugin-uglify');
 const browserslist = require('browserslist');
 
-module.exports = (entry, dest, options) => {
+module.exports = (input, dest, options) => {
   const browserslistConfig = browserslist();
 
-  const config = {
-    entry,
-    dest,
-    format: 'iife',
-    sourceMap: options.sourceMap,
-    moduleName: options.moduleName,
-    exports: 'named',
+  const inputOptions = {
+    input,
     plugins: [
       resolve({
         jsnext: true,
@@ -44,7 +39,15 @@ module.exports = (entry, dest, options) => {
     ],
   };
 
-  rollup.rollup(config).then(bundle => {
-    bundle.write(config);
+  const outputOptions = {
+    file: dest,
+    format: 'iife',
+    name: options.name || options.moduleName,
+    sourcemap: options.sourcemap || options.sourceMap,
+    exports: 'named',
+  };
+
+  rollup.rollup(inputOptions).then(bundle => {
+    bundle.write(outputOptions);
   });
 };

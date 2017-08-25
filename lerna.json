@@ -1,5 +1,5 @@
 {
-  "lerna": "2.0.0",
+  "lerna": "2.1.0",
   "version": "independent",
   "npmClient": "yarn",
   "changelog": {
@@ -16,7 +16,6 @@
   },
   "commands": {
     "bootstrap": {
-      "concurrency": 1,
       "hoist": true
     },
     "publish": {
