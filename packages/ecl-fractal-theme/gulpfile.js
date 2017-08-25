@@ -1,9 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
-const sassGlob = require('gulp-sass-glob');
-const stylelint = require('gulp-stylelint');
 const uglify = require('gulp-uglify');
 const browserify = require('browserify');
 const watchify = require('watchify');
@@ -19,35 +15,6 @@ gulp.task('js', ['clean:js'], () => compileJS());
 gulp.task('js:watch', () => compileJS(true));
 
 gulp.task('clean:js', () => del(['./dist/js']));
-
-//
-// CSS
-//
-gulp.task('css', () =>
-  gulp
-    .src('./assets/scss/fractal.scss')
-    .pipe(
-      stylelint({
-        reporters: [
-          {
-            formatter: 'string',
-            console: true,
-          },
-        ],
-      })
-    )
-    .pipe(sassGlob())
-    .pipe(sass({ includePaths: 'node_modules' }).on('error', sass.logError))
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/css'))
-);
-
-gulp.task('css:clean', () => del(['./dist/css']));
-
-gulp.task('css:watch', () => {
-  gulp.watch('./assets/scss/**/*.scss', ['css']);
-});
 
 //
 // Images
@@ -66,9 +33,9 @@ gulp.task('img:watch', () => {
 //
 // Task sets
 //
-gulp.task('watch', ['css:watch', 'js:watch', 'img:watch']);
+gulp.task('watch', ['js:watch', 'img:watch']);
 
-gulp.task('default', ['css', 'js', 'img']);
+gulp.task('default', ['js', 'img']);
 
 //
 // Utils

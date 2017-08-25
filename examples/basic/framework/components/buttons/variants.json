@@ -1,11 +1,9 @@
 [{
   "name": "default",
-  "label": "Primary button, block-wide, with arrow-down",
+  "label": "Default",
   "context": {
     "label": "Default",
-    "modifier": "primary",
-    "isBlock": true,
-    "icon": "arrow-down"
+    "modifier": "default"
   }
 }, {
   "name": "primary",
@@ -21,56 +19,10 @@
   }
 }, {
   "name": "call",
+  "label": "Call-to-action",
   "context": {
-    "label": "Call to action",
-    "modifier": "call"
-  }
-}, {
-  "name": "form",
-  "context": {
-    "label": "Form",
-    "modifier": "form"
-  }
-}, {
-  "name": "light",
-  "context": {
-    "label": "Light",
-    "modifier": "light"
-  }
-}, {
-  "name": "arrow-up",
-  "context": {
-    "label": "Icon: Arrow up",
-    "icon": "arrow-up"
-  }
-}, {
-  "name": "arrow-down",
-  "context": {
-    "label": "Icon: Arrow down",
-    "icon": "arrow-down"
-  }
-}, {
-  "name": "caret-up",
-  "context": {
-    "label": "Icon: Caret up",
-    "icon": "caret-up"
-  }
-}, {
-  "name": "caret-right",
-  "context": {
-    "label": "Icon: Caret right",
+    "label": "Call-to-action",
+    "modifier": "call",
     "icon": "caret-right"
-  }
-}, {
-  "name": "caret-down",
-  "context": {
-    "label": "Icon: Caret down",
-    "icon": "caret-down"
-  }
-}, {
-  "name": "caret-left",
-  "context": {
-    "label": "Icon: Caret left",
-    "icon": "caret-left"
   }
 }]

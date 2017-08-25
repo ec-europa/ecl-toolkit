@@ -26,7 +26,7 @@ module.exports = options => {
   ];
 
   config.nav = config.nav || ['search', 'docs', 'components', 'assets'];
-  config.styles = [`/${config.static.mount}/ecl/ecl.css`]
+  config.styles = []
     .concat(config.styles)
     .concat(config.stylesheet)
     .filter(url => url)

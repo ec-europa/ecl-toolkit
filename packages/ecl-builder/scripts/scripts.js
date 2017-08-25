@@ -7,8 +7,6 @@ const uglify = require('rollup-plugin-uglify');
 const browserslist = require('browserslist');
 
 module.exports = (input, dest, options) => {
-  const browserslistConfig = browserslist();
-
   const inputOptions = {
     input,
     plugins: [
@@ -24,7 +22,7 @@ module.exports = (input, dest, options) => {
             babelPresetEnv,
             {
               targets: {
-                browsers: browserslistConfig,
+                browsers: browserslist(),
                 uglify: process.env.NODE_ENV === 'production',
               },
               modules: false,
@@ -47,7 +45,5 @@ module.exports = (input, dest, options) => {
     exports: 'named',
   };
 
-  rollup.rollup(inputOptions).then(bundle => {
-    bundle.write(outputOptions);
-  });
+  rollup.rollup(inputOptions).then(bundle => bundle.write(outputOptions));
 };

@@ -12,7 +12,7 @@
 <header class="ecl-site-header" role="banner">
   <div class="ecl-container ecl-site-header__container">
     <a href="https://ec.europa.eu" class="ecl-logo ecl-logo--logotype ecl-site-header__logo" title="Home - European Commission">
-      <span class="ecl-sr-only">Home - European Commission</span>
+      <span class="ecl-u-sr-only">Home - European Commission</span>
     </a>
     <div class="ecl-lang-select-sites ecl-site-header__lang-select-sites">
       <a href="#" class="ecl-lang-select-sites__link">
@@ -25,7 +25,7 @@
     </div>
     <form class="ecl-search-form ecl-site-header__search">
       <label class="ecl-search-form__textfield-wrapper">
-        <span class="ecl-sr-only">Search this website</span>
+        <span class="ecl-u-sr-only">Search this website</span>
         <input type="search" class="ecl-text-input ecl-search-form__textfield" id="search-components" name="search-components" />
         <script id="searchIndexPath" type="application/json">{ "path": "{{ path('/assets/searchIndex.json') }}" }</script>
       </label>
@@ -37,7 +37,7 @@
 <div class="ecl-page-header">
   <div class="ecl-container">
     <nav class="ecl-breadcrumbs " aria-label="breadcrumbs">
-      <span class="ecl-sr-only">You are here:</span>
+      <span class="ecl-u-sr-only">You are here:</span>
       <ol class="ecl-breadcrumbs__segments-wrapper">
         <li class="ecl-breadcrumbs__segment ecl-breadcrumbs__segment--first">
           <a href="http://europa.eu/index_en.htm" class="ecl-breadcrumbs__link">European Commission</a>

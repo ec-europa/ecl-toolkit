@@ -1,7 +1,22 @@
+// Import normalize.css
+@import-normalize;
+
+// -----------------------------------------------------------------------------
+// Vendor (node_modules)
+// -----------------------------------------------------------------------------
+
+@import '~sass-mq/mq';
+@import '~highlight.js/styles/github';
+@import '~select2/dist/css/select2';
+
+// Fractal stuff
 $color-header-background: #14f;
 $color-header-content: #fff;
 $color-link: #28f;
 
-@import "./theme";
-@import "./core/all";
-@import "./components/**/*.scss";
+// @import './theme';
+// @import './core/all';
+// @import './components';
+
+// Import base preset
+@import '~@ec-europa/ecl-components-preset-base';
