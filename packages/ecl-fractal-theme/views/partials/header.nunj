@@ -11,8 +11,13 @@
     <nav class="ecl-navigation-list-wrapper" style="float: right">
       <h2 class="ecl-sr-only">User menu</h2>
       <ul class="ecl-navigation-list ecl-navigation-list--small">
-        <li class="ecl-navigation-list__item" id="login"></li>
-        <li class="ecl-navigation-list__item" id="user"></li>
+        <li class="ecl-navigation-list__item" id="login">
+          <a class="ecl-navigation-list__link ecl-link" href="#">Log In</a>
+        </li>
+        <li class="ecl-navigation-list__item" id="logout">
+          <a class="ecl-navigation-list__link ecl-link" href="#">Log out</a>
+        </li>
+        <li class="ecl-navigation-list__item" id="auth-status"></li>
       </ul>
     </nav>
   </div>
