@@ -11,6 +11,8 @@ const framer = require('./components/frame');
 const Tree = require('./components/tree');
 const Pen = require('./components/pen');
 const Search = require('./search');
+const auth = require('./auth');
+const updateButton = require('./updateButton');
 
 global.fractal = {
   events,
@@ -51,3 +53,11 @@ function loadPen() {
     new Search();
   }, 1);
 }
+
+// Setup authentication and update button.
+// When finding a button "Suggest updates" we'll update its link location.
+// When the user clicks on the link, he will be redirected to github to make the changes.
+$(document).ready(() => {
+  auth();
+  updateButton();
+});

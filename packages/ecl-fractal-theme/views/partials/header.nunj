@@ -7,6 +7,20 @@
     <li class="ecl-site-switcher__option"><a class="ecl-link ecl-site-switcher__link" href="#">Commission and its priorities</a></li>
     <li class="ecl-site-switcher__option ecl-site-switcher__option--is-selected"><a class="ecl-link ecl-site-switcher__link" href="#">Policies, information and services</a></li>
   </ul>
+  <div class="ecl-container">
+    <nav class="ecl-navigation-list-wrapper" style="float: right">
+      <h2 class="ecl-sr-only">User menu</h2>
+      <ul class="ecl-navigation-list ecl-navigation-list--small">
+        <li class="ecl-navigation-list__item" id="login">
+          <a class="ecl-navigation-list__link ecl-link" href="#">Log In</a>
+        </li>
+        <li class="ecl-navigation-list__item" id="logout">
+          <a class="ecl-navigation-list__link ecl-link" href="#">Log out</a>
+        </li>
+        <li class="ecl-navigation-list__item" id="auth-status"></li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 <header class="ecl-site-header" role="banner">
@@ -72,6 +86,9 @@
       </li>
       <li class="ecl-navigation-menu__item">
         <a href="{{ frctl.get('project.repo') }}" class="ecl-navigation-menu__link  ecl-link--external">GitHub</a>
+      </li>
+      <li class="ecl-navigation-menu__item ecl-auth-only" aria-hidden="true">
+        <a href="#" class="ecl-navigation-menu__link" id="update-docs">Suggest updates</a>
       </li>
     </ul>
   </div>
