@@ -87,6 +87,9 @@
       <li class="ecl-navigation-menu__item">
         <a href="{{ frctl.get('project.repo') }}" class="ecl-navigation-menu__link  ecl-link--external">GitHub</a>
       </li>
+      <li class="ecl-navigation-menu__item ecl-auth-only" aria-hidden="true">
+        <a href="#" class="ecl-navigation-menu__link  ecl-link--external">Suggest updates</a>
+      </li>
     </ul>
   </div>
 </nav>

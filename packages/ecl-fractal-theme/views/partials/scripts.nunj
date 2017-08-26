@@ -43,12 +43,24 @@
       }
 
       function toggleAuthButtonsDisplay() {
+        var authLinks = document.querySelectorAll('.ecl-auth-only');
+
         if (isAuthenticated()) {
           loginBtn.style.display = 'none';
           logoutBtn.style.display = 'inline-block';
+
+          authLinks.forEach(function(privateLink) {
+            privateLink.setAttribute('aria-hidden', 'false');
+            privateLink.style.display = 'block';
+          });
         } else {
           loginBtn.style.display = 'inline-block';
           logoutBtn.style.display = 'none';
+
+          authLinks.forEach(function(privateLink) {
+            privateLink.setAttribute('aria-hidden', 'true');
+            privateLink.style.display = 'none';
+          });
         }
       }
 
