@@ -44,7 +44,7 @@ const setGithubLocation = pathSegments => {
       const pkg = component[0];
       // Fine the location of the component.
       $.get(
-        `${github}/search/code?q=ecl-${pkg}+in:file+language:json+repo:${ecl}`,
+        `${github}/search/code?q=${pkg}+in:file+language:json+repo:${ecl}`,
         data => {
           if (data.items !== undefined && data.items.length) {
             // Wild guess/hope that the search found the package.json of the right component.
