@@ -34,7 +34,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} )) }}"><span>{{ frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} ) }}</span></a></span>
+                    <span class="Meta-value"><a href="{{ path(frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} )) }}"><span>{{ frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} ) }}</span></a></span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>

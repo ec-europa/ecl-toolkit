@@ -1,10 +1,9 @@
-const $ = global.jQuery;
-const storage = require('../storage');
-const events = require('../events');
-require('jquery-resizable-dom/dist/jquery-resizable.js');
+/* eslint-disable import/no-extraneous-dependencies */
+import $ from 'jquery';
+import storage from '../storage';
+import events from '../events';
 
 class Preview {
-
   constructor(el) {
     this._el = $(el);
     this._id = this._el[0].id;
@@ -16,7 +15,10 @@ class Preview {
 
   _init() {
     const dir = $('html').attr('dir');
-    const initialWidth = storage.get('preview.width', this._resizer.outerWidth());
+    const initialWidth = storage.get(
+      'preview.width',
+      this._resizer.outerWidth()
+    );
     let handleClicks = 0;
 
     if (initialWidth === this._el.outerWidth()) {
@@ -38,6 +40,7 @@ class Preview {
       }
     });
 
+    /*
     this._resizer.resizable({
       handleSelector: this._handle,
       resizeHeight: false,
@@ -57,6 +60,7 @@ class Preview {
       },
       resizeWidthFrom: dir === 'rtl' ? 'left' : 'right',
     });
+    */
   }
 
   disableEvents() {
@@ -68,4 +72,4 @@ class Preview {
   }
 }
 
-module.exports = Preview;
+export default Preview;

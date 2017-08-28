@@ -1,11 +1,10 @@
-const $ = global.jQuery;
-const storage = require('../storage');
-const utils = require('../utils');
-const events = require('../events');
+/* eslint-disable import/no-extraneous-dependencies */
+import $ from 'jquery';
+import storage from '../storage';
+import utils from '../utils';
+import events from '../events';
 
-module.exports = (element) => {
-  const win = $(window);
-  const doc = $(document);
+export default element => {
   const el = $(element);
   const dir = $('html').attr('dir');
   const body = el.find('> [data-role="body"]');
@@ -35,7 +34,7 @@ module.exports = (element) => {
 
   sidebar.scrollTop(scrollPos);
 
-  handle.on('mousedown', (e) => {
+  handle.on('mousedown', e => {
     handleClicks += 1;
 
     setTimeout(() => {
@@ -50,6 +49,7 @@ module.exports = (element) => {
     }
   });
 
+  /*
   sidebar.resizable({
     handleSelector: handle,
     resizeHeight: false,
@@ -67,19 +67,16 @@ module.exports = (element) => {
       }
     },
     resizeWidthFrom: dir === 'rtl' ? 'left' : 'right',
-  });
+  }); */
 
-  sidebar.on('scroll', utils.debounce(() => {
-    storage.set('frame.scrollPos', sidebar.scrollTop());
-  }, 50));
+  sidebar.on(
+    'scroll',
+    utils.debounce(() => {
+      storage.set('frame.scrollPos', sidebar.scrollTop());
+    }, 50)
+  );
 
   toggle.on('click', toggleSidebar);
-
-  win.on('resize', () => {
-    if (sidebarState === 'open' && doc.outerWidth() < (sidebarWidth + 50)) {
-      // setSidebarWidth(doc.outerWidth() - 50);
-    }
-  });
 
   // Global event listeners
 
@@ -102,9 +99,7 @@ module.exports = (element) => {
     }
 
     const w = sidebar.outerWidth();
-    const translate = (dir === 'rtl')
-      ? `${w}px`
-      : `${-1 * w}px`;
+    const translate = dir === 'rtl' ? `${w}px` : `${-1 * w}px`;
     const sidebarProps = {
       transform: `translate3d(${translate}, 0, 0)`,
     };
@@ -114,9 +109,7 @@ module.exports = (element) => {
     } else {
       sidebarProps.marginRight = `${-1 * w}px`;
     }
-    sidebarProps.transition = isInitialClose
-      ? 'none'
-      : '.3s ease all';
+    sidebarProps.transition = isInitialClose ? 'none' : '.3s ease all';
     body.css(sidebarProps);
     sidebarState = 'closed';
     el.addClass('is-closed');

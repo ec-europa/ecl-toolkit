@@ -1,7 +1,8 @@
-const $ = global.jQuery;
-const config = require('./config');
+/* eslint-disable import/no-extraneous-dependencies */
+import $ from 'jquery';
+import config from './config';
 
-module.exports = {
+export default {
   debounce(func, wait, immediate) {
     let timeout;
     return function handleDebounce(...args) {
@@ -25,5 +26,4 @@ module.exports = {
   isSmallScreen() {
     return $(document).width() < config.breakpoints.navCollapse;
   },
-
 };

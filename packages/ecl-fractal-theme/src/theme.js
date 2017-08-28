@@ -26,6 +26,7 @@ module.exports = options => {
   ];
 
   config.nav = config.nav || ['search', 'docs', 'components', 'assets'];
+
   config.styles = []
     .concat(config.styles)
     .concat(config.stylesheet)
@@ -34,7 +35,11 @@ module.exports = options => {
       url =>
         url === 'default' ? `/${config.static.mount}/css/fractal.css` : url
     );
-  config.scripts = []
+
+  config.scripts = [
+    `/${config.static.mount}/js/jquery.min.js`,
+    `/${config.static.mount}/js/jquery-resizable.min.js`,
+  ]
     .concat(config.scripts)
     .filter(url => url)
     .map(
@@ -43,6 +48,7 @@ module.exports = options => {
           ? `/${config.static.mount}/js/ecl-fractal-theme.js`
           : url
     );
+
   config.favicon = config.favicon || `/${config.static.mount}/favicon.ico`;
 
   const theme = new Theme(Path.join(__dirname, '..', 'views'), config);

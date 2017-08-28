@@ -18,7 +18,7 @@
 <ul class="AssetList">
     {% for asset in assetSource.flatten().items() %}
     <li class="AssetList-asset">
-        <a class="AssetList-link" href="{{ path( asset | url ) }}" data-no-pjax>
+        <a class="AssetList-link" href="{{ path( asset | url ) }}">
             <span class="AssetList-icon">
             {% include 'icons/asset.svg' %}
             </span>

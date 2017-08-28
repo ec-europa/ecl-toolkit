@@ -1,7 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  scripts: [],
+  scripts: [
+    {
+      entry: path.resolve(__dirname, './assets/js/ecl-fractal-theme.js'),
+      dest: path.resolve(__dirname, './dist/js/ecl-fractal-theme.js'),
+      options: {
+        sourceMap: false,
+        moduleName: 'fractal',
+      },
+    },
+  ],
   styles: [
     {
       entry: path.resolve(__dirname, './assets/scss/fractal.scss'),
@@ -36,6 +45,19 @@ module.exports = {
       patterns: 'favicon.ico',
       from: path.resolve(__dirname, './assets'),
       to: path.resolve(__dirname, './dist'),
+    },
+    {
+      patterns: 'jquery.min.js',
+      from: path.resolve(__dirname, '../../node_modules/jquery/dist'),
+      to: path.resolve(__dirname, './dist/js'),
+    },
+    {
+      patterns: 'jquery-resizable.min.{js,js.map}',
+      from: path.resolve(
+        __dirname,
+        '../../node_modules/jquery-resizable-dom/dist'
+      ),
+      to: path.resolve(__dirname, './dist/js'),
     },
   ],
 };

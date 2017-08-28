@@ -1,12 +1,11 @@
-const $ = global.jQuery;
-const storage = require('../storage');
-const events = require('../events');
-const Preview = require('./preview');
-const Browser = require('./browser');
-require('jquery-resizable-dom/dist/jquery-resizable.js');
+/* eslint-disable import/no-extraneous-dependencies */
+import $ from 'jquery';
+import storage from '../storage';
+import events from '../events';
+import Preview from './preview';
+import Browser from './browser';
 
 class Pen {
-
   constructor(el) {
     this._el = $(el);
     this._id = this._el[0].id;
@@ -17,10 +16,14 @@ class Pen {
   }
 
   _init() {
-    const initialHeight = storage.get('pen.previewHeight', (this._el.outerHeight() / 2));
+    const initialHeight = storage.get(
+      'pen.previewHeight',
+      this._el.outerHeight() / 2
+    );
+
     const preview = new Preview(this._previewPanel);
     const browser = new Browser(this._browser);
-    let state = storage.get('pen.previewState', 'open');
+    const state = storage.get('pen.previewState', 'open');
     let handleClicks = 0;
     let dblClick = false;
 
@@ -46,6 +49,7 @@ class Pen {
       }
     });
 
+    /*
     this._previewPanel.resizable({
       handleSelector: this._handle,
       resizeWidth: false,
@@ -60,7 +64,10 @@ class Pen {
         events.trigger('end-dragging');
         if (dblClick) {
           if (state === 'closed') {
-            this._previewPanel.css('height', storage.get('pen.onClosedHeight', initialHeight));
+            this._previewPanel.css(
+              'height',
+              storage.get('pen.onClosedHeight', initialHeight)
+            );
             state = 'open';
             storage.set('pen.previewState', 'open');
           } else {
@@ -79,13 +86,17 @@ class Pen {
             if (!dblClick) {
               state = 'open';
               storage.set('pen.previewState', 'open');
-              storage.set('pen.previewHeight', this._previewPanel.outerHeight());
+              storage.set(
+                'pen.previewHeight',
+                this._previewPanel.outerHeight()
+              );
             }
           }, 400);
         }
       },
     });
+    */
   }
 }
 
-module.exports = Pen;
+export default Pen;

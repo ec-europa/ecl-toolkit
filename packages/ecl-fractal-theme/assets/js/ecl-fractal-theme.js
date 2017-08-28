@@ -1,53 +1,19 @@
-global.jQuery = require('jquery');
-require('jquery-pjax');
+/* eslint-disable import/no-extraneous-dependencies, import/first */
+import $ from 'jquery';
+import 'select2';
 
-const $ = global.jQuery;
-const doc = $(document);
-const frctl = window.frctl || {};
+// Local imports
+import framer from './components/frame';
+import Tree from './components/tree';
+import Pen from './components/pen';
+import search from './search';
+import events from './events';
 
-const events = require('./events');
-const utils = require('./utils');
-const framer = require('./components/frame');
-const Tree = require('./components/tree');
-const Pen = require('./components/pen');
-const Search = require('./search');
+document.addEventListener('DOMContentLoaded', () => {
+  framer($('#frame'));
+  $.map($('[data-behaviour="tree"]'), t => new Tree(t));
+  $.map($('[data-behaviour="pen"]'), p => new Pen(p));
+  search();
+});
 
-global.fractal = {
-  events,
-};
-
-const frame = framer($('#frame'));
-$.map($('[data-behaviour="tree"]'), t => new Tree(t));
-loadPen();
-
-if (frctl.env === 'server') {
-  doc
-    .pjax(
-      'a[data-pjax], code a[href], .Prose a[href]:not([data-no-pjax]), .Browser a[href]:not([data-no-pjax])',
-      '#pjax-container',
-      {
-        fragment: '#pjax-container',
-        timeout: 10000,
-      }
-    )
-    .on('pjax:start', (e, xhr, options) => {
-      if (utils.isSmallScreen()) {
-        frame.closeSidebar();
-      }
-      frame.startLoad();
-      events.trigger('main-content-preload', options.url);
-    })
-    .on('pjax:end', () => {
-      events.trigger('main-content-loaded');
-      frame.endLoad();
-    });
-}
-
-events.on('main-content-loaded', loadPen);
-
-function loadPen() {
-  setTimeout(() => {
-    $.map($('[data-behaviour="pen"]'), p => new Pen(p));
-    new Search();
-  }, 1);
-}
+export default events;

@@ -1,9 +1,7 @@
-module.exports = {
+export default {
   get(name, fallback) {
     const result = localStorage.getItem(name);
-    return result
-      ? JSON.parse(result)
-      : fallback;
+    return result ? JSON.parse(result) : fallback;
   },
 
   set(name, value) {

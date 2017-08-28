@@ -1,4 +1,4 @@
-{% extends "layouts/pjax.nunj" if request.isPjax else "layouts/doc-frame.nunj" %}
+{% extends "layouts/doc-frame.nunj" %}
 
 {% block content %}
 

@@ -1,6 +1,7 @@
-const $ = global.jQuery;
-const storage = require('../storage');
-const events = require('../events');
+/* eslint-disable import/no-extraneous-dependencies */
+import $ from 'jquery';
+import storage from '../storage';
+import events from '../events';
 
 function getTreeUrl(urlPath) {
   const parser = document.createElement('a');
@@ -15,13 +16,16 @@ class Tree {
     this._el = $(el);
     this._id = this._el[0].id;
     this._state = storage.get(`tree.${this._id}.state`, []);
-    this._collections = $.map(this._el.find('[data-behaviour="collection"]'), c => new TreeCollection(c, this));
+    this._collections = $.map(
+      this._el.find('[data-behaviour="collection"]'),
+      c => new TreeCollection(c, this)
+    );
 
-    for (const collection of this._collections) {
+    this._collections.forEach(collection => {
       if (collection.containsCurrentItem()) {
         this._state.push(collection.id);
       }
-    }
+    });
 
     this._state = $.unique(this._state);
     this._applyState();
@@ -36,29 +40,29 @@ class Tree {
   }
 
   _applyState() {
-    for (const collection of this._collections) {
+    this._collections.forEach(collection => {
       if (this._state.includes(collection.id)) {
         collection.open(true);
       } else {
         collection.close(true);
       }
-    }
+    });
   }
 
   saveState() {
     this._state = this._collections.filter(c => c.isOpen).map(c => c.id);
     storage.set(`tree.${this._id}.state`, this._state);
   }
-
 }
 
 class TreeCollection {
-
   constructor(el, tree) {
     this._tree = tree;
     this._el = $(el);
     this._toggle = this._el.find('> [data-role="toggle"]');
-    this._itemsWrapper = this._el.find('[data-role="items"]:not(> [data-behaviour] [data-role="items"])');
+    this._itemsWrapper = this._el.find(
+      '[data-role="items"]:not(> [data-behaviour] [data-role="items"])'
+    );
     this._isOpen = true;
     this._toggle.on('click', this.toggle.bind(this));
   }
@@ -102,4 +106,4 @@ class TreeCollection {
   }
 }
 
-module.exports = Tree;
+export default Tree;
