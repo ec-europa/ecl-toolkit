@@ -1,22 +1,17 @@
+// Mixins
+@import '~sass-mq/mq';
+
 // Import normalize.css
 @import-normalize;
 
-// -----------------------------------------------------------------------------
-// Vendor (node_modules)
-// -----------------------------------------------------------------------------
-
-@import '~sass-mq/mq';
+// Embed external CSS
 @import '~highlight.js/styles/github';
 @import '~select2/dist/css/select2';
 
-// Fractal stuff
-$color-header-background: #14f;
-$color-header-content: #fff;
-$color-link: #28f;
+// ECL
+@import '~@ec-europa/ecl-components-preset-base';
 
+// Fractal
 @import './theme';
 @import './core/all';
-// @import './components';
-
-// Import base preset
-// @import '~@ec-europa/ecl-components-preset-base';
+@import './components';
