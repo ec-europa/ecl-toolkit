@@ -14,9 +14,9 @@ $color-header-background: #14f;
 $color-header-content: #fff;
 $color-link: #28f;
 
-// @import './theme';
-// @import './core/all';
+@import './theme';
+@import './core/all';
 // @import './components';
 
 // Import base preset
-@import '~@ec-europa/ecl-components-preset-base';
+// @import '~@ec-europa/ecl-components-preset-base';
