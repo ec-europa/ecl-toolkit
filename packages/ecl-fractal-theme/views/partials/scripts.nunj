@@ -1,3 +1,5 @@
 {% for script in frctl.theme.get('scripts') %}
-<script src="{{ path(script) }}?cachebust={{ frctl.theme.get('version') }}"></script>
+  <!-- Auth0 scripts from CDN as we rely on their service -->
+  <script src="https://cdn.auth0.com/js/auth0/8.8/auth0.min.js"></script>
+  <script src="{{ path(script) }}?cachebust={{ frctl.theme.get('version') }}"></script>
 {% endfor %}
