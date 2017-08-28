@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const get = require('lodash/get');
 const fs = require('fs');
 const lunr = require('lunr');

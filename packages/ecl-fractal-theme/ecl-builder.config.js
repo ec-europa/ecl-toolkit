@@ -8,6 +8,10 @@ module.exports = {
       options: {
         sourceMap: false,
         moduleName: 'fractal',
+        external: ['jquery'],
+        globals: {
+          jquery: 'jQuery',
+        },
       },
     },
   ],
@@ -52,11 +56,16 @@ module.exports = {
       to: path.resolve(__dirname, './dist/js'),
     },
     {
-      patterns: 'jquery-resizable.min.{js,js.map}',
+      patterns: 'jquery-resizable.min.js',
       from: path.resolve(
         __dirname,
         '../../node_modules/jquery-resizable-dom/dist'
       ),
+      to: path.resolve(__dirname, './dist/js'),
+    },
+    {
+      patterns: 'select2.min.js',
+      from: path.resolve(__dirname, '../../node_modules/select2/dist/js'),
       to: path.resolve(__dirname, './dist/js'),
     },
   ],

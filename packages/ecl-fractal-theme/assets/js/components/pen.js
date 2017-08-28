@@ -23,7 +23,7 @@ class Pen {
 
     const preview = new Preview(this._previewPanel);
     const browser = new Browser(this._browser);
-    const state = storage.get('pen.previewState', 'open');
+    let state = storage.get('pen.previewState', 'open');
     let handleClicks = 0;
     let dblClick = false;
 
@@ -49,7 +49,6 @@ class Pen {
       }
     });
 
-    /*
     this._previewPanel.resizable({
       handleSelector: this._handle,
       resizeWidth: false,
@@ -95,7 +94,6 @@ class Pen {
         }
       },
     });
-    */
   }
 }
 

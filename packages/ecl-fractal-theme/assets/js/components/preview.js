@@ -40,7 +40,6 @@ class Preview {
       }
     });
 
-    /*
     this._resizer.resizable({
       handleSelector: this._handle,
       resizeHeight: false,
@@ -60,7 +59,6 @@ class Preview {
       },
       resizeWidthFrom: dir === 'rtl' ? 'left' : 'right',
     });
-    */
   }
 
   disableEvents() {

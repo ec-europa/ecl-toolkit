@@ -1,4 +1,5 @@
-const Path = require('path');
+/* eslint-disable import/no-extraneous-dependencies */
+const path = require('path');
 const beautifyHTML = require('js-beautify').html;
 
 module.exports = (theme, env, app) => {
@@ -13,7 +14,7 @@ module.exports = (theme, env, app) => {
     } else if (item.isAssetSource) {
       return theme.urlFromRoute('asset-source', { name: item.name });
     } else if (item.isAsset) {
-      return Path.join('/', app.get('web.assets.mount'), item.srcPath);
+      return path.join('/', app.get('web.assets.mount'), item.srcPath);
     }
     throw new Error(`Cannot generate URL for ${item}`);
   });
@@ -30,19 +31,19 @@ module.exports = (theme, env, app) => {
   env.engine.addFilter(
     'resourceUrl',
     str =>
-      `/${app.web.get('assets.mount')}/components/${Path.relative(
-        Path.resolve(app.components.get('path')),
-        Path.resolve(str)
+      `/${app.web.get('assets.mount')}/components/${path.relative(
+        path.resolve(app.components.get('path')),
+        path.resolve(str)
       )}`
   );
   env.engine.addFilter('componentPath', str =>
-    Path.relative(
+    path.relative(
       process.cwd(),
-      Path.join(
+      path.join(
         app.components.get('path'),
-        Path.relative(
-          Path.resolve(app.components.get('path')),
-          Path.resolve(str)
+        path.relative(
+          path.resolve(app.components.get('path')),
+          path.resolve(str)
         )
       )
     )

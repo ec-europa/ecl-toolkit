@@ -1,6 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies, import/first */
 import $ from 'jquery';
-import 'select2';
 
 // Local imports
 import framer from './components/frame';

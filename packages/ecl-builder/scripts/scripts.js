@@ -9,7 +9,7 @@ const browserslist = require('browserslist');
 module.exports = (input, dest, options) => {
   const inputOptions = {
     input,
-    external: ['jquery'],
+    external: options.external || [],
     plugins: [
       resolve({
         jsnext: true,
@@ -44,9 +44,7 @@ module.exports = (input, dest, options) => {
     name: options.name || options.moduleName,
     sourcemap: options.sourcemap || options.sourceMap,
     exports: 'named',
-    globals: {
-      jquery: 'jQuery',
-    },
+    globals: options.globals || {},
   };
 
   rollup.rollup(inputOptions).then(bundle => bundle.write(outputOptions));

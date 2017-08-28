@@ -49,7 +49,6 @@ export default element => {
     }
   });
 
-  /*
   sidebar.resizable({
     handleSelector: handle,
     resizeHeight: false,
@@ -67,7 +66,7 @@ export default element => {
       }
     },
     resizeWidthFrom: dir === 'rtl' ? 'left' : 'right',
-  }); */
+  });
 
   sidebar.on(
     'scroll',
