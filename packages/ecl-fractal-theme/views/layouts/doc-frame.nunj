@@ -5,7 +5,7 @@
   <div id="frame">
     <div class="Frame-body" data-role="body">
       <div class="Frame-panel Frame-panel--main" data-role="main">
-        <div class="Frame-inner" id="pjax-container">
+        <div class="Frame-inner">
           {% block content %}{% endblock %}
         </div>
       </div>

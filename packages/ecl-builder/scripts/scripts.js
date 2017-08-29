@@ -6,16 +6,14 @@ const commonjs = require('rollup-plugin-commonjs');
 const uglify = require('rollup-plugin-uglify');
 const browserslist = require('browserslist');
 
-module.exports = (entry, dest, options) => {
-  const browserslistConfig = browserslist();
+module.exports = (input, dest, options) => {
+  const uglifyCode =
+    options.uglify === true ||
+    (options.uglify !== false && process.env.NODE_ENV === 'production');
 
-  const config = {
-    entry,
-    dest,
-    format: 'iife',
-    sourceMap: options.sourceMap,
-    moduleName: options.moduleName,
-    exports: 'named',
+  const inputOptions = {
+    input,
+    external: options.external || [],
     plugins: [
       resolve({
         jsnext: true,
@@ -29,8 +27,8 @@ module.exports = (entry, dest, options) => {
             babelPresetEnv,
             {
               targets: {
-                browsers: browserslistConfig,
-                uglify: process.env.NODE_ENV === 'production',
+                browsers: browserslist(),
+                uglify: uglifyCode,
               },
               modules: false,
               loose: true,
@@ -40,11 +38,18 @@ module.exports = (entry, dest, options) => {
         ],
         plugins: ['external-helpers'],
       }),
-      process.env.NODE_ENV === 'production' && uglify(),
+      uglifyCode && uglify(),
     ],
   };
 
-  rollup.rollup(config).then(bundle => {
-    bundle.write(config);
-  });
+  const outputOptions = {
+    file: dest,
+    format: 'iife',
+    name: options.name || options.moduleName,
+    sourcemap: options.sourcemap || options.sourceMap,
+    exports: 'named',
+    globals: options.globals || {},
+  };
+
+  rollup.rollup(inputOptions).then(bundle => bundle.write(outputOptions));
 };

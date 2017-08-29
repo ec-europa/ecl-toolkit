@@ -1,7 +1,8 @@
-const Path = require('path');
+/* eslint-disable import/no-extraneous-dependencies */
+const path = require('path');
 const _ = require('lodash');
 const Theme = require('@frctl/fractal').WebTheme;
-const packageJSON = require('../package.json');
+const pkg = require('../package.json');
 
 module.exports = options => {
   const config = _.defaultsDeep(_.clone(options || {}), {
@@ -13,7 +14,7 @@ module.exports = options => {
     static: {
       mount: 'themes/ecl-fractal-theme',
     },
-    version: packageJSON.version,
+    version: pkg.version,
     favicon: null,
   });
 
@@ -26,7 +27,8 @@ module.exports = options => {
   ];
 
   config.nav = config.nav || ['search', 'docs', 'components', 'assets'];
-  config.styles = [`/${config.static.mount}/ecl/ecl.css`]
+
+  config.styles = []
     .concat(config.styles)
     .concat(config.stylesheet)
     .filter(url => url)
@@ -34,7 +36,12 @@ module.exports = options => {
       url =>
         url === 'default' ? `/${config.static.mount}/css/fractal.css` : url
     );
-  config.scripts = []
+
+  config.scripts = [
+    `/${config.static.mount}/js/jquery.min.js`,
+    `/${config.static.mount}/js/jquery-resizable.min.js`,
+    `/${config.static.mount}/js/select2.min.js`,
+  ]
     .concat(config.scripts)
     .filter(url => url)
     .map(
@@ -43,14 +50,15 @@ module.exports = options => {
           ? `/${config.static.mount}/js/ecl-fractal-theme.js`
           : url
     );
+
   config.favicon = config.favicon || `/${config.static.mount}/favicon.ico`;
 
-  const theme = new Theme(Path.join(__dirname, '..', 'views'), config);
+  const theme = new Theme(path.join(__dirname, '..', 'views'), config);
 
   theme.setErrorView('pages/error.nunj');
 
   theme.addStatic(
-    Path.join(__dirname, '..', 'dist'),
+    path.join(__dirname, '..', 'dist'),
     `/${config.static.mount}`
   );
 
@@ -114,7 +122,7 @@ module.exports = options => {
       static: (params, app) => {
         const component = app.components.find(`@${params.handle}`);
         if (component) {
-          return Path.join(component.viewDir, params.asset);
+          return path.join(component.viewDir, params.asset);
         }
         throw new Error('Component not found');
       },

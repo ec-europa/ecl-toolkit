@@ -1,9 +1,8 @@
-const $ = global.jQuery;
-require('select2');
-const storage = require('../storage');
-require('../events');
+/* eslint-disable import/no-extraneous-dependencies */
+import $ from 'jquery';
+import storage from '../storage';
 
-class Browser {
+export default class Browser {
   constructor(el) {
     const self = this;
 
@@ -16,10 +15,15 @@ class Browser {
     this._activeClass = 'is-active';
     this._initTabs();
 
-    $('.FileBrowser-select').select2({ minimumResultsForSearch: Infinity }).on('change', function handleChange() {
-      $(this).closest('.FileBrowser').find('[data-role="resource-preview"]').removeClass(self._activeClass);
-      $(`#${this.value}`).addClass(self._activeClass);
-    });
+    $('.FileBrowser-select')
+      .select2({ minimumResultsForSearch: Infinity })
+      .on('change', function handleChange() {
+        $(this)
+          .closest('.FileBrowser')
+          .find('[data-role="resource-preview"]')
+          .removeClass(self._activeClass);
+        $(`#${this.value}`).addClass(self._activeClass);
+      });
 
     this._initFileSwitcher();
   }
@@ -27,8 +31,11 @@ class Browser {
   _initTabs() {
     const ac = this._activeClass;
     const tabs = this._tabs;
-    const selectedIndex = Math.min(tabs.length - 1, storage.get('browser.selectedTabIndex', 0));
-    tabs.on('click', (e) => {
+    const selectedIndex = Math.min(
+      tabs.length - 1,
+      storage.get('browser.selectedTabIndex', 0)
+    );
+    tabs.on('click', e => {
       const link = $(e.target).closest('a');
       const tab = link.parent();
       tabs.removeClass(ac);
@@ -44,5 +51,3 @@ class Browser {
 
   _initFileSwitcher() {}
 }
-
-module.exports = Browser;

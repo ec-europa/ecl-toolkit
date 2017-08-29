@@ -12,6 +12,18 @@ const handleError = err => {
   if (err) throw err;
 };
 
+const loadFile = (file, done) => {
+  // Special behavior: embed CSS files
+  if (path.extname(file) === '.css') {
+    return fs.readFile(file, 'utf8', (err, data) => {
+      if (err) throw err;
+      return done({ contents: data });
+    });
+  }
+
+  return done({ file });
+};
+
 module.exports = (entry, dest, options) => {
   const plugins = [postcssNormalize(), autoprefixer()];
 
@@ -44,26 +56,25 @@ module.exports = (entry, dest, options) => {
           const checkFor = [
             path.join(prefix, normalizedDir, `${normalizedFile}.scss`),
             path.join(prefix, normalizedDir, `_${normalizedFile}.scss`),
+            path.join(prefix, normalizedDir, `${normalizedFile}.css`),
             path.join(prefix, normalizedUrl, 'index.scss'),
             path.join(prefix, normalizedDir, 'package.json'),
             path.join(prefix, normalizedDir, normalizedFile, 'package.json'),
           ];
 
-          const file = findup(checkFor, {
-            cwd: base,
-          });
+          const file = findup(checkFor, { cwd: base });
 
           if (path.basename(file) === 'package.json') {
             // eslint-disable-next-line
             const pkg = require(file);
             const relativeStyle = pkg.style || pkg.main || 'index.scss';
-
-            return done({
-              file: path.resolve(path.dirname(file), relativeStyle),
-            });
+            return loadFile(
+              path.resolve(path.dirname(file), relativeStyle),
+              done
+            );
           }
 
-          return done({ file });
+          return loadFile(file, done);
         } catch (e) {
           // Return a better error message?
           return done();
