@@ -1,3 +1,14 @@
+## 0.18.1 (2017-08-29)
+
+#### :bug: Bug Fix
+
+*   `ecl-fractal-theme`
+    *   [#51](https://github.com/ec-europa/ecl-toolkit/pull/51) fix(dependencies): fix fractal theme dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.18.0 (2017-08-29)
 
 #### :nail_care: Enhancement
