@@ -1,3 +1,19 @@
+## 0.18.0 (2017-08-29)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `eslint-config-ecl`
+    *   [#49](https://github.com/ec-europa/ecl-toolkit/pull/49) chore(packages): build fractal theme with ECL Builder - INNO-789. ([@yhuard](https://github.com/yhuard))
+
+#### :house: Internal
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `eslint-config-ecl`
+    *   [#49](https://github.com/ec-europa/ecl-toolkit/pull/49) chore(packages): build fractal theme with ECL Builder - INNO-789. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.17.0 (2017-08-18)
 
 #### :nail_care: Enhancement
