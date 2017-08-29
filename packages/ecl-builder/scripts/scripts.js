@@ -7,6 +7,10 @@ const uglify = require('rollup-plugin-uglify');
 const browserslist = require('browserslist');
 
 module.exports = (input, dest, options) => {
+  const uglifyCode =
+    options.uglify === true ||
+    (options.uglify !== false && process.env.NODE_ENV === 'production');
+
   const inputOptions = {
     input,
     external: options.external || [],
@@ -24,7 +28,7 @@ module.exports = (input, dest, options) => {
             {
               targets: {
                 browsers: browserslist(),
-                uglify: process.env.NODE_ENV === 'production',
+                uglify: uglifyCode,
               },
               modules: false,
               loose: true,
@@ -34,7 +38,7 @@ module.exports = (input, dest, options) => {
         ],
         plugins: ['external-helpers'],
       }),
-      process.env.NODE_ENV === 'production' && uglify(),
+      uglifyCode && uglify(),
     ],
   };
 
