@@ -26,7 +26,7 @@
     "rimraf": "2.6.1",
     "sass-mq": "3.3.2",
     "select2": "4.0.3",
-    "stylelint": "8.0.0"
+    "stylelint": "8.1.1"
   },
   "dependencies": {
     "@frctl/fractal": "1.1.5",
