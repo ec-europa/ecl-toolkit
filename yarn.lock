@@ -24,23 +24,9 @@
     "@ec-europa/ecl-grid" "^0.3.3"
     "@ec-europa/ecl-typography-paragraphs" "^0.5.3"
 
-"@ec-europa/ecl-banners@0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-banners/-/ecl-banners-0.5.4.tgz#4903b716e8c0437f853cd86ed1516984b3b5279f"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-blockquotes" "^0.6.3"
-    "@ec-europa/ecl-files" "^0.7.2"
-    "@ec-europa/ecl-grid" "^0.3.3"
-    "@ec-europa/ecl-typography-paragraphs" "^0.5.3"
-
-"@ec-europa/ecl-base@0.8.1", "@ec-europa/ecl-base@^0.8.0", "@ec-europa/ecl-base@^0.8.1":
+"@ec-europa/ecl-base@0.8.1", "@ec-europa/ecl-base@^0.8.1":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.8.1.tgz#d11bce0a0c8bcd0de0629f491c7b83dbfcad87f9"
-
-"@ec-europa/ecl-base@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.7.1.tgz#b9d67d7d165e75c6ca3e073032b06c3bf360a17e"
 
 "@ec-europa/ecl-blockquotes@0.6.3", "@ec-europa/ecl-blockquotes@^0.6.3":
   version "0.6.3"
@@ -63,7 +49,7 @@
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-icons" "^0.8.0"
 
-"@ec-europa/ecl-buttons@0.12.0", "@ec-europa/ecl-buttons@^0.12.0":
+"@ec-europa/ecl-buttons@^0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-buttons/-/ecl-buttons-0.12.0.tgz#c6cb296e5b4ee87c72987e8ac3fee8f112d25283"
   dependencies:
@@ -92,18 +78,6 @@
     "@ec-europa/ecl-typography-lists" "^0.7.1"
     lodash.debounce "4.0.8"
 
-"@ec-europa/ecl-clearfix@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-clearfix/-/ecl-clearfix-0.4.2.tgz#c925a14fca2296200b477e53678e61eedc61bb38"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
-
-"@ec-europa/ecl-colorize@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-colorize/-/ecl-colorize-0.4.0.tgz#3936fbc16c987c0bb4e8823cdcc799984ab6a67c"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
-
 "@ec-europa/ecl-colors@0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-colors/-/ecl-colors-0.3.3.tgz#b84254c8c254e44e0a970274cfbd67e87d27b05e"
@@ -120,88 +94,6 @@
     "@ec-europa/ecl-typography-headings" "^0.6.2"
     "@ec-europa/ecl-typography-paragraphs" "^0.5.3"
 
-"@ec-europa/ecl-components-preset-base@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-components-preset-base/-/ecl-components-preset-base-0.12.0.tgz#27d17f5eaa5af2d7a66b09de7b684da6a6a0ff41"
-  dependencies:
-    "@ec-europa/ecl-accordions" "0.4.1"
-    "@ec-europa/ecl-banners" "0.5.3"
-    "@ec-europa/ecl-base" "0.8.1"
-    "@ec-europa/ecl-blockquotes" "0.6.3"
-    "@ec-europa/ecl-breadcrumbs" "0.8.3"
-    "@ec-europa/ecl-buttons" "0.11.0"
-    "@ec-europa/ecl-carousels" "0.1.2"
-    "@ec-europa/ecl-colors" "0.3.3"
-    "@ec-europa/ecl-comments" "0.5.2"
-    "@ec-europa/ecl-context-navs" "0.6.1"
-    "@ec-europa/ecl-date-blocks" "0.5.1"
-    "@ec-europa/ecl-datepickers" "0.7.1"
-    "@ec-europa/ecl-dialogs" "0.2.3"
-    "@ec-europa/ecl-dropdowns" "0.8.1"
-    "@ec-europa/ecl-expandables" "0.8.0"
-    "@ec-europa/ecl-featured-items" "0.5.1"
-    "@ec-europa/ecl-fields" "0.4.3"
-    "@ec-europa/ecl-files" "0.7.1"
-    "@ec-europa/ecl-footers" "0.9.1"
-    "@ec-europa/ecl-forms-checkboxes" "0.7.1"
-    "@ec-europa/ecl-forms-feedback-messages" "0.7.1"
-    "@ec-europa/ecl-forms-fieldsets" "0.1.2"
-    "@ec-europa/ecl-forms-file-uploads" "0.6.1"
-    "@ec-europa/ecl-forms-form-groups" "0.5.3"
-    "@ec-europa/ecl-forms-forms" "0.1.2"
-    "@ec-europa/ecl-forms-help-blocks" "0.5.3"
-    "@ec-europa/ecl-forms-labels" "0.6.3"
-    "@ec-europa/ecl-forms-legends" "0.5.3"
-    "@ec-europa/ecl-forms-radio-groups" "0.6.3"
-    "@ec-europa/ecl-forms-radios" "0.7.1"
-    "@ec-europa/ecl-forms-selects" "0.11.0"
-    "@ec-europa/ecl-forms-text-inputs" "0.6.3"
-    "@ec-europa/ecl-forms-textareas" "0.6.1"
-    "@ec-europa/ecl-gallery-base" "0.5.3"
-    "@ec-europa/ecl-gallery-dialog" "0.5.2"
-    "@ec-europa/ecl-grid" "0.3.3"
-    "@ec-europa/ecl-icons" "0.8.0"
-    "@ec-europa/ecl-images" "0.4.3"
-    "@ec-europa/ecl-labels" "0.6.1"
-    "@ec-europa/ecl-lang-select-pages" "0.6.1"
-    "@ec-europa/ecl-lang-select-sites" "0.7.1"
-    "@ec-europa/ecl-legacy-bootstrap-grid" "0.3.1"
-    "@ec-europa/ecl-link-blocks" "0.7.1"
-    "@ec-europa/ecl-links" "0.8.1"
-    "@ec-europa/ecl-logos" "0.7.2"
-    "@ec-europa/ecl-messages" "0.6.3"
-    "@ec-europa/ecl-meta" "0.6.2"
-    "@ec-europa/ecl-navigation-inpages" "0.4.3"
-    "@ec-europa/ecl-navigation-lists" "0.9.1"
-    "@ec-europa/ecl-navigation-menus" "0.8.1"
-    "@ec-europa/ecl-page-headers" "0.9.1"
-    "@ec-europa/ecl-pagers" "0.6.2"
-    "@ec-europa/ecl-profile-topbars" "0.6.1"
-    "@ec-europa/ecl-rss-links" "0.8.1"
-    "@ec-europa/ecl-search-forms" "0.8.1"
-    "@ec-europa/ecl-site-headers" "0.11.0"
-    "@ec-europa/ecl-site-switchers" "0.5.3"
-    "@ec-europa/ecl-skip-links" "0.5.2"
-    "@ec-europa/ecl-social-icons" "0.4.3"
-    "@ec-europa/ecl-tables" "0.7.3"
-    "@ec-europa/ecl-tabs" "0.4.1"
-    "@ec-europa/ecl-tags" "0.7.0"
-    "@ec-europa/ecl-timelines" "0.6.1"
-    "@ec-europa/ecl-typography-headings" "0.6.2"
-    "@ec-europa/ecl-typography-lists" "0.7.1"
-    "@ec-europa/ecl-typography-paragraphs" "0.5.3"
-    "@ec-europa/ecl-u-clearfix" "0.4.3"
-    "@ec-europa/ecl-u-colorize" "0.4.1"
-    "@ec-europa/ecl-u-display" "0.2.1"
-    "@ec-europa/ecl-u-flex" "0.5.1"
-    "@ec-europa/ecl-u-font-size" "0.5.3"
-    "@ec-europa/ecl-u-margin" "0.4.3"
-    "@ec-europa/ecl-u-padding" "0.4.3"
-    "@ec-europa/ecl-u-ratio" "0.3.3"
-    "@ec-europa/ecl-u-screen-reader" "0.4.3"
-    "@ec-europa/ecl-u-text" "0.2.3"
-    "@ec-europa/ecl-u-z-index" "0.2.3"
-
 "@ec-europa/ecl-context-navs@0.6.1":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-context-navs/-/ecl-context-navs-0.6.1.tgz#9763f567fe624435c3a2e7cfbd33e29156801cbc"
@@ -210,7 +102,7 @@
     "@ec-europa/ecl-buttons" "^0.11.0"
     "@ec-europa/ecl-links" "^0.8.1"
 
-"@ec-europa/ecl-context-navs@0.6.2", "@ec-europa/ecl-context-navs@^0.6.1", "@ec-europa/ecl-context-navs@^0.6.2":
+"@ec-europa/ecl-context-navs@^0.6.1":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-context-navs/-/ecl-context-navs-0.6.2.tgz#85c5bb787fe1834d8e4523729ae65882ee1ecb99"
   dependencies:
@@ -248,16 +140,6 @@
     "@ec-europa/ecl-icons" "^0.8.0"
     "@ec-europa/ecl-link-blocks" "^0.7.1"
 
-"@ec-europa/ecl-dropdowns@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-dropdowns/-/ecl-dropdowns-0.8.2.tgz#9fec9832116d93108264368b3af412e037eec56f"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-buttons" "^0.12.0"
-    "@ec-europa/ecl-expandables" "^0.8.1"
-    "@ec-europa/ecl-icons" "^0.8.0"
-    "@ec-europa/ecl-link-blocks" "^0.7.1"
-
 "@ec-europa/ecl-expandables@0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-expandables/-/ecl-expandables-0.8.0.tgz#a22b2e5b95283a600a0501250e8c6c2b4029d7ce"
@@ -266,7 +148,7 @@
     "@ec-europa/ecl-buttons" "^0.11.0"
     "@ec-europa/ecl-icons" "^0.8.0"
 
-"@ec-europa/ecl-expandables@0.8.1", "@ec-europa/ecl-expandables@^0.8.0", "@ec-europa/ecl-expandables@^0.8.1":
+"@ec-europa/ecl-expandables@^0.8.0":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-expandables/-/ecl-expandables-0.8.1.tgz#cd90f880ebe842a25bf83c5df0b1745dae7b9682"
   dependencies:
@@ -280,16 +162,6 @@
   dependencies:
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-buttons" "^0.11.0"
-    "@ec-europa/ecl-links" "^0.8.1"
-    "@ec-europa/ecl-meta" "^0.6.2"
-    "@ec-europa/ecl-typography-paragraphs" "^0.5.3"
-
-"@ec-europa/ecl-featured-items@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-featured-items/-/ecl-featured-items-0.5.2.tgz#ef582f6a4d416cc349aa7c13dc3b3ee3b46ec515"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-buttons" "^0.12.0"
     "@ec-europa/ecl-links" "^0.8.1"
     "@ec-europa/ecl-meta" "^0.6.2"
     "@ec-europa/ecl-typography-paragraphs" "^0.5.3"
@@ -312,7 +184,7 @@
     "@ec-europa/ecl-u-ratio" "^0.3.3"
     "@ec-europa/ecl-u-screen-reader" "^0.4.3"
 
-"@ec-europa/ecl-files@0.7.2", "@ec-europa/ecl-files@^0.7.1", "@ec-europa/ecl-files@^0.7.2":
+"@ec-europa/ecl-files@^0.7.1":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-files/-/ecl-files-0.7.2.tgz#62923d2fac207586851a45eff52312d35bf398d8"
   dependencies:
@@ -323,18 +195,6 @@
     "@ec-europa/ecl-links" "^0.8.1"
     "@ec-europa/ecl-u-ratio" "^0.3.3"
     "@ec-europa/ecl-u-screen-reader" "^0.4.3"
-
-"@ec-europa/ecl-flex@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-flex/-/ecl-flex-0.5.0.tgz#f78bd136a723d3dccfcdc00e64a59134efb39c3e"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
-
-"@ec-europa/ecl-font-size@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-font-size/-/ecl-font-size-0.5.2.tgz#22ff81363dcb9ab67c6b34a1b9063a29d88eb012"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
 
 "@ec-europa/ecl-footers@0.9.1":
   version "0.9.1"
@@ -433,15 +293,6 @@
   dependencies:
     "@ec-europa/ecl-base" "^0.8.1"
 
-"@ec-europa/ecl-galleries@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-galleries/-/ecl-galleries-0.5.1.tgz#1f2756fc846666978df6af801b00b11b34c2468e"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.7.1"
-    "@ec-europa/ecl-grid" "^0.3.2"
-    "@ec-europa/ecl-icons" "^0.7.1"
-    "@ec-europa/ecl-images" "^0.4.1"
-
 "@ec-europa/ecl-gallery-base@0.5.3", "@ec-europa/ecl-gallery-base@^0.5.3":
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-gallery-base/-/ecl-gallery-base-0.5.3.tgz#266f73f323ab13babb9a79426fb18dfd23e26d24"
@@ -460,7 +311,7 @@
     "@ec-europa/ecl-dialogs" "^0.2.3"
     "@ec-europa/ecl-gallery-base" "^0.5.3"
 
-"@ec-europa/ecl-grid@0.3.3", "@ec-europa/ecl-grid@^0.3.2", "@ec-europa/ecl-grid@^0.3.3":
+"@ec-europa/ecl-grid@0.3.3", "@ec-europa/ecl-grid@^0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-grid/-/ecl-grid-0.3.3.tgz#ad5a7dd0f9b03d93d3b2ff8d2827349d5c5c2d05"
 
@@ -468,11 +319,7 @@
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-icons/-/ecl-icons-0.8.0.tgz#406b6e77578f810b9f2e7a18a7de61b309e7f83d"
 
-"@ec-europa/ecl-icons@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-icons/-/ecl-icons-0.7.1.tgz#ae48f5939728e07ea47cb234e206ee6aaf0b0356"
-
-"@ec-europa/ecl-images@0.4.3", "@ec-europa/ecl-images@^0.4.1", "@ec-europa/ecl-images@^0.4.3":
+"@ec-europa/ecl-images@0.4.3", "@ec-europa/ecl-images@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-images/-/ecl-images-0.4.3.tgz#6d270657404c2d1358e9ebc349f5644e236a025f"
   dependencies:
@@ -526,12 +373,6 @@
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-u-screen-reader" "^0.4.3"
 
-"@ec-europa/ecl-margin@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-margin/-/ecl-margin-0.4.2.tgz#1d171819fd3bfe98269bea35a3bac7799ca21cdd"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
-
 "@ec-europa/ecl-messages@0.6.3":
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-messages/-/ecl-messages-0.6.3.tgz#a99294db65ac1cb933d4f18f9f239363b020c945"
@@ -553,15 +394,6 @@
     gumshoejs "3.5.0"
     stickybits "1.5.3"
 
-"@ec-europa/ecl-navigation-inpages@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-inpages/-/ecl-navigation-inpages-0.4.4.tgz#acce5d0e3a494258761cb0119fed97818da1263d"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-expandables" "^0.8.1"
-    gumshoejs "3.5.0"
-    stickybits "1.5.3"
-
 "@ec-europa/ecl-navigation-lists@0.9.1", "@ec-europa/ecl-navigation-lists@^0.9.1":
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-lists/-/ecl-navigation-lists-0.9.1.tgz#812a20e8d5c1f06cabde8cd725f7b38e1e084a7e"
@@ -578,21 +410,6 @@
     "@ec-europa/ecl-expandables" "^0.8.0"
     "@ec-europa/ecl-grid" "^0.3.3"
     "@ec-europa/ecl-icons" "^0.8.0"
-
-"@ec-europa/ecl-navigation-menus@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-menus/-/ecl-navigation-menus-0.8.2.tgz#9b00ba9cc2f5187b2c99a22ae28f9ed7ee75abac"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-expandables" "^0.8.1"
-    "@ec-europa/ecl-grid" "^0.3.3"
-    "@ec-europa/ecl-icons" "^0.8.0"
-
-"@ec-europa/ecl-padding@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-padding/-/ecl-padding-0.4.2.tgz#d6cde2b78a0c15767a0f78e97b6a14c6e9a4fb55"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
 
 "@ec-europa/ecl-page-headers@0.9.1":
   version "0.9.1"
@@ -622,41 +439,12 @@
     "@ec-europa/ecl-grid" "^0.3.3"
     "@ec-europa/ecl-icons" "^0.8.0"
 
-"@ec-europa/ecl-profile-topbars@0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-profile-topbars/-/ecl-profile-topbars-0.6.2.tgz#0aeef0a9db44cdb26c5cc254070e16e27b4a5325"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-buttons" "^0.12.0"
-    "@ec-europa/ecl-context-navs" "^0.6.2"
-    "@ec-europa/ecl-grid" "^0.3.3"
-    "@ec-europa/ecl-icons" "^0.8.0"
-
-"@ec-europa/ecl-ratio@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-ratio/-/ecl-ratio-0.3.2.tgz#7d16d9baa886c576af60c53de00e294fedd30c56"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
-
 "@ec-europa/ecl-rss-links@0.8.1":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-rss-links/-/ecl-rss-links-0.8.1.tgz#ceab9829a06c2d45982fc0276fda1153ae054d10"
   dependencies:
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-social-icons" "^0.4.3"
-
-"@ec-europa/ecl-rss-links@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-rss-links/-/ecl-rss-links-0.9.0.tgz#97eca8a32eb9d1824d14c06c2a0568ff3fea62df"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-social-icons" "^0.5.0"
-
-"@ec-europa/ecl-screen-reader@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-screen-reader/-/ecl-screen-reader-0.4.2.tgz#817732e8b33b9245a2ccca70b53c5525cfeb61a1"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
 
 "@ec-europa/ecl-search-forms@0.8.1":
   version "0.8.1"
@@ -667,7 +455,7 @@
     "@ec-europa/ecl-forms-text-inputs" "^0.6.3"
     "@ec-europa/ecl-u-screen-reader" "^0.4.3"
 
-"@ec-europa/ecl-search-forms@0.8.2", "@ec-europa/ecl-search-forms@^0.8.1", "@ec-europa/ecl-search-forms@^0.8.2":
+"@ec-europa/ecl-search-forms@^0.8.1":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-search-forms/-/ecl-search-forms-0.8.2.tgz#e65cf15366b79027f531e2f9873fd04eb2555dc0"
   dependencies:
@@ -686,18 +474,6 @@
     "@ec-europa/ecl-logos" "^0.7.2"
     "@ec-europa/ecl-navigation-lists" "^0.9.1"
     "@ec-europa/ecl-search-forms" "^0.8.1"
-    "@ec-europa/ecl-site-switchers" "^0.5.3"
-
-"@ec-europa/ecl-site-headers@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-site-headers/-/ecl-site-headers-0.12.0.tgz#2c5d4374c96055ca005405cb1729fc8e166b0b72"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-icons" "^0.8.0"
-    "@ec-europa/ecl-lang-select-sites" "^0.7.1"
-    "@ec-europa/ecl-logos" "^0.7.2"
-    "@ec-europa/ecl-navigation-lists" "^0.9.1"
-    "@ec-europa/ecl-search-forms" "^0.8.2"
     "@ec-europa/ecl-site-switchers" "^0.5.3"
 
 "@ec-europa/ecl-site-switchers@0.5.3", "@ec-europa/ecl-site-switchers@^0.5.3":
@@ -719,7 +495,7 @@
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-links" "^0.8.1"
 
-"@ec-europa/ecl-social-icons@0.5.0", "@ec-europa/ecl-social-icons@^0.5.0":
+"@ec-europa/ecl-social-icons@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-social-icons/-/ecl-social-icons-0.5.0.tgz#fbbdbb735264c7e54032ed764ffef41e32f7cd73"
   dependencies:
@@ -757,33 +533,12 @@
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-buttons" "^0.11.0"
 
-"@ec-europa/ecl-tags@0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-tags/-/ecl-tags-0.7.1.tgz#3b23816cc4b7570103d572e04a4f8515f7fde872"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-buttons" "^0.12.0"
-
-"@ec-europa/ecl-text@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-text/-/ecl-text-0.2.2.tgz#18bac015a9da4a5759bdfe6ce18dd514a0d9db72"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
-
 "@ec-europa/ecl-timelines@0.6.1":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-timelines/-/ecl-timelines-0.6.1.tgz#5dbca2357b39987d79d40ea3d20ae3b7f2ab0b57"
   dependencies:
     "@ec-europa/ecl-base" "^0.8.1"
     "@ec-europa/ecl-buttons" "^0.11.0"
-    "@ec-europa/ecl-typography-headings" "^0.6.2"
-
-"@ec-europa/ecl-timelines@0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-timelines/-/ecl-timelines-0.6.2.tgz#2763f48c58200774c752ca5267e658f47a6bb4d6"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.1"
-    "@ec-europa/ecl-buttons" "^0.12.0"
     "@ec-europa/ecl-typography-headings" "^0.6.2"
 
 "@ec-europa/ecl-typography-headings@0.6.2", "@ec-europa/ecl-typography-headings@^0.6.2":
@@ -865,12 +620,6 @@
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-u-z-index/-/ecl-u-z-index-0.2.3.tgz#5c8dd90339ebb5f0c29c16f771031ec41c3b7b9b"
   dependencies:
     "@ec-europa/ecl-base" "^0.8.1"
-
-"@ec-europa/ecl-z-index@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-z-index/-/ecl-z-index-0.2.2.tgz#364a6f9857be9b539fec1a1e85f6203259ab7e4c"
-  dependencies:
-    "@ec-europa/ecl-base" "^0.8.0"
 
 "@frctl/fractal@1.1.5", "@frctl/fractal@^1.0.0", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.0-beta.1":
   version "1.1.5"
