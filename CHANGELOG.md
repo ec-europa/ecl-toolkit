@@ -1,3 +1,14 @@
+## 0.19.0 (2017-09-06)
+
+#### :nail_care: Enhancement
+
+*   `ecl-builder`, `ecl-components-preset-base`, `ecl-fractal-theme`, `ecl-qa`, `eslint-config-ecl`
+    *   [#52](https://github.com/ec-europa/ecl-toolkit/pull/52) chore(dependencies): update all packages - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.18.1 (2017-08-29)
 
 #### :bug: Bug Fix
