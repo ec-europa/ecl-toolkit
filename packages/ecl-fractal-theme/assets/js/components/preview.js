@@ -38,6 +38,8 @@ class Preview {
         this._resizer.css('width', 'calc(100% + 0.75rem)');
         return false;
       }
+
+      return true;
     });
 
     this._resizer.resizable({

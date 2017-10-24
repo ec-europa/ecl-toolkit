@@ -46,8 +46,11 @@ export default class Browser {
       return false;
     });
     tabs.removeClass('is-active');
-    tabs.eq(selectedIndex).find('a').trigger('click');
+    tabs
+      .eq(selectedIndex)
+      .find('a')
+      .trigger('click');
   }
 
-  _initFileSwitcher() {}
+  _initFileSwitcher() {} // eslint-disable-line class-methods-use-this
 }

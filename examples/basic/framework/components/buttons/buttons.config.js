@@ -1,11 +1,11 @@
-const variants = require("./variants.json");
+const variants = require('./variants.json');
 
 module.exports = {
-  title: "Buttons",
-  label: "Buttons",
-  preview: "@preview-center-transparent",
-  tags: ["atom"],
-  status: "ready",
+  title: 'Buttons',
+  label: 'Buttons',
+  preview: '@preview-center-transparent',
+  tags: ['atom'],
+  status: 'ready',
   collated: true,
   collator(markup, item) {
     return `
@@ -15,5 +15,5 @@ module.exports = {
       <!-- End: @${item.handle} -->\n
     `;
   },
-  variants
+  variants,
 };

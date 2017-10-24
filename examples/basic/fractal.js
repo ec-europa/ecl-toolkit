@@ -1,6 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
-const fractal = require('@frctl/fractal').create(); // eslint-disable-line import/no-extraneous-dependencies
-const eclTheme = require('@ec-europa/ecl-fractal-theme'); // eslint-disable-line import/no-extraneous-dependencies
+const fractal = require('@frctl/fractal').create();
+const eclTheme = require('@ec-europa/ecl-fractal-theme');
 const twigAdapter = require('@frctl/twig')({
   handlePrefix: '@ec-europa/',
 });
