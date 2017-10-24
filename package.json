@@ -3,12 +3,11 @@
   "author": "European Commission",
   "license": "EUPL-1.1",
   "description": "ECL Toolkit",
-  "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "changelog": "lerna-changelog",
     "lint": "eslint .",
-    "postinstall": "npm run bootstrap",
+    "postinstall": "lerna run prepublish",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "publish": "scripts/release.sh",
@@ -23,14 +22,20 @@
   },
   "homepage": "https://github.com/ec-europa/ecl-toolkit#readme",
   "devDependencies": {
-    "eslint": "4.6.1",
+    "eslint": "4.9.0",
     "husky": "0.14.3",
-    "lerna": "2.1.2",
-    "lerna-changelog": "0.6.0",
-    "lint-staged": "4.1.0",
-    "prettier-eslint-cli": "4.3.0"
+    "lerna": "2.4.0",
+    "lerna-changelog": "0.7.0",
+    "lint-staged": "4.3.0",
+    "prettier-eslint-cli": "4.4.0"
   },
   "lint-staged": {
-    "*.js": ["prettier-eslint --write", "git add"]
-  }
+    "*.js": ["prettier --write", "eslint", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true
+  },
+  "workspaces": ["examples/*", "packages/*"]
 }
