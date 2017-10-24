@@ -144,8 +144,8 @@ module.exports = options => {
   );
 
   theme.on('init', (env, app) => {
-    require('./filters')(theme, env, app);
-    require('./search')(theme, env, app);
+    require('./filters')(theme, env, app); // eslint-disable-line global-require
+    require('./search')(theme, env, app); // eslint-disable-line global-require
   });
 
   let handles = null;

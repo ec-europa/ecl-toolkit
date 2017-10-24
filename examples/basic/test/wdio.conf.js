@@ -1,7 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* global browser */
 const path = require('path');
 const chai = require('chai');
-const VisualRegressionCompare = require('wdio-visual-regression-service/compare'); // eslint-disable-line import/no-extraneous-dependencies
+const VisualRegressionCompare = require('wdio-visual-regression-service/compare');
 const {
   injectAxeCore,
   runAxeCore,
@@ -14,7 +15,7 @@ const matchReference = require('@ec-europa/ecl-qa/wdio/assertions/matchReference
 const isAccessible = require('@ec-europa/ecl-qa/wdio/assertions/isAccessible');
 const isWellFormatted = require('@ec-europa/ecl-qa/wdio/assertions/isWellFormatted');
 
-require('dotenv').config(); // eslint-disable-line import/no-extraneous-dependencies
+require('dotenv').config();
 
 const isTravis = 'TRAVIS' in process.env && 'CI' in process.env;
 
@@ -23,7 +24,7 @@ function getScreenshotName(basePath) {
     const testName = context.options.name;
     const browserVersion = parseInt(/\d+/.exec(context.browser.version)[0], 10);
     const browserName = context.browser.name;
-    const platform = context.desiredCapabilities.platform;
+    const { platform } = context.desiredCapabilities;
 
     return path.join(
       basePath,

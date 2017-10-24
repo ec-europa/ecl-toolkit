@@ -10,16 +10,13 @@ export default () => {
   const searchIndexPath = JSON.parse($('#searchIndexPath').html());
 
   $.getJSON(searchIndexPath.path, searchIndexJson => {
-    let store = '';
-    let index = '';
-
     const $searchInput = $('#search-components');
     const $resultsArea = $('.Frame-inner');
 
     const initialContent = $resultsArea.html();
 
-    store = searchIndexJson.store;
-    index = lunr.Index.load(searchIndexJson.index);
+    const { store } = searchIndexJson;
+    const index = lunr.Index.load(searchIndexJson.index);
 
     $searchInput.keyup(() => {
       const query = $searchInput.val();

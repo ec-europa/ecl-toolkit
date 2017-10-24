@@ -7,7 +7,9 @@ module.exports = {
     if (typeof axe === "object" && axe.version) { return; }
     var s = document.createElement("script");
     // stringify so that quotes are properly escaped
-    s.innerHTML = ${JSON.stringify(`${axeSource};axe.configure({branding:{application:"webdriverjs"}});`)};
+    s.innerHTML = ${JSON.stringify(
+      `${axeSource};axe.configure({branding:{application:"webdriverjs"}});`
+    )};
     document.body.appendChild(s);
   }());
     `);
@@ -17,10 +19,10 @@ module.exports = {
     /* eslint-disable */
     const script = function check(cls, done) {
       var n = document.getElementsByClassName(cls);
-      axe.run(n, function (err, result) {
+      axe.run(n, function(err, result) {
         return done({
           err: err,
-          result: result
+          result: result,
         });
       });
     };

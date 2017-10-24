@@ -7,7 +7,7 @@ const chai = require('chai');
 
 function formatErrors(errors) {
   let message = '';
-  errors.forEach((err) => {
+  errors.forEach(err => {
     message += `- ${err.message} `;
   });
 
@@ -19,7 +19,11 @@ module.exports = function isWellFormatted() {
 
   new chai.Assertion(report.value).to.be.instanceof(Array);
 
-  this.assert(report.value.length === 0,
-    `expected markup report to be empty but instead got: ${formatErrors(report.value)}`,
-    'expected markup report to contain errors');
+  this.assert(
+    report.value.length === 0,
+    `expected markup report to be empty but instead got: ${formatErrors(
+      report.value
+    )}`,
+    'expected markup report to contain errors'
+  );
 };

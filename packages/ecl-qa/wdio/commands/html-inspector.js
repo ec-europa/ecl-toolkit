@@ -1,8 +1,11 @@
 const fs = require('fs');
 
-const HTMLInspector = fs.readFileSync(require.resolve('html-inspector/html-inspector'), {
-  encoding: 'utf8',
-});
+const HTMLInspector = fs.readFileSync(
+  require.resolve('html-inspector/html-inspector'),
+  {
+    encoding: 'utf8',
+  }
+);
 
 module.exports = {
   injectHTMLInspector() {
@@ -21,7 +24,7 @@ module.exports = {
     /* eslint-disable */
     const script = function check(cls, done) {
       HTMLInspector.inspect({
-        domRoot: "body",
+        domRoot: 'body',
         // excludeRules: ["some-rule-name", "some-other-rule-name"],
         // excludeElements: ["svg", "iframe"],
         onComplete: done,

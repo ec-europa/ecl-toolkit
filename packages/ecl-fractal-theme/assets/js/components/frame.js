@@ -80,7 +80,9 @@ export default element => {
   // Global event listeners
 
   events.on('toggle-sidebar', toggleSidebar);
-  events.on('start-dragging', () => (dragOccuring = true));
+  events.on('start-dragging', () => {
+    dragOccuring = true;
+  });
   events.on('end-dragging', () => {
     setTimeout(() => {
       dragOccuring = false;

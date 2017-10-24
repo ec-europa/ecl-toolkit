@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-extraneous-dependencies, no-restricted-properties */
 const path = require('path');
 const beautifyHTML = require('js-beautify').html;
 

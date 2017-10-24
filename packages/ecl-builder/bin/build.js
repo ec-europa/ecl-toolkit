@@ -20,26 +20,35 @@ program
     'config file (default: ecl-builder.config.js)'
   );
 
-program.command('scripts').description('compile JS').action(options => {
-  const config = loadConfig(options.config_file);
-  config.scripts.forEach(conf =>
-    buildScript(conf.entry, conf.dest, conf.options)
-  );
-});
+program
+  .command('scripts')
+  .description('compile JS')
+  .action(options => {
+    const config = loadConfig(options.config_file);
+    config.scripts.forEach(conf =>
+      buildScript(conf.entry, conf.dest, conf.options)
+    );
+  });
 
-program.command('styles').description('compile SCSS to CSS').action(options => {
-  const config = loadConfig(options.config_file);
-  config.styles.forEach(conf =>
-    buildStyles(conf.entry, conf.dest, conf.options)
-  );
-});
+program
+  .command('styles')
+  .description('compile SCSS to CSS')
+  .action(options => {
+    const config = loadConfig(options.config_file);
+    config.styles.forEach(conf =>
+      buildStyles(conf.entry, conf.dest, conf.options)
+    );
+  });
 
-program.command('copy').description('copy static files').action(options => {
-  const config = loadConfig(options.config_file);
-  config.copy.forEach(conf =>
-    copyFiles(conf.patterns || '**', conf.from, conf.to)
-  );
-});
+program
+  .command('copy')
+  .description('copy static files')
+  .action(options => {
+    const config = loadConfig(options.config_file);
+    config.copy.forEach(conf =>
+      copyFiles(conf.patterns || '**', conf.from, conf.to)
+    );
+  });
 
 // If no arguments provided, display help menu.
 if (!process.argv.slice(2).length) {

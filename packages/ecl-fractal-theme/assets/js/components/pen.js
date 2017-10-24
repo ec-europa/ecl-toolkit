@@ -22,7 +22,7 @@ class Pen {
     );
 
     const preview = new Preview(this._previewPanel);
-    const browser = new Browser(this._browser);
+    const browser = new Browser(this._browser); // eslint-disable-line no-unused-vars
     let state = storage.get('pen.previewState', 'open');
     let handleClicks = 0;
     let dblClick = false;
@@ -47,6 +47,8 @@ class Pen {
         handleClicks = 0;
         return false;
       }
+
+      return true;
     });
 
     this._previewPanel.resizable({
