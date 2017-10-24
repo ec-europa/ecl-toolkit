@@ -1,3 +1,14 @@
+## 0.19.1 (2017-10-24)
+
+#### :house: Internal
+
+*   `ecl-builder`, `ecl-fractal-theme`, `ecl-qa`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#54](https://github.com/ec-europa/ecl-toolkit/pull/54) chore(packages): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.19.0 (2017-09-06)
 
 #### :nail_care: Enhancement
