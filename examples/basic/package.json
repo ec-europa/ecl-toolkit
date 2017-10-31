@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "@ec-europa/ecl-builder": "^0.12.2",
-    "@ec-europa/ecl-components-preset-base": "^0.13.0",
     "@ec-europa/ecl-fractal-theme": "^0.11.3",
     "@ec-europa/ecl-qa": "^0.3.5",
     "@ec-europa/eslint-config-ecl": "^0.4.5",
@@ -48,6 +47,9 @@
     "wdio-static-server-service": "1.0.1",
     "wdio-visual-regression-service": "0.8.0",
     "webdriverio": "4.8.0"
+  },
+  "dependencies": {
+    "@ec-europa/ecl-preset-full": "0.2.0"
   },
   "engines": {
     "node": ">=6.9.5"
