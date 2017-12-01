@@ -18,24 +18,11 @@ module.exports = {
       ignoreSelectors: /^\.no-js$/,
     },
     'selector-class-pattern': null,
-    'at-rule-no-unknown': [
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: [
-          'at-root',
-          'debug',
-          'each',
-          'else',
-          'error',
-          'extend',
-          'for',
-          'if',
-          'import-normalize',
-          'include',
-          'mixin',
-          'warn',
-          'while',
-        ],
+        ignoreAtRules: ['import-normalize'],
       },
     ],
   },

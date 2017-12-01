@@ -5719,7 +5719,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@4.17.4, lodash@>=3.10.0, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.12.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.14.1, lodash@^4.15.0, lodash@^4.16.1, lodash@^4.16.6, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.8.0, lodash@~4.17.4:
+lodash@4.17.4, lodash@>=3.10.0, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.11.1, lodash@^4.12.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.14.1, lodash@^4.15.0, lodash@^4.16.1, lodash@^4.16.6, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.8.0, lodash@~4.17.4:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -7144,6 +7144,13 @@ postcss-selector-parser@^3.1.0:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
+postcss-sorting@^3.0.2:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-3.1.0.tgz#af7c90ee73ad12569a57664eaf06735c2e25bec0"
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^6.0.13"
+
 postcss-svgo@^2.1.1:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/postcss-svgo/-/postcss-svgo-2.1.6.tgz#b6df18aa613b666e133f08adb5219c2684ac108d"
@@ -7173,7 +7180,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@6.0.14, postcss@>=5.0.19, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.2, postcss@^6.0.3, postcss@^6.0.6, postcss@^6.0.8:
+postcss@6.0.14, postcss@>=5.0.19, postcss@^6.0.11, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.2, postcss@^6.0.3, postcss@^6.0.6, postcss@^6.0.8:
   version "6.0.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.14.tgz#5534c72114739e75d0afcf017db853099f562885"
   dependencies:
@@ -8635,6 +8642,24 @@ stylelint-config-standard@18.0.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-18.0.0.tgz#0d872b40fafdcddcf4188fb5b64ddb3887e8aefc"
   dependencies:
     stylelint-config-recommended "^2.0.0"
+
+stylelint-order@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-0.7.0.tgz#ceab5cbe24aa33fa63590024995395f6edfc9ab7"
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^6.0.11"
+    postcss-sorting "^3.0.2"
+
+stylelint-scss@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-2.1.0.tgz#e3fe24262bcb09cf70d859b80b17099d511094de"
+  dependencies:
+    lodash "^4.11.1"
+    postcss-media-query-parser "^0.2.3"
+    postcss-resolve-nested-selector "^0.1.1"
+    postcss-selector-parser "^2.0.0"
+    postcss-value-parser "^3.3.0"
 
 stylelint-selector-bem-pattern@2.0.0:
   version "2.0.0"
