@@ -1,3 +1,19 @@
+## 0.20.0 (2017-12-01)
+
+#### :boom: Breaking Change
+
+*   `ecl-components-preset-base`, `ecl-fractal-theme`
+    *   [#55](https://github.com/ec-europa/ecl-toolkit/pull/55) chore(preset): remove preset from toolkit - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### :house: Internal
+
+*   `ecl-builder`, `ecl-fractal-theme`, `ecl-qa`, `eslint-config-ecl`, `stylelint-config-ecl`
+    *   [#56](https://github.com/ec-europa/ecl-toolkit/pull/56) chore(updates): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+-   Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.19.1 (2017-10-24)
 
 #### :house: Internal
