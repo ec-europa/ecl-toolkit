@@ -2,7 +2,7 @@
   "name": "@ec-europa/stylelint-config-ecl",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Stylelint config for ECL QA",
   "main": "index.js",
   "publishConfig": {
