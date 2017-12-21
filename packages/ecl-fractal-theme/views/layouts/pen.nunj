@@ -29,17 +29,13 @@
     {% include "partials/pen/header.nunj" %}
 
     <div class="Pen-tabs">
-        <div class="Pen-documentation active" id="documentation">
-          <div class="Document">
-            <div class="Document-content">
-              <div class="Prose">
-                {% if entity.notes %}
-                {{ frctl.docs.renderString(entity.notes, renderEnv) | async }}
-                {% else %}
-                <p class="Browser-isEmptyNote">There are no notes for this item.</p>
-                {% endif %}
-              </div>
-            </div>
+        <div class="Pen-documentation active ecl-u-mv-s" id="documentation">
+          <div class="ecl-editor">
+            {% if entity.notes %}
+            {{ frctl.docs.renderString(entity.notes, renderEnv) | async }}
+            {% else %}
+            <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+            {% endif %}
           </div>
         </div>
 

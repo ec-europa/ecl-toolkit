@@ -11,7 +11,7 @@ export default () => {
 
   $.getJSON(searchIndexPath.path, searchIndexJson => {
     const $searchInput = $('#search-components');
-    const $resultsArea = $('.Frame-inner');
+    const $resultsArea = $('main > .ecl-container > .ecl-row > .ecl-col');
 
     const initialContent = $resultsArea.html();
 
@@ -51,15 +51,16 @@ export default () => {
                 </div>
                 <div class="Document-content">
                   <div class="Prose">
-                    <ul>
+                    <ul class="ecl-list">
                       ${results
                         .map(
                           result => `
                           <li>
-                            <h4>
-                              <a href="${prefix +
-                                store[result.ref].handle}">${store[result.ref]
-                            .title}
+                            <h4 class="ecl-heading ecl-heading--h4 ecl-u-mb-none">
+                              <a class="ecl-link" href="${prefix +
+                                store[result.ref].handle}">${
+                            store[result.ref].title
+                          }
                               </a>
                             </h4>
                           </li>

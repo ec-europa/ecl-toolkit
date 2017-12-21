@@ -11,7 +11,7 @@
 
 {% block docContent %}
 
-<div class="Prose">
+<div class="ecl-editor">
 {% block pageContent %}
 {% import "macros/errors.nunj" as errors %}
 {% set contents = doc.render(null, renderEnv) | async(true) %}

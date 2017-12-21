@@ -10,7 +10,7 @@
 {% block docContent %}
 
 {% if assetSource.notes %}
-<div class="Prose">
+<div class="ecl-editor">
     {{ frctl.docs.renderString(assetSource.notes) | async }}
 </div>
 {% endif %}

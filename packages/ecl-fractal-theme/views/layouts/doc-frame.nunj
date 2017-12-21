@@ -2,17 +2,11 @@
 {% import "macros/navigation.nunj" as nav %}
 
 {% block page %}
-  <div id="frame">
-    <div class="Frame-body" data-role="body">
-      <div class="Frame-panel Frame-panel--main" data-role="main">
-        <div class="Frame-inner">
-          {% block content %}{% endblock %}
-        </div>
-      </div>
-      <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
-        <nav class="Navigation">
-          {% include 'partials/navigation/docs.nunj' %}
-        </nav>
+  {% include 'partials/navigation/docs.nunj' %}
+  <div class="ecl-container">
+    <div class="ecl-row">
+      <div class="ecl-col ecl-u-mb-s">
+        {% block content %}{% endblock %}
       </div>
     </div>
   </div>

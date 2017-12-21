@@ -55,6 +55,7 @@
   </div>
 </div>
 
+<!--
 <nav class="ecl-navigation-menu" aria-label="Main Navigation">
   <div class="ecl-container">
     <button class="ecl-navigation-menu__toggle ecl-navigation-menu__hamburger ecl-navigation-menu__hamburger--squeeze" aria-controls="nav-menu-expandable-root" aria-expanded="false">
@@ -76,3 +77,4 @@
     </ul>
   </div>
 </nav>
+-->

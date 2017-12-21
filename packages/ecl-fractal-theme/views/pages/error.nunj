@@ -8,7 +8,7 @@
 
 <div class="Error">
 
-    <div class="Error-message Prose">
+    <div class="Error-message ecl-editor">
         {{ error.message | default('No more information is available.') | markdown }}
     </div>
 

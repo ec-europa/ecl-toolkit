@@ -18,19 +18,21 @@
   },
   "devDependencies": {
     "@ec-europa/ecl-builder": "^0.12.3",
-    "@ec-europa/ecl-preset-full": "0.3.0",
+    "@ec-europa/ecl-preset-full": "0.3.2",
+    "eslint": "4.13.1",
     "highlight.js": "9.12.0",
     "jquery": "3.2.1",
     "jquery-resizable-dom": "0.16.0",
     "npm-run-all": "4.1.2",
+    "prettier-eslint-cli": "4.6.1",
     "rimraf": "2.6.2",
     "sass-mq": "3.3.2",
     "select2": "4.0.5",
-    "stylelint": "8.3.1"
+    "stylelint": "8.4.0"
   },
   "dependencies": {
     "@frctl/fractal": "1.1.7",
-    "js-beautify": "1.7.4",
+    "js-beautify": "1.7.5",
     "lodash": "4.17.4",
     "lunr": "1.0.0"
   }
