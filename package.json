@@ -33,9 +33,5 @@
     "*.js": ["prettier --write", "eslint", "git add"],
     "*.json": ["prettier --write", "git add"]
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true
-  },
   "workspaces": ["examples/*", "packages/*"]
 }
