@@ -35,13 +35,13 @@
     "chokidar-cli": "1.2.0",
     "cross-env": "5.1.1",
     "dotenv": "4.0.0",
-    "eslint": "4.12.1",
+    "eslint": "4.13.1",
     "npm-run-all": "4.1.2",
-    "prettier": "1.8.2",
+    "prettier": "1.9.2",
     "rimraf": "2.6.2",
-    "stylelint": "8.3.1",
-    "wdio-mocha-framework": "0.5.11",
-    "wdio-sauce-service": "0.4.4",
+    "stylelint": "8.4.0",
+    "wdio-mocha-framework": "0.5.12",
+    "wdio-sauce-service": "0.4.6",
     "wdio-screenshot": "0.6.0",
     "wdio-selenium-standalone-service": "0.0.9",
     "wdio-static-server-service": "1.0.1",
@@ -49,7 +49,7 @@
     "webdriverio": "4.9.11"
   },
   "dependencies": {
-    "@ec-europa/ecl-preset-full": "0.3.0"
+    "@ec-europa/ecl-preset-full": "0.3.2"
   },
   "engines": {
     "node": ">=6.9.5"

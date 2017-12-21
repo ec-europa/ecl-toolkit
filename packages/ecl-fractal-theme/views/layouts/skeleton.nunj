@@ -21,6 +21,6 @@
     <a id="main-content" tabindex="-1"></a>
     {% block page %}{% endblock %}
   </main>
-  {% include 'partials/foot.nunj' %}
+  {% include 'partials/footer.nunj' %}
 </body>
 </html>
