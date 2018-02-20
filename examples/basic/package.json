@@ -3,9 +3,9 @@
   "name": "@ec-europa/ecl-example-basic",
   "version": "0.15.0",
   "scripts": {
-    "build:copy": "ecl-builder copy -c test/ecl-builder.config.js",
-    "build:scripts": "ecl-builder scripts -c test/ecl-builder.config.js",
-    "build:styles": "ecl-builder styles -c test/ecl-builder.config.js",
+    "build:copy": "ecl-builder copy",
+    "build:scripts": "ecl-builder scripts",
+    "build:styles": "ecl-builder styles",
     "build": "npm-run-all --parallel build:*",
     "clean": "rimraf tmp build dist static/framework",
     "dist":
