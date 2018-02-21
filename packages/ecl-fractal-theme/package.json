@@ -14,7 +14,6 @@
     "build:scripts": "ecl-builder scripts",
     "build:styles": "ecl-builder styles",
     "clean": "rimraf dist",
-    "postinstall": "npm run build",
     "prepublish": "npm run clean && npm run build"
   },
   "devDependencies": {
