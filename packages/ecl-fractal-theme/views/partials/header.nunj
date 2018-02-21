@@ -32,49 +32,26 @@
     </form>
   </div>
 </header>
-
-
 <div class="ecl-page-header">
   <div class="ecl-container">
     <nav class="ecl-breadcrumbs " aria-label="breadcrumbs">
       <span class="ecl-u-sr-only">You are here:</span>
       <ol class="ecl-breadcrumbs__segments-wrapper">
         <li class="ecl-breadcrumbs__segment ecl-breadcrumbs__segment--first">
-          <a href="http://europa.eu/index_en.htm" class="ecl-breadcrumbs__link">European Commission</a>
+          <a href="http://europa.eu/index_en.htm" class="ecl-link ecl-link--inverted ecl-link--standalone ecl-breadcrumbs__link">European Commission</a>
         </li>
         <li class="ecl-breadcrumbs__segment ecl-breadcrumbs__segment--last">
-          <a href="#" class="ecl-breadcrumbs__link">{{ current }} Europa Component Library</a>
+          <a href="/" class="ecl-link ecl-link--inverted ecl-link--standalone ecl-breadcrumbs__link">Europa Component Library</a>
+        </li>
+        <li class="ecl-breadcrumbs__segment ecl-breadcrumbs__segment--last">
+          <a href="#" class="ecl-link ecl-link--inverted ecl-link--standalone ecl-breadcrumbs__link">{{ current }} {{ frctl.get('project.title') }}</a>
         </li>
       </ol>
     </nav>
     <div class="ecl-page-header__body">
       <div class="ecl-page-header__identity">
-        Europa Component Library
+        {{ frctl.get('project.title') }}
       </div>
     </div>
   </div>
 </div>
-
-<!--
-<nav class="ecl-navigation-menu" aria-label="Main Navigation">
-  <div class="ecl-container">
-    <button class="ecl-navigation-menu__toggle ecl-navigation-menu__hamburger ecl-navigation-menu__hamburger--squeeze" aria-controls="nav-menu-expandable-root" aria-expanded="false">
-      <span class="ecl-navigation-menu__hamburger-box">
-        <span class="ecl-navigation-menu__hamburger-inner"></span>
-      </span>
-      <span class="ecl-navigation-menu__hamburger-label">Menu</span>
-    </button>
-    <ul class="ecl-navigation-menu__root" id="nav-menu-expandable-root" aria-hidden="true">
-      <li class="ecl-navigation-menu__item">
-        <a href="{{ path('/components') }}" class="ecl-navigation-menu__link">{{ frctl.get('project.title') }}</a>
-      </li>
-      <li class="ecl-navigation-menu__item">
-        <a href="{{ path('/docs') }}" class="ecl-navigation-menu__link">Documentation</a>
-      </li>
-      <li class="ecl-navigation-menu__item">
-        <a href="{{ frctl.get('project.repo') }}" class="ecl-navigation-menu__link  ecl-link--external">GitHub</a>
-      </li>
-    </ul>
-  </div>
-</nav>
--->

@@ -22,12 +22,12 @@
 
     .Tree-collectionLabel {
       span::after {
-        [dir="ltr"] & {
-          background-image: url("../img/icon-navigation-closed-ltr.svg");
+        [dir='ltr'] & {
+          background-image: url('../img/icon-navigation-closed-ltr.svg');
         }
 
-        [dir="rtl"] & {
-          background-image: url("../img/icon-navigation-closed-rtl.svg");
+        [dir='rtl'] & {
+          background-image: url('../img/icon-navigation-closed-rtl.svg');
         }
       }
     }
@@ -80,12 +80,12 @@
     transform: translateY(-50%);
     width: 0.75rem;
     height: 0.75rem;
-    background-image: url("../img/icon-navigation-opened.svg");
+    background-image: url('../img/icon-navigation-opened.svg');
     background-size: 0.8rem;
     background-repeat: no-repeat;
     background-position: 50%;
     opacity: 0.6;
-    content: "";
+    content: '';
   }
 
   > span {
