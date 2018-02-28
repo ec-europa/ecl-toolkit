@@ -1,3 +1,14 @@
+## 0.23.0 (2018-02-28)
+
+#### :nail_care: Enhancement
+
+* `ecl-builder`
+  * [#61](https://github.com/ec-europa/ecl-toolkit/pull/61) chore(deps): update dependencies - no issue. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+* Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.22.0 (2018-02-21)
 
 #### :nail_care: Enhancement
