@@ -1,3 +1,14 @@
+## 0.22.0 (2018-02-21)
+
+#### :nail_care: Enhancement
+
+* `ecl-builder`, `ecl-fractal-theme`
+  * [#59](https://github.com/ec-europa/ecl-toolkit/pull/59) feat(flavors): prepare theme for flavors - INNO-927.
+
+#### Committers: 1
+
+* Kalin Chernev ([kalinchernev](https://github.com/kalinchernev))
+
 ## 0.21.0 (2017-12-21)
 
 #### :nail_care: Enhancement
