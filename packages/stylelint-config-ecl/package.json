@@ -9,7 +9,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "stylelint": "^8.0.0"
+    "stylelint": "^9.0.0"
   },
   "dependencies": {
     "stylelint-config-sass-guidelines": "5.0.0",
