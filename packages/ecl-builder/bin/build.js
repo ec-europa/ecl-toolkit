@@ -23,8 +23,8 @@ program
 program
   .command('scripts')
   .description('compile JS')
-  .action(options => {
-    const config = Object.assign({}, loadConfig(program.config), options);
+  .action(() => {
+    const config = loadConfig(program.config);
     config.scripts.forEach(conf =>
       buildScript(conf.entry, conf.dest, conf.options)
     );
@@ -33,8 +33,8 @@ program
 program
   .command('styles')
   .description('compile SCSS to CSS')
-  .action(options => {
-    const config = Object.assign({}, loadConfig(program.config), options);
+  .action(() => {
+    const config = loadConfig(program.config);
     config.styles.forEach(conf =>
       buildStyles(conf.entry, conf.dest, conf.options)
     );
@@ -43,8 +43,8 @@ program
 program
   .command('copy')
   .description('copy static files')
-  .action(options => {
-    const config = Object.assign({}, loadConfig(program.config), options);
+  .action(() => {
+    const config = loadConfig(program.config);
     config.copy.forEach(conf =>
       copyFiles(conf.patterns || '**', conf.from, conf.to)
     );
