@@ -24,7 +24,7 @@ program
   .command('scripts')
   .description('compile JS')
   .action(options => {
-    const config = loadConfig(program.config);
+    const config = Object.assign({}, loadConfig(program.config), options);
     config.scripts.forEach(conf =>
       buildScript(conf.entry, conf.dest, conf.options)
     );
@@ -34,7 +34,7 @@ program
   .command('styles')
   .description('compile SCSS to CSS')
   .action(options => {
-    const config = loadConfig(program.config);
+    const config = Object.assign({}, loadConfig(program.config), options);
     config.styles.forEach(conf =>
       buildStyles(conf.entry, conf.dest, conf.options)
     );
@@ -44,7 +44,7 @@ program
   .command('copy')
   .description('copy static files')
   .action(options => {
-    const config = loadConfig(program.config);
+    const config = Object.assign({}, loadConfig(program.config), options);
     config.copy.forEach(conf =>
       copyFiles(conf.patterns || '**', conf.from, conf.to)
     );
