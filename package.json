@@ -7,7 +7,6 @@
     "bootstrap": "lerna bootstrap",
     "changelog": "lerna-changelog",
     "lint": "eslint .",
-    "postinstall": "lerna run prepublish",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "publish": "scripts/release.sh",
