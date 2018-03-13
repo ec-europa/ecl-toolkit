@@ -1,8 +1,8 @@
 {
-  "name": "@ec-europa/ecl-qa",
+  "name": "@ecl/qa",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.4.0",
+  "version": "0.0.1",
   "description": "ECL QA tools",
   "publishConfig": {
     "access": "public"

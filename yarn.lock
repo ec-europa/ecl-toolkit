@@ -83,21 +83,21 @@
     "@ec-europa/ecl-icons" "^0.9.2"
     "@ec-europa/ecl-u-colorize" "^0.5.0"
 
-"@ec-europa/ecl-banners@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-banners/-/ecl-banners-0.7.0.tgz#884ef0328f91ff14578f4db96859b481e8bb55bb"
+"@ec-europa/ecl-banners@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-banners/-/ecl-banners-0.7.1.tgz#20d119d0519d5cab68cd30e4e4893d2a634e9416"
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
-    "@ec-europa/ecl-blockquotes" "^0.8.0"
+    "@ec-europa/ecl-blockquotes" "^0.9.0"
     "@ec-europa/ecl-typography-paragraphs" "^0.6.1"
 
 "@ec-europa/ecl-base@^0.11.0":
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@ec-europa/ecl-base/-/ecl-base-0.11.0.tgz#79cfd4fa3aa21d712af78b2a0df7c6fc271096d5"
 
-"@ec-europa/ecl-blockquotes@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-blockquotes/-/ecl-blockquotes-0.8.0.tgz#82edbb8ce43a1850c9c4207d48f0e5f341fef037"
+"@ec-europa/ecl-blockquotes@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-blockquotes/-/ecl-blockquotes-0.9.0.tgz#b95ad92ad5c90773962303bb52d7df9d00611b82"
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
     "@ec-europa/ecl-typography-paragraphs" "^0.6.1"
@@ -173,19 +173,19 @@
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
 
-"@ec-europa/ecl-dropdowns@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-dropdowns/-/ecl-dropdowns-0.10.0.tgz#424574015f7c0648e548a725be9684cd56052b25"
+"@ec-europa/ecl-dropdowns@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-dropdowns/-/ecl-dropdowns-0.10.1.tgz#8982fce5f0c2efcd30647d0980d934bed5e49d66"
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
     "@ec-europa/ecl-buttons" "^0.14.0"
-    "@ec-europa/ecl-expandables" "^0.10.0"
+    "@ec-europa/ecl-expandables" "^0.11.0"
     "@ec-europa/ecl-icons" "^0.9.2"
     "@ec-europa/ecl-link-blocks" "^0.9.0"
 
-"@ec-europa/ecl-expandables@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-expandables/-/ecl-expandables-0.10.0.tgz#f002429d910c8bbbd54c0e0b34f12adc004ad7c3"
+"@ec-europa/ecl-expandables@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-expandables/-/ecl-expandables-0.11.0.tgz#a0c8029ea8d1f0f2d890d288cf8fede4a239363f"
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
     "@ec-europa/ecl-buttons" "^0.14.0"
@@ -447,15 +447,15 @@
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
 
-"@ec-europa/ecl-navigation-inpages@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-inpages/-/ecl-navigation-inpages-0.6.0.tgz#b6fd743fa95f860c8dae683aee8c6ecb5494d647"
+"@ec-europa/ecl-navigation-inpages@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-inpages/-/ecl-navigation-inpages-0.7.0.tgz#a3ee22026f5dd872134e91154c13e51a91a07b3a"
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
-    "@ec-europa/ecl-expandables" "^0.10.0"
+    "@ec-europa/ecl-expandables" "^0.11.0"
     "@ec-europa/ecl-links" "^0.11.0"
     gumshoejs "3.5.0"
-    stickybits "2.0.13"
+    stickybits "3.1.1"
 
 "@ec-europa/ecl-navigation-lists@^0.11.0":
   version "0.11.0"
@@ -465,12 +465,12 @@
     "@ec-europa/ecl-links" "^0.11.0"
     "@ec-europa/ecl-u-screen-reader" "^0.6.0"
 
-"@ec-europa/ecl-navigation-menus@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-menus/-/ecl-navigation-menus-0.10.0.tgz#0a7f2d47adeae53d7952665496cfaf278260862b"
+"@ec-europa/ecl-navigation-menus@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-navigation-menus/-/ecl-navigation-menus-0.10.1.tgz#216cd40f55b67ebf6abc35a2d75bcbc5e11ab8d6"
   dependencies:
     "@ec-europa/ecl-base" "^0.11.0"
-    "@ec-europa/ecl-expandables" "^0.10.0"
+    "@ec-europa/ecl-expandables" "^0.11.0"
     "@ec-europa/ecl-grid" "^0.3.4"
     "@ec-europa/ecl-icons" "^0.9.2"
 
@@ -503,14 +503,14 @@
     "@ec-europa/ecl-typography-lists" "^0.9.0"
     "@ec-europa/ecl-typography-paragraphs" "^0.6.1"
 
-"@ec-europa/ecl-preset-full@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-preset-full/-/ecl-preset-full-0.6.0.tgz#ae746d197f39b9864cb434b1f393932732f0bd2d"
+"@ec-europa/ecl-preset-full@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@ec-europa/ecl-preset-full/-/ecl-preset-full-0.6.1.tgz#13aca12518d8fffe4af4a78ec8396a54807eccdc"
   dependencies:
     "@ec-europa/ecl-accordions" "^0.6.0"
-    "@ec-europa/ecl-banners" "^0.7.0"
+    "@ec-europa/ecl-banners" "^0.7.1"
     "@ec-europa/ecl-base" "^0.11.0"
-    "@ec-europa/ecl-blockquotes" "^0.8.0"
+    "@ec-europa/ecl-blockquotes" "^0.9.0"
     "@ec-europa/ecl-breadcrumbs" "^0.10.0"
     "@ec-europa/ecl-buttons" "^0.14.0"
     "@ec-europa/ecl-carousels" "^0.3.0"
@@ -520,8 +520,8 @@
     "@ec-europa/ecl-date-blocks" "^0.7.0"
     "@ec-europa/ecl-datepickers" "^0.9.0"
     "@ec-europa/ecl-dialogs" "^0.4.0"
-    "@ec-europa/ecl-dropdowns" "^0.10.0"
-    "@ec-europa/ecl-expandables" "^0.10.0"
+    "@ec-europa/ecl-dropdowns" "^0.10.1"
+    "@ec-europa/ecl-expandables" "^0.11.0"
     "@ec-europa/ecl-featured-items" "^0.8.0"
     "@ec-europa/ecl-fields" "^0.6.0"
     "@ec-europa/ecl-files" "^0.9.0"
@@ -554,9 +554,9 @@
     "@ec-europa/ecl-logos" "^0.9.0"
     "@ec-europa/ecl-messages" "^0.8.0"
     "@ec-europa/ecl-meta" "^0.9.0"
-    "@ec-europa/ecl-navigation-inpages" "^0.6.0"
+    "@ec-europa/ecl-navigation-inpages" "^0.7.0"
     "@ec-europa/ecl-navigation-lists" "^0.11.0"
-    "@ec-europa/ecl-navigation-menus" "^0.10.0"
+    "@ec-europa/ecl-navigation-menus" "^0.10.1"
     "@ec-europa/ecl-page-headers" "^0.13.0"
     "@ec-europa/ecl-pagers" "^0.8.0"
     "@ec-europa/ecl-preset-base" "^0.5.0"
@@ -1228,15 +1228,15 @@ atob@~1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
 
-autoprefixer@8.0.0, autoprefixer@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.0.0.tgz#c19e480f061013127c373df0b01cf46919943f74"
+autoprefixer@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.1.0.tgz#374cf35be1c0e8fce97408d876f95f66f5cb4641"
   dependencies:
-    browserslist "^3.0.0"
-    caniuse-lite "^1.0.30000808"
+    browserslist "^3.1.1"
+    caniuse-lite "^1.0.30000810"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^6.0.17"
+    postcss "^6.0.19"
     postcss-value-parser "^3.2.3"
 
 autoprefixer@^6.3.1:
@@ -1259,6 +1259,17 @@ autoprefixer@^7.1.2:
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^6.0.13"
+    postcss-value-parser "^3.2.3"
+
+autoprefixer@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.0.0.tgz#c19e480f061013127c373df0b01cf46919943f74"
+  dependencies:
+    browserslist "^3.0.0"
+    caniuse-lite "^1.0.30000808"
+    normalize-range "^0.1.2"
+    num2fraction "^1.2.2"
+    postcss "^6.0.17"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -1955,9 +1966,9 @@ browser-resolve@^1.11.2:
   dependencies:
     resolve "1.1.7"
 
-browser-stdout@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/browser-stdout/-/browser-stdout-1.3.0.tgz#f351d32969d32fa5d7a5567154263d928ae3bd1f"
+browser-stdout@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/browser-stdout/-/browser-stdout-1.3.1.tgz#baa559ee14ced73452229bad7326467c61fabd60"
 
 browser-sync-client@2.5.1:
   version "2.5.1"
@@ -2008,12 +2019,12 @@ browser-sync@^2.18.13:
     ua-parser-js "0.7.12"
     yargs "6.4.0"
 
-browserslist@3.1.1, browserslist@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-3.1.1.tgz#d380fc048bc3a33e60fb87dc135110ebaaa6320a"
+browserslist@3.1.2, browserslist@^3.1.1:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-3.1.2.tgz#893f29399d640ed35fe06bacd7eb1d78609a47e5"
   dependencies:
-    caniuse-lite "^1.0.30000809"
-    electron-to-chromium "^1.3.33"
+    caniuse-lite "^1.0.30000813"
+    electron-to-chromium "^1.3.36"
 
 browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
   version "1.7.7"
@@ -2022,12 +2033,19 @@ browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
     caniuse-db "^1.0.30000639"
     electron-to-chromium "^1.2.7"
 
-browserslist@^2.1.2, browserslist@^2.1.5, browserslist@^2.5.1:
+browserslist@^2.1.2, browserslist@^2.5.1:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.9.1.tgz#b72d3982ab01b5cd24da62ff6d45573886aff275"
   dependencies:
     caniuse-lite "^1.0.30000770"
     electron-to-chromium "^1.3.27"
+
+browserslist@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-3.1.1.tgz#d380fc048bc3a33e60fb87dc135110ebaaa6320a"
+  dependencies:
+    caniuse-lite "^1.0.30000809"
+    electron-to-chromium "^1.3.33"
 
 bs-recipes@1.3.4:
   version "1.3.4"
@@ -2041,9 +2059,13 @@ buffer-equal@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/buffer-equal/-/buffer-equal-0.0.1.tgz#91bc74b11ea405bc916bc6aa908faafa5b4aac4b"
 
-builtin-modules@^1.0.0, builtin-modules@^1.1.0, builtin-modules@^1.1.1:
+builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
+
+builtin-modules@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-2.0.0.tgz#60b7ef5ae6546bd7deefa74b08b62a43a232648e"
 
 byline@^5.0.0:
   version "5.0.0"
@@ -2158,6 +2180,10 @@ caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000770:
 caniuse-lite@^1.0.30000808, caniuse-lite@^1.0.30000809:
   version "1.0.30000810"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000810.tgz#47585fffce0e9f3593a6feea4673b945424351d9"
+
+caniuse-lite@^1.0.30000810, caniuse-lite@^1.0.30000813:
+  version "1.0.30000814"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000814.tgz#73eb6925ac2e54d495218f1ea0007da3940e488b"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2479,7 +2505,11 @@ commander@2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
-commander@2.14.1, commander@^2.14.1:
+commander@2.15.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.0.tgz#ad2a23a1c3b036e392469b8012cec6b33b4c1322"
+
+commander@^2.14.1:
   version "2.14.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"
 
@@ -2823,9 +2853,9 @@ create-error-class@^3.0.0, create-error-class@^3.0.1:
   dependencies:
     capture-stack-trace "^1.0.0"
 
-cross-env@5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.3.tgz#f8ae18faac87692b0a8b4d2f7000d4ec3a85dfd7"
+cross-env@5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.4.tgz#f61c14291f7cc653bb86457002ea80a04699d022"
   dependencies:
     cross-spawn "^5.1.0"
     is-windows "^1.0.0"
@@ -2849,6 +2879,16 @@ cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
     lru-cache "^4.0.1"
+    shebang-command "^1.2.0"
+    which "^1.2.9"
+
+cross-spawn@^6.0.0:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
+  dependencies:
+    nice-try "^1.0.4"
+    path-key "^2.0.1"
+    semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
 
@@ -2977,7 +3017,7 @@ debug@*, debug@3.1.0, debug@^3.0.0, debug@^3.0.1, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.3, debug@^2.6.8:
+debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   dependencies:
@@ -3146,9 +3186,9 @@ diff@1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/diff/-/diff-1.0.7.tgz#24bbb001c4a7d5522169e7cabdb2c2814ed91cf4"
 
-diff@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.3.1.tgz#aa8567a6eed03c531fc89d3f711cd0e5259dec75"
+diff@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
 
 diff@^3.2.0:
   version "3.4.0"
@@ -3308,6 +3348,10 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.27:
 electron-to-chromium@^1.3.33:
   version "1.3.34"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.34.tgz#d93498f40391bb0c16a603d8241b9951404157ed"
+
+electron-to-chromium@^1.3.36:
+  version "1.3.37"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.37.tgz#4a92734e0044c8cf0b1553be57eae21a4c6e5fab"
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -3500,9 +3544,9 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@4.18.1:
-  version "4.18.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.18.1.tgz#b9138440cb1e98b2f44a0d578c6ecf8eae6150b0"
+eslint@4.18.2:
+  version "4.18.2"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.18.2.tgz#0f81267ad1012e7d2051e186a9004cc2267b8d45"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -3539,7 +3583,7 @@ eslint@4.18.1:
     semver "^5.3.0"
     strip-ansi "^4.0.0"
     strip-json-comments "~2.0.1"
-    table "^4.0.1"
+    table "4.0.2"
     text-table "~0.2.0"
 
 eslint@^4.0.0:
@@ -3670,7 +3714,7 @@ estree-walker@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.3.1.tgz#e6b1a51cf7292524e7237c312e5fe6660c1ce1aa"
 
-estree-walker@^0.5.0:
+estree-walker@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.5.1.tgz#64fc375053abc6f57d73e9bd2f004644ad3c5854"
 
@@ -6588,14 +6632,14 @@ mocha@1.17.0:
     jade "0.26.3"
     mkdirp "0.3.5"
 
-mocha@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-4.0.1.tgz#0aee5a95cf69a4618820f5e51fa31717117daf1b"
+mocha@^5.0.0:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.0.4.tgz#6b7aa328472da1088e69d47e75925fd3a3bb63c6"
   dependencies:
-    browser-stdout "1.3.0"
+    browser-stdout "1.3.1"
     commander "2.11.0"
     debug "3.1.0"
-    diff "3.3.1"
+    diff "3.5.0"
     escape-string-regexp "1.0.5"
     glob "7.1.2"
     growl "1.10.3"
@@ -6700,6 +6744,10 @@ ncp@2.0.0:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+nice-try@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
 
 node-fetch-npm@^2.0.2:
   version "2.0.2"
@@ -6839,6 +6887,10 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
+
+normalize.css@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
 
 npm-install-package@~2.1.0:
   version "2.1.0"
@@ -7249,7 +7301,7 @@ path-is-inside@^1.0.1, path-is-inside@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/path-is-inside/-/path-is-inside-1.0.2.tgz#365417dede44430d1c11af61027facf074bdfc53"
 
-path-key@^2.0.0:
+path-key@^2.0.0, path-key@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
 
@@ -7573,13 +7625,6 @@ postcss-normalize-url@^3.0.7:
     postcss "^5.0.14"
     postcss-value-parser "^3.2.3"
 
-postcss-normalize@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-4.0.0.tgz#12d05a6005661a7282034347b5d12ccf083bd119"
-  dependencies:
-    browserslist "^2.1.5"
-    postcss "^6.0.2"
-
 postcss-ordered-values@^2.1.0:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/postcss-ordered-values/-/postcss-ordered-values-2.2.3.tgz#eec6c2a67b6c412a8db2042e77fe8da43f95c11d"
@@ -7692,7 +7737,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@6.0.19, postcss@^6.0.16, postcss@^6.0.17:
+postcss@6.0.19, postcss@^6.0.16, postcss@^6.0.17, postcss@^6.0.19:
   version "6.0.19"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.19.tgz#76a78386f670b9d9494a655bf23ac012effd1555"
   dependencies:
@@ -7700,7 +7745,7 @@ postcss@6.0.19, postcss@^6.0.16, postcss@^6.0.17:
     source-map "^0.6.1"
     supports-color "^5.2.0"
 
-postcss@>=5.0.19, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.2, postcss@^6.0.3, postcss@^6.0.6, postcss@^6.0.8:
+postcss@>=5.0.19, postcss@^6.0.13, postcss@^6.0.14, postcss@^6.0.3, postcss@^6.0.6, postcss@^6.0.8:
   version "6.0.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.14.tgz#5534c72114739e75d0afcf017db853099f562885"
   dependencies:
@@ -7769,9 +7814,9 @@ prettier-eslint@^8.5.0:
     typescript "^2.5.1"
     typescript-eslint-parser "^11.0.0"
 
-prettier@1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.11.0.tgz#c024f70cab158c993f50fc0c25ffe738cb8b0f85"
+prettier@1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.11.1.tgz#61e43fc4cd44e68f2b0dfc2c38cd4bb0fccdcc75"
 
 prettier@^1.7.0:
   version "1.9.2"
@@ -7803,13 +7848,13 @@ process@~0.5.1:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/process/-/process-0.5.2.tgz#1638d8a8e34c2f440a91db95ab9aeb677fc185cf"
 
-progress@1.1.8, progress@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
-
-progress@^2.0.0:
+progress@2.0.0, progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
+
+progress@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -8360,7 +8405,7 @@ resolve@1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
-resolve@^1.1.6, resolve@^1.1.7, resolve@^1.2.0, resolve@^1.4.0:
+resolve@^1.1.6, resolve@^1.1.7, resolve@^1.2.0, resolve@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
   dependencies:
@@ -8413,21 +8458,20 @@ rollup-plugin-babel@3.0.3:
   dependencies:
     rollup-pluginutils "^1.5.0"
 
-rollup-plugin-commonjs@8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-8.3.0.tgz#91b4ba18f340951e39ed7b1901f377a80ab3f9c3"
+rollup-plugin-commonjs@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.1.0.tgz#468341aab32499123ee9a04b22f51d9bf26fdd94"
   dependencies:
-    acorn "^5.2.1"
-    estree-walker "^0.5.0"
+    estree-walker "^0.5.1"
     magic-string "^0.22.4"
-    resolve "^1.4.0"
+    resolve "^1.5.0"
     rollup-pluginutils "^2.0.1"
 
-rollup-plugin-node-resolve@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-3.0.3.tgz#8f57b253edd00e5b0ad0aed7b7e9cf5982e98fa4"
+rollup-plugin-node-resolve@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-3.2.0.tgz#31534952f3ab21f9473c1d092be7ed43937ea4d4"
   dependencies:
-    builtin-modules "^1.1.0"
+    builtin-modules "^2.0.0"
     is-module "^1.0.0"
     resolve "^1.1.6"
 
@@ -8451,9 +8495,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup@0.56.3:
-  version "0.56.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.56.3.tgz#7900695531afa1badd3235f285cc4aa0d49ce254"
+rollup@0.56.5:
+  version "0.56.5"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.56.5.tgz#40fe3cf0cd1659d469baad11f4d5b6336c14ce84"
 
 run-async@^0.1.0:
   version "0.1.0"
@@ -8531,18 +8575,18 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-selenium-standalone@^6.5.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/selenium-standalone/-/selenium-standalone-6.11.0.tgz#eb21ff65f3b2ece75061b35d4f9e7572ac0280c2"
+selenium-standalone@^6.13.0:
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/selenium-standalone/-/selenium-standalone-6.13.0.tgz#d61d2994e196b2ff61a19de498c6711375f5a51b"
   dependencies:
     async "^2.1.4"
     commander "^2.9.0"
-    cross-spawn "^5.1.0"
-    debug "^2.6.3"
+    cross-spawn "^6.0.0"
+    debug "^3.0.0"
     lodash "^4.17.4"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
-    progress "1.1.8"
+    progress "2.0.0"
     request "2.79.0"
     tar-stream "1.5.2"
     urijs "^1.18.4"
@@ -9033,9 +9077,9 @@ stealthy-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
 
-stickybits@2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/stickybits/-/stickybits-2.0.13.tgz#ab0fca4c2bb07c2925e2775b88a2116dc7f57005"
+stickybits@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/stickybits/-/stickybits-3.1.1.tgz#b2c6a7e9d2ba6a19235d5068639298ac958e9dad"
 
 stream-combiner@~0.0.4:
   version "0.0.4"
@@ -9185,6 +9229,12 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
+stylelint-config-prettier@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-3.0.4.tgz#1259093c1db2d5e8dfff7d9672f6f41db2101845"
+  dependencies:
+    stylelint "^9.1.1"
+
 stylelint-config-recommended@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.0.0.tgz#560a028e81ea3ca8894b9a8eef4c0e05ac60e090"
@@ -9210,7 +9260,17 @@ stylelint-order@0.8.1, stylelint-order@^0.8.0:
     postcss "^6.0.14"
     postcss-sorting "^3.1.0"
 
-stylelint-scss@2.4.0, stylelint-scss@^2.0.0:
+stylelint-scss@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-2.5.0.tgz#ac4c83474c53b19cc1f9e93d332786cf89c8d217"
+  dependencies:
+    lodash "^4.17.4"
+    postcss-media-query-parser "^0.2.3"
+    postcss-resolve-nested-selector "^0.1.1"
+    postcss-selector-parser "^3.1.1"
+    postcss-value-parser "^3.3.0"
+
+stylelint-scss@^2.0.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-2.4.0.tgz#2d417688556d64536f435e7a6f77a40dbb89e505"
   dependencies:
@@ -9229,7 +9289,7 @@ stylelint-selector-bem-pattern@2.0.0:
     postcss-bem-linter "^3.0.0"
     stylelint ">=3.0.2"
 
-stylelint@9.1.1:
+stylelint@9.1.1, stylelint@^9.1.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.1.1.tgz#bfabb7eb8ea6251a4732f4b2a0468963a30d3da9"
   dependencies:
@@ -9385,7 +9445,7 @@ symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
-table@^4.0.1:
+table@4.0.2, table@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/table/-/table-4.0.2.tgz#a33447375391e766ad34d3486e6e2aedc84d2e36"
   dependencies:
@@ -9974,12 +10034,12 @@ wdio-dot-reporter@~0.0.8:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/wdio-dot-reporter/-/wdio-dot-reporter-0.0.9.tgz#929b2adafd49d6b0534fda068e87319b47e38fe5"
 
-wdio-mocha-framework@0.5.12:
-  version "0.5.12"
-  resolved "https://registry.yarnpkg.com/wdio-mocha-framework/-/wdio-mocha-framework-0.5.12.tgz#84633c697275896b46f7922cd7b4cb0cd59049cc"
+wdio-mocha-framework@0.5.13:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/wdio-mocha-framework/-/wdio-mocha-framework-0.5.13.tgz#f4da119456cb673b8c058fb60936132ec752a9d4"
   dependencies:
     babel-runtime "^6.23.0"
-    mocha "^4.0.0"
+    mocha "^5.0.0"
     wdio-sync "0.7.1"
 
 wdio-sauce-service@0.4.8:
@@ -10003,12 +10063,12 @@ wdio-screenshot@0.6.0, wdio-screenshot@^0.6.0:
     uuid "^3.0.0"
     which "^1.2.10"
 
-wdio-selenium-standalone-service@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/wdio-selenium-standalone-service/-/wdio-selenium-standalone-service-0.0.9.tgz#c80d4ff489744d5a0b91d5189764916d4c0c8564"
+wdio-selenium-standalone-service@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/wdio-selenium-standalone-service/-/wdio-selenium-standalone-service-0.0.10.tgz#cdb64d9a53fa3ea0ed3cf0ebf4fd3bdca93dcf05"
   dependencies:
     fs-extra "^0.30.0"
-    selenium-standalone "^6.5.0"
+    selenium-standalone "^6.13.0"
 
 wdio-static-server-service@1.0.1:
   version "1.0.1"
@@ -10039,9 +10099,9 @@ wdio-visual-regression-service@0.8.0:
     platform "^1.3.1"
     wdio-screenshot "^0.6.0"
 
-webdriverio@4.11.0:
-  version "4.11.0"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-4.11.0.tgz#289baae2257301d95cfecefdec2038a6aa6b94c5"
+webdriverio@4.12.0:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-4.12.0.tgz#e340def272183c8168a4dd0b382322f9d7bee10d"
   dependencies:
     archiver "~2.1.0"
     babel-runtime "^6.26.0"

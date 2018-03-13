@@ -4,7 +4,6 @@ const fs = require('fs');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
-const postcssNormalize = require('postcss-normalize');
 const mkdirp = require('mkdirp');
 
 const handleError = err => {
@@ -12,7 +11,7 @@ const handleError = err => {
 };
 
 module.exports = (entry, dest, options) => {
-  const plugins = [postcssNormalize(), autoprefixer()];
+  const plugins = [autoprefixer()];
 
   let postcssSourceMap = false;
   if (options.sourceMap === true) {

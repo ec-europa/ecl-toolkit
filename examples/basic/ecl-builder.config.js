@@ -3,6 +3,9 @@ const path = require('path');
 const isProd = process.env.NODE_ENV === 'production';
 const outputFolder = isProd ? 'dist/framework' : 'static/framework';
 
+// SCSS includePaths
+const includePaths = [path.resolve(__dirname, '../../node_modules')];
+
 module.exports = {
   scripts: [
     {
@@ -20,6 +23,7 @@ module.exports = {
       dest: path.resolve(__dirname, outputFolder, 'styles/europa.css'),
       options: {
         sourceMap: isProd ? 'file' : true,
+        includePaths,
       },
     },
   ],

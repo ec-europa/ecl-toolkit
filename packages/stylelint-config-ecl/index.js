@@ -9,7 +9,11 @@ function bemSelector(block) {
 }
 
 module.exports = {
-  extends: ['stylelint-config-sass-guidelines', 'stylelint-config-standard'],
+  extends: [
+    'stylelint-config-sass-guidelines',
+    'stylelint-config-standard',
+    'stylelint-config-prettier',
+  ],
   plugins: ['stylelint-selector-bem-pattern'],
   rules: {
     'plugin/selector-bem-pattern': {
@@ -17,13 +21,5 @@ module.exports = {
       componentSelectors: bemSelector,
       ignoreSelectors: /^\.no-js$/,
     },
-    'selector-class-pattern': null,
-    'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['import-normalize'],
-      },
-    ],
   },
 };
