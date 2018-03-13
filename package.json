@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ec-europa/ecl-toolkit#readme",
   "devDependencies": {
-    "eslint": "4.18.1",
+    "eslint": "4.18.2",
     "husky": "0.14.3",
     "lerna": "2.9.0",
     "lerna-changelog": "0.7.0",
@@ -32,5 +32,5 @@
     "*.js": ["prettier --write", "eslint", "git add"],
     "*.json": ["prettier --write", "git add"]
   },
-  "workspaces": ["examples/*", "packages/*"]
+  "workspaces": ["packages/*"]
 }

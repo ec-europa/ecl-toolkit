@@ -1,0 +1,21 @@
+{
+  "name": "@ecl/qa",
+  "author": "European Commission",
+  "license": "EUPL-1.1",
+  "version": "0.0.1",
+  "description": "ECL QA tools",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "axe-core": "2.6.1",
+    "chai": "4.1.2",
+    "html-inspector": "0.8.2"
+  },
+  "peerDependencies": {
+    "webdriverio": ">= 4.6.2"
+  },
+  "engines": {
+    "node": ">=6.9.5"
+  }
+}
