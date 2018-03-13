@@ -2,7 +2,7 @@
   "name": "@ecl/stylelint-config",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Stylelint config for ECL QA",
   "main": "index.js",
   "publishConfig": {
@@ -19,5 +19,9 @@
     "stylelint-scss": "2.5.0",
     "stylelint-selector-bem-pattern": "2.0.0"
   },
-  "keywords": ["ecl", "stylelint", "stylelint-config"]
+  "keywords": [
+    "ecl",
+    "stylelint",
+    "stylelint-config"
+  ]
 }
