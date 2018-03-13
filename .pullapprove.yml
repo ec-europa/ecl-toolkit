@@ -20,4 +20,5 @@ groups:
       - inno
     conditions:
       branches:
-          - master # only need to review if merging into master
+          - master
+          - next
