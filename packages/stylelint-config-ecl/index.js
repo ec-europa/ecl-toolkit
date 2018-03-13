@@ -10,8 +10,8 @@ function bemSelector(block) {
 
 module.exports = {
   extends: [
-    'stylelint-config-sass-guidelines',
     'stylelint-config-standard',
+    'stylelint-config-sass-guidelines',
     'stylelint-config-prettier',
   ],
   plugins: ['stylelint-selector-bem-pattern'],
@@ -21,5 +21,10 @@ module.exports = {
       componentSelectors: bemSelector,
       ignoreSelectors: /^\.no-js$/,
     },
+    // Allow underscores in class names (BEM)
+    'selector-class-pattern': null,
+    // Fix rules conflicting with prettier
+    'at-rule-empty-line-before': null,
+    'selector-descendant-combinator-no-non-space': null,
   },
 };
