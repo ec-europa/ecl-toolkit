@@ -32,5 +32,5 @@
     "*.js": ["prettier --write", "eslint", "git add"],
     "*.json": ["prettier --write", "git add"]
   },
-  "workspaces": ["examples/*", "packages/*"]
+  "workspaces": ["packages/*"]
 }

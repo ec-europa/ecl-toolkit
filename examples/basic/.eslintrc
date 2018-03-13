@@ -1,3 +1,0 @@
----
-  extends: '@ecl/eslint-config-ecl'
-  root: true
