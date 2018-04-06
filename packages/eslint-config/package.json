@@ -2,7 +2,7 @@
   "name": "@ecl/eslint-config",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint config for ECL QA",
   "main": "index.js",
   "publishConfig": {
@@ -18,5 +18,9 @@
     "eslint-plugin-import": "2.10.0",
     "eslint-plugin-prettier": "2.6.0"
   },
-  "keywords": ["ecl", "eslint", "eslintconfig"]
+  "keywords": [
+    "ecl",
+    "eslint",
+    "eslintconfig"
+  ]
 }
