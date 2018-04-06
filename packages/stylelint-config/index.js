@@ -23,8 +23,5 @@ module.exports = {
     },
     // Allow underscores in class names (BEM)
     'selector-class-pattern': null,
-    // Fix rules conflicting with prettier
-    'at-rule-empty-line-before': null,
-    'selector-descendant-combinator-no-non-space': null,
   },
 };
