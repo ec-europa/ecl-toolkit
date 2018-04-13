@@ -24,6 +24,7 @@
     "ncp": "2.0.0",
     "node-sass": "4.8.3",
     "postcss": "6.0.21",
+    "postcss-banner": "3.0.0",
     "rollup": "0.57.1",
     "rollup-plugin-babel": "3.0.3",
     "rollup-plugin-commonjs": "9.1.0",
