@@ -11,6 +11,12 @@ module.exports = (input, dest, options) => {
     options.uglify === true ||
     (options.uglify !== false && process.env.NODE_ENV === 'production');
 
+  const uglifyOptions = {};
+
+  if (options.banner) {
+    uglifyOptions.output = { preamble: `/* ${options.banner} */` };
+  }
+
   const inputOptions = {
     input,
     external: options.external || [],
@@ -38,7 +44,7 @@ module.exports = (input, dest, options) => {
         ],
         plugins: ['external-helpers'],
       }),
-      uglifyCode && uglify(),
+      uglifyCode && uglify(uglifyOptions),
     ],
   };
 

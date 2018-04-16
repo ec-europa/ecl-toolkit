@@ -5,6 +5,7 @@ const postcss = require('postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const mkdirp = require('mkdirp');
+const bannerPlugin = require('postcss-banner');
 
 const handleError = err => {
   if (err) throw err;
@@ -21,6 +22,16 @@ module.exports = (entry, dest, options) => {
   }
 
   if (process.env.NODE_ENV === 'production') {
+    if (options.banner) {
+      plugins.push(
+        bannerPlugin({
+          banner: options.banner,
+          important: true,
+          inline: true,
+        })
+      );
+    }
+
     plugins.push(cssnano({ safe: true }));
   }
 
