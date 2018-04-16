@@ -1,3 +1,14 @@
+## 0.24.0 (2018-04-16)
+
+#### :rocket: New Feature
+
+* `builder`, `eslint-config`
+  * [#65](https://github.com/ec-europa/ecl-toolkit/pull/65) feat(banner): add banner to CSS and JS files - INNO-950. ([@yhuard](https://github.com/yhuard))
+
+#### Committers: 1
+
+* Yannick Huard ([yhuard](https://github.com/yhuard))
+
 ## 0.23.0 (2018-02-28)
 
 #### :nail_care: Enhancement
