@@ -2,7 +2,7 @@
   "name": "@ecl/eslint-config",
   "author": "European Commission",
   "license": "EUPL-1.1",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "ESLint config for ECL QA",
   "main": "index.js",
   "publishConfig": {
