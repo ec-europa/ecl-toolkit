@@ -64,7 +64,7 @@ program
   .action(() => {
     const config = loadConfig(program.config);
     config.styles.forEach(conf =>
-      resolveAndBuildStyles(conf);
+      resolveAndBuildStyles(conf)
     );
   });
 
